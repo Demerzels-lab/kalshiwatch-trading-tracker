@@ -1,0 +1,32 @@
+📄 Extracted from page: kalshiwatch-final
+URL: https://zstwsyrwsnez.space.minimax.io/
+
+Extracted content:
+```json
+{
+    "title": "kalshiwatch-final",
+    "url": "https://zstwsyrwsnez.space.minimax.io/",
+    "summary": "The Kalshiwatch platform is introduced as a tool for tracking Kalshi traders and receiving real-time alerts. Its main tagline highlights the ability to get instant Telegram bot alerts. The page also features a list of recommended traders along with their profits and provides navigation links and social media contacts for X (Twitter) and Telegram.",
+    "key_points": [
+        "The tagline found on the main page is: \"Track Kalshi traders and get instant telegram bot alerts\".",
+        "The platform, Kalshiwatch, is designed for tracking Kalshi traders.",
+        "It offers instant alerts, specifically through a Telegram bot.",
+        "A section for 'Recommended traders' is displayed, showing top performers with their earnings.",
+        "Links to social media channels (X/Twitter and Telegram) are provided."
+    ],
+    "relevant_links": [
+        "/",
+        "/auth",
+        "/profile/0x59ba5d72069752fa30fb3d60f8890c7d8385b589",
+        "/profile/0xf5de09a5f22f3f8e8a8c96557b89a5157918394a",
+        "/profile/0x75cd0ee2963cf478f73ade3ae0c34de55b0058ae",
+        "/profile/0x87f87447b1ce6496db3ce4b6f5135f1265476a55",
+        "/profile/0xc784d7debc7e9228534b457c4fa5f6c7b2d393fd",
+        "/profile/0xb4eea1c82f0c4cf7e02e69212bd447a63314cc59",
+        "/profile/0x3928faf6e1bd6763ee13e89aca1cff401e9515e4",
+        "https://x.com/kalshiwatch",
+        "https://t.me/kalshiwatch_bot"
+    ],
+    "file_name": "kalshiwatch_tagline_extraction.json"
+}
+```

@@ -116,7 +116,7 @@ export default function LandingPage() {
             Kalshiwatch
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 md:mb-12">
-            Track Polymarket traders and get instant alerts
+            Track Kalshi traders and get instant telegram bot alerts
           </p>
           <Link 
             to="/auth"

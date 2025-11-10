@@ -8,7 +8,7 @@ interface OnboardingTourProps {
 const steps = [
   {
     title: 'Selamat Datang di Kalshiwatch!',
-    description: 'Platform untuk tracking trader Polymarket dan menerima alert real-time. Mari kita lihat fitur-fitur utama.',
+    description: 'Platform untuk tracking trader Kalshi dan menerima alert real-time. Mari kita lihat fitur-fitur utama.',
     image: null,
   },
   {
@@ -33,7 +33,7 @@ const steps = [
   },
   {
     title: 'Siap Mulai!',
-    description: 'Anda sudah siap untuk memulai tracking trader Polymarket. Jelajahi platform dan temukan trader terbaik untuk diikuti!',
+    description: 'Anda sudah siap untuk memulai tracking trader Kalshi. Jelajahi platform dan temukan trader terbaik untuk diikuti!',
     image: null,
   },
 ];

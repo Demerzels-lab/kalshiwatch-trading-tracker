@@ -1,0 +1,35 @@
+📄 Extracted from page: kalshiwatch-final
+URL: https://zstwsyrwsnez.space.minimax.io/
+
+Extracted content:
+```json
+{
+  "title": "kalshiwatch-final",
+  "url": "https://zstwsyrwsnez.space.minimax.io/",
+  "summary": "Kalshiwatch is an online service designed to help users track traders on the Kalshi platform and receive instant alerts via a Telegram bot. The main page prominently displays its tagline, calls to action for getting started or logging in, and features a list of 'Recommended traders' complete with their accumulated profits and trade counts. The site also provides links to its presence on X (Twitter) and Telegram, and notes its creation by MiniMax Agent.",
+  "key_points": [
+    "Website Name: Kalshiwatch.",
+    "Tagline: \"Track Kalshi traders and get instant telegram bot alerts.\"",
+    "Primary Functionality: Tracking Kalshi traders and providing instant Telegram bot alerts.",
+    "Navigation options include Home, Bantuan (Help), and Login.",
+    "A clear call to action: \"Get started\", which links to the authentication page.",
+    "Features a section for 'Recommended traders' displaying their profile names (e.g., Outlying-Talking, Bouncy-Bullet), profit figures (e.g., +$20.0K), and number of trades (e.g., 1 trades).",
+    "Provides links to its social media channels: X (Twitter) and Telegram bot.",
+    "Credited as 'Created by MiniMax Agent'."
+  ],
+  "relevant_links": [
+    "/",
+    "/auth",
+    "/profile/0x59ba5d72069752fa30fb3d60f8890c7d8385b589",
+    "/profile/0xf5de09a5f22f3f8e8a8c96557b89a5157918394a",
+    "/profile/0x75cd0ee2963cf478f73ade3ae0c34de55b0058ae",
+    "/profile/0x87f87447b1ce6496db3ce4b6f5135f1265476a55",
+    "/profile/0xc784d7debc7e9228534b457c4fa5f6c7b2d393fd",
+    "/profile/0xb4eea1c82f0c4cf7e02e69212bd447a63314cc59",
+    "/profile/0x3928faf6e1bd6763ee13e89aca1cff401e9515e4",
+    "https://x.com/kalshiwatch",
+    "https://t.me/kalshiwatch_bot"
+  ],
+  "file_name": "kalshiwatch_main_page_content.json"
+}
+```
