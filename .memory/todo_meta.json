@@ -3,44 +3,37 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Meneliti API Kalsehi dan dokumentasi teknis",
-        "details": "1. ✅ Kalsehi API tersedia: https://docs.kalshi.com/\n2. ✅ Public market data (tidak perlu API key)\n3. ✅ WebSocket untuk real-time data\n4. ✅ Order book data (bid/ask)\n5. ✅ Market data: ekonomi, iklim, teknologi, hiburan\n6. Menentukan struktur data untuk dashboard",
-        "status": "completed",
+        "content": "Analisis mendalam website PolyWatch.app",
+        "details": "1. Extract semua content dari https://polywatch.app/\n2. Analyze layout structure, design elements, color scheme, typography\n3. Document semua pages, components, dan user flow\n4. Identify semua fitur dan functionality\n5. Create detailed plan untuk cloning",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Merancang arsitektur website Kalsehi dengan fitur persis seperti PolyWatch",
-        "details": "1. ✅ Analisis fitur PolyWatch: Peringatan Real-time, Pelacakan Trader, Feed Aktivitas, Profil Trader, Rekomendasi, Tautan Langsung\n2. ✅ Adaptasi untuk Kalsehi: Web alerts (vs Telegram), Market tracking (vs trader), Trading feeds, Market recommendations, Direct links\n3. ✅ Design database schema untuk Kalsehi market data dan user tracking\n4. ✅ Plan real-time WebSocket integration untuk live updates\n5. ✅ UI layout persis seperti PolyWatch (dashboard, trader profiles, activity feeds)\n6. ✅ Authentication system untuk user accounts dan preferences",
-        "status": "completed",
+        "content": "Delete website Kalsehi tracker yang lama",
+        "details": "1. Remove project yang sudah dibuat sebelumnya\n2. Clean up workspace untuk proyek baru\n3. Prepare fresh start untuk project cloning",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Mendapatkan kredensial Supabase untuk backend",
-        "details": "1. ✅ Supabase credentials berhasil disetup\n2. ✅ Ready to use Supabase project untuk database dan auth\n3. ✅ Can configure real-time subscriptions untuk live data",
-        "status": "completed",
+        "content": "Clone website PolyWatch.app persis untuk Kalsehi",
+        "details": "1. Recreate exact UI/UX dari PolyWatch.app\n2. Copy semua layout, navigation, dan component structure\n3. Replicate semua pages dan functionality\n4. Adapt semua content untuk Kalsehi (ganti Polymarket -> Kalsehi)\n5. Keep exact same design, colors, typography, spacing\n6. Maintain identical user flow dan behavior",
+        "status": "pending",
         "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Mengembangkan frontend dashboard dengan React",
-        "details": "1. ✅ Create main dashboard dengan market activity feed\n2. ✅ Build market profile pages dengan statistics\n3. ✅ Implement search dan filter functionality\n4. ✅ Create real-time data display components\n5. ✅ Design responsive layout untuk mobile dan desktop",
-        "status": "completed",
+        "content": "Setup backend baru untuk project clone",
+        "details": "1. Get fresh Supabase credentials untuk project baru\n2. Setup database dengan same structure seperti PolyWatch\n3. Create edge functions untuk Kalsehi API integration\n4. Setup real-time features persis seperti PolyWatch",
+        "status": "pending",
         "priority": "medium"
       },
       "5": {
         "id": "5",
-        "content": "Membangun backend dengan Supabase integration untuk Kalsehi",
-        "details": "1. ✅ Setup database tables untuk Kalsehi market data, user activities, users\n2. ✅ Create API endpoints untuk data fetching dari Kalsehi\n3. ✅ Implement real-time data integration untuk Kalsehi updates\n4. ✅ Build data processing untuk Kalsehi market statistics\n5. ✅ Setup automated data collection dari Kalsehi API",
-        "status": "completed",
-        "priority": "medium"
-      },
-      "6": {
-        "id": "6",
-        "content": "Testing dan deployment website",
-        "details": "1. ✅ Test semua functionality dan real-time features\n2. ✅ Optimize performance untuk real-time data\n3. ✅ Deploy ke production environment\n4. ✅ Setup monitoring dan error handling",
-        "status": "completed",
+        "content": "Testing dan deployment website clone",
+        "details": "1. Test semua functionality yang cloned\n2. Verify design sama persis dengan PolyWatch.app\n3. Test Kalsehi data integration\n4. Deploy ke production",
+        "status": "pending",
         "priority": "low"
       }
     }
