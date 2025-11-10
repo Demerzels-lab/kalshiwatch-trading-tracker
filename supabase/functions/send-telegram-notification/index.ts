@@ -61,61 +61,90 @@ Deno.serve(async (req) => {
             });
         }
 
-        const connection = connections[0];
-        const chatId = connection.chat_id;
+        // Send notification to all active connections (personal + groups)
+        const sendPromises = connections.map(async (connection) => {
+            const chatId = connection.chat_id;
+            const chatType = connection.chat_type || 'private';
 
-        // Format message based on alert type
-        let formattedMessage = message;
-        if (alert_type === 'trade' && trader_name && trade_details) {
-            formattedMessage = `New trade alert for ${trader_name}:\n\n${trade_details}`;
-        } else if (alert_type === 'profit' && trader_name) {
-            formattedMessage = `Profit alert for ${trader_name}:\n\n${trade_details || message}`;
-        } else if (alert_type === 'loss' && trader_name) {
-            formattedMessage = `Loss alert for ${trader_name}:\n\n${trade_details || message}`;
-        }
+            // Format message based on chat type and alert type
+            let formattedMessage = message;
+            
+            if (chatType === 'private') {
+                // Personal chat - detailed message
+                if (alert_type === 'trade' && trader_name && trade_details) {
+                    formattedMessage = `New trade alert for ${trader_name}:\n\n${trade_details}`;
+                } else if (alert_type === 'profit' && trader_name) {
+                    formattedMessage = `Profit alert for ${trader_name}:\n\n${trade_details || message}`;
+                } else if (alert_type === 'loss' && trader_name) {
+                    formattedMessage = `Loss alert for ${trader_name}:\n\n${trade_details || message}`;
+                }
+            } else {
+                // Group chat - more concise format
+                const prefix = alert_type === 'trade' ? '[NEW TRADE]' :
+                              alert_type === 'profit' ? '[PROFIT]' :
+                              alert_type === 'loss' ? '[LOSS]' : '[ALERT]';
+                
+                if (trader_name && trade_details) {
+                    formattedMessage = `${prefix} ${trader_name}\n${trade_details}`;
+                } else {
+                    formattedMessage = `${prefix} ${message}`;
+                }
+            }
 
-        // Send message via Telegram Bot API
-        const telegramApiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
-        const telegramResponse = await fetch(telegramApiUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                chat_id: chatId,
-                text: formattedMessage,
-                parse_mode: 'HTML',
-                disable_web_page_preview: true
-            })
-        });
-
-        const telegramResult = await telegramResponse.json();
-
-        if (!telegramResponse.ok) {
-            throw new Error(`Telegram API error: ${JSON.stringify(telegramResult)}`);
-        }
-
-        // Update notification stats
-        await fetch(
-            `${supabaseUrl}/rest/v1/telegram_connections?id=eq.${connection.id}`,
-            {
-                method: 'PATCH',
+            // Send message via Telegram Bot API
+            const telegramApiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
+            const telegramResponse = await fetch(telegramApiUrl, {
+                method: 'POST',
                 headers: {
-                    'Authorization': `Bearer ${serviceRoleKey}`,
-                    'apikey': serviceRoleKey,
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    last_notification_at: new Date().toISOString(),
-                    notification_count: connection.notification_count + 1
+                    chat_id: chatId,
+                    text: formattedMessage,
+                    parse_mode: 'HTML',
+                    disable_web_page_preview: true
                 })
+            });
+
+            const telegramResult = await telegramResponse.json();
+
+            if (!telegramResponse.ok) {
+                console.error(`Failed to send to chat ${chatId}:`, telegramResult);
+                return { success: false, chat_id: chatId, error: telegramResult };
             }
-        );
+
+            // Update notification stats
+            await fetch(
+                `${supabaseUrl}/rest/v1/telegram_connections?id=eq.${connection.id}`,
+                {
+                    method: 'PATCH',
+                    headers: {
+                        'Authorization': `Bearer ${serviceRoleKey}`,
+                        'apikey': serviceRoleKey,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        last_notification_at: new Date().toISOString(),
+                        notification_count: connection.notification_count + 1
+                    })
+                }
+            );
+
+            return { 
+                success: true, 
+                chat_id: chatId, 
+                message_id: telegramResult.result.message_id 
+            };
+        });
+
+        // Wait for all sends to complete
+        const results = await Promise.all(sendPromises);
+        const successCount = results.filter(r => r.success).length;
 
         return new Response(JSON.stringify({
             success: true,
-            message: 'Notification sent successfully',
-            telegram_message_id: telegramResult.result.message_id
+            message: `Notification sent to ${successCount} of ${connections.length} chat(s)`,
+            results: results
         }), {
             headers: { ...corsHeaders, 'Content-Type': 'application/json' }
         });

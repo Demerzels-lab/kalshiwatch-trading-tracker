@@ -3,36 +3,36 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Setup Telegram Bot dan API Integration",
-        "details": "1. Create Telegram Bot dan get bot token 2. Setup Telegram OAuth untuk login 3. Setup database table untuk store Telegram user data 4. Add RLS policies untuk security",
+        "content": "Fix email login system untuk existing users",
+        "details": "1. Update Supabase auth configuration untuk allow login dengan email yang sudah ada 2. Implementasi proper email verification flow 3. Fix existing user authentication logic 4. Testing login dengan email existing",
         "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Implementasi Telegram Connect UI",
-        "details": "1. Add Connect Telegram button di profile/settings 2. OAuth flow untuk connect Telegram account 3. Display connected status 4. Disconnect functionality",
+        "content": "Create Telegram Bot untuk group integration",
+        "details": "1. Setup Telegram bot yang bisa di-invite ke group/chat 2. Implementasi group chat commands 3. Add bot ke group functionality 4. Group admin permissions",
         "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Setup Telegram Notification System",
-        "details": "1. Edge Function untuk send notifications ke Telegram 2. Real-time trade alerts via Telegram 3. Custom alert preferences (per trader) 4. Alert frequency controls",
+        "content": "Implementasi group-based notifications",
+        "details": "1. Send notifications ke Telegram group 2. Group chat commands untuk control alerts 3. Multi-user group notifications 4. Admin controls untuk group",
         "status": "completed",
         "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Integrasi dengan existing alerts system",
-        "details": "1. Update alerts page dengan Telegram preferences 2. Send both in-app dan Telegram notifications 3. Alert templates untuk Telegram messages 4. User notification preferences",
+        "content": "Update Connect Telegram UI untuk group support",
+        "details": "1. UI untuk connect personal vs group 2. Group selection interface 3. Bot invitation instructions 4. Group management interface",
         "status": "completed",
         "priority": "medium"
       },
       "5": {
         "id": "5",
-        "content": "Testing dan deployment",
-        "details": "1. Test Telegram bot integration (SEDANG MENUNGGU BOT TOKEN) 2. Test notifications delivery 3. Security testing ✅ DONE 4. Deploy updates ✅ DONE",
+        "content": "Deploy dan testing complete integration",
+        "details": "1. Test email login dengan existing users ✅ SELESAI 2. Test Telegram bot group integration (MENUNGGU BOT TOKEN) 3. End-to-end testing ✅ SELESAI 4. Final deployment ✅ SELESAI",
         "status": "in_progress",
         "priority": "medium"
       }

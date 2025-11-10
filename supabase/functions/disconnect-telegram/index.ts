@@ -23,15 +23,21 @@ Deno.serve(async (req) => {
 
         // Get request data
         const requestData = await req.json();
-        const { user_id } = requestData;
+        const { user_id, chat_id } = requestData;
 
         if (!user_id) {
             throw new Error('user_id is required');
         }
 
-        // Soft delete - set is_active to false
+        // Build query - if chat_id provided, disconnect specific chat, otherwise all
+        let query = `user_id=eq.${user_id}`;
+        if (chat_id) {
+            query += `&chat_id=eq.${chat_id}`;
+        }
+
+        // Soft delete - set is_active to false and add disconnected_at timestamp
         const updateResponse = await fetch(
-            `${supabaseUrl}/rest/v1/telegram_connections?user_id=eq.${user_id}`,
+            `${supabaseUrl}/rest/v1/telegram_connections?${query}`,
             {
                 method: 'PATCH',
                 headers: {
@@ -40,7 +46,8 @@ Deno.serve(async (req) => {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    is_active: false
+                    is_active: false,
+                    disconnected_at: new Date().toISOString()
                 })
             }
         );

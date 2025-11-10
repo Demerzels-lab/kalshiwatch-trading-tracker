@@ -3,11 +3,12 @@
 ## Project Overview
 Clone 100% identik dari PolyWatch.app dengan branding "Kalshiwatch" dan menggunakan real Polymarket data.
 
-## Status: ✅ TELEGRAM INTEGRATION READY (Awaiting Bot Token)
+## Status: ✅ EMAIL LOGIN & TELEGRAM GROUP BOT READY (Awaiting Bot Token)
 Started: 2025-11-10 16:34:26
 Phase 1-4 Completed: 2025-11-10 16:42:27
 Auth + Watchlist + Alerts Completed: 2025-11-10 16:58:00
 Telegram Integration Infrastructure: 2025-11-10 17:11:10
+Email Login Fix + Group Bot: 2025-11-10 17:28:25
 
 ## Implementation Summary
 Successfully built and deployed Kalshiwatch - 100% clone of PolyWatch.app using real Polymarket data.
@@ -52,8 +53,9 @@ Successfully built and deployed Kalshiwatch - 100% clone of PolyWatch.app using 
 - Deployment: Production URL active
 
 ## Live Deployment
-- URL: https://busfvujgj1sb.space.minimax.io
-- Status: Production-Ready with Optimizations
+- URL: https://j5nyo71pev2m.space.minimax.io (Updated 2025-11-10 - Email Login Fix + Telegram Group Bot)
+- Previous: https://busfvujgj1sb.space.minimax.io
+- Status: Production-Ready with Email & Group Bot Features
 - Performance: 56% bundle size reduction (871 kB → 379 kB main)
 - Features Implemented:
   * ✅ Landing page with 7 recommended traders
@@ -74,6 +76,14 @@ Successfully built and deployed Kalshiwatch - 100% clone of PolyWatch.app using 
   * ✅ Code-splitting with React.lazy (performance optimization)
   * ✅ Onboarding tour for new users
   * ✅ Help button with tutorial access
+  * ✅ Password Reset functionality (email-based)
+  * ✅ Improved auth error messages
+  * ✅ Email verification handling
+  * ✅ Telegram Group Bot support (webhook + commands)
+  * ✅ Multi-connection support (personal + multiple groups)
+  * ✅ Bot commands: /start, /help, /status, /connect_kalshiwatch, /alerts_on, /alerts_off
+  * ✅ Admin permission checks for group commands
+  * ✅ Group connection UI with Chat ID input
   * ⏳ Telegram Bot Token (awaiting from user)
 
 ## Database Stats

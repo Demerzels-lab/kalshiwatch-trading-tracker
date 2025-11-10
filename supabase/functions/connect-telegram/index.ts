@@ -34,16 +34,22 @@ Deno.serve(async (req) => {
             chat_id, 
             username, 
             first_name, 
-            last_name 
+            last_name,
+            chat_type = 'private',
+            group_title 
         } = requestData;
 
-        if (!user_id || !telegram_user_id || !chat_id) {
-            throw new Error('user_id, telegram_user_id, and chat_id are required');
+        if (!user_id || !chat_id) {
+            throw new Error('user_id and chat_id are required');
         }
 
-        // Check if connection already exists
+        if (chat_type === 'private' && !telegram_user_id) {
+            throw new Error('telegram_user_id is required for private chats');
+        }
+
+        // Check if connection already exists for this chat
         const existingResponse = await fetch(
-            `${supabaseUrl}/rest/v1/telegram_connections?user_id=eq.${user_id}`,
+            `${supabaseUrl}/rest/v1/telegram_connections?user_id=eq.${user_id}&chat_id=eq.${chat_id}`,
             {
                 headers: {
                     'Authorization': `Bearer ${serviceRoleKey}`,
@@ -57,7 +63,7 @@ Deno.serve(async (req) => {
         if (existing.length > 0) {
             // Update existing connection
             const updateResponse = await fetch(
-                `${supabaseUrl}/rest/v1/telegram_connections?user_id=eq.${user_id}`,
+                `${supabaseUrl}/rest/v1/telegram_connections?user_id=eq.${user_id}&chat_id=eq.${chat_id}`,
                 {
                     method: 'PATCH',
                     headers: {
@@ -66,12 +72,15 @@ Deno.serve(async (req) => {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        telegram_user_id,
+                        telegram_user_id: telegram_user_id || existing[0].telegram_user_id,
                         chat_id,
                         username,
                         first_name,
                         last_name,
+                        chat_type,
+                        group_title,
                         is_active: true,
+                        disconnected_at: null,
                         connected_at: new Date().toISOString()
                     })
                 }
@@ -83,7 +92,9 @@ Deno.serve(async (req) => {
 
             return new Response(JSON.stringify({
                 success: true,
-                message: 'Telegram connection updated successfully',
+                message: chat_type === 'private' 
+                    ? 'Telegram connection updated successfully'
+                    : `Group "${group_title || 'Telegram Group'}" connected successfully`,
                 action: 'updated'
             }), {
                 headers: { ...corsHeaders, 'Content-Type': 'application/json' }
@@ -102,11 +113,13 @@ Deno.serve(async (req) => {
                     },
                     body: JSON.stringify({
                         user_id,
-                        telegram_user_id,
+                        telegram_user_id: telegram_user_id || `group_${chat_id}`,
                         chat_id,
                         username,
                         first_name,
                         last_name,
+                        chat_type,
+                        group_title,
                         is_active: true
                     })
                 }
@@ -117,8 +130,12 @@ Deno.serve(async (req) => {
                 throw new Error(`Failed to create Telegram connection: ${errorText}`);
             }
 
-            // Send welcome message to user
+            // Send welcome message
             const telegramApiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
+            const welcomeText = chat_type === 'private'
+                ? `Welcome to Kalshiwatch!\n\nYour Telegram account has been successfully connected. You will now receive real-time trading alerts for your watched traders.`
+                : `Kalshiwatch connected to "${group_title || 'this group'}"!\n\nThis group will now receive real-time trading alerts. Use /alerts_off to pause notifications or /help for more commands.`;
+
             await fetch(telegramApiUrl, {
                 method: 'POST',
                 headers: {
@@ -126,14 +143,16 @@ Deno.serve(async (req) => {
                 },
                 body: JSON.stringify({
                     chat_id: chat_id,
-                    text: `Welcome to Kalshiwatch!\n\nYour Telegram account has been successfully connected. You will now receive real-time trading alerts for your watched traders.`,
+                    text: welcomeText,
                     parse_mode: 'HTML'
                 })
             });
 
             return new Response(JSON.stringify({
                 success: true,
-                message: 'Telegram connection created successfully',
+                message: chat_type === 'private'
+                    ? 'Telegram connection created successfully'
+                    : `Group "${group_title || 'Telegram Group'}" connected successfully`,
                 action: 'created'
             }), {
                 headers: { ...corsHeaders, 'Content-Type': 'application/json' }
