@@ -3,16 +3,16 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Meneliti API Polymarket dan dokumentasi teknis",
-        "details": "1. Cari tahu endpoint API Polymarket yang tersedia\n2. Pelajari struktur data trading dan trader information\n3. Tentukan bagaimana mengakses real-time data\n4. Identifikasi data yang diperlukan untuk dashboard",
-        "status": "pending",
+        "content": "Meneliti API Kalsehi dan dokumentasi teknis",
+        "details": "1. ✅ Kalsehi API tersedia: https://docs.kalshi.com/\n2. ✅ Public market data (tidak perlu API key)\n3. ✅ WebSocket untuk real-time data\n4. ✅ Order book data (bid/ask)\n5. ✅ Market data: ekonomi, iklim, teknologi, hiburan\n6. Menentukan struktur data untuk dashboard",
+        "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Merancang arsitektur website dan database",
-        "details": "1. Design database schema untuk trader data, user preferences, dan activity feeds\n2. Plan real-time data structure dan update mechanisms\n3. Design user interface layout dan navigation\n4. Plan authentication system requirements",
-        "status": "pending",
+        "content": "Merancang arsitektur website Kalsehi dan database",
+        "details": "1. Design database schema untuk Kalsehi market data, trader activities, user preferences\n2. Plan real-time WebSocket integration untuk live updates\n3. Design UI layout khusus untuk Kalsehi (series, events, markets structure)\n4. Plan authentication system untuk user accounts",
+        "status": "in_progress",
         "priority": "high"
       },
       "3": {
@@ -31,8 +31,8 @@
       },
       "5": {
         "id": "5",
-        "content": "Membangun backend dengan Supabase integration",
-        "details": "1. Setup database tables untuk traders, activities, users\n2. Create API endpoints untuk data fetching\n3. Implement real-time subscriptions untuk live updates\n4. Build data processing untuk trader statistics\n5. Setup automated data collection dari Polymarket",
+        "content": "Membangun backend dengan Supabase integration untuk Kalsehi",
+        "details": "1. Setup database tables untuk Kalsehi market data, trader activities, users\n2. Create API endpoints untuk data fetching dari Kalsehi\n3. Implement WebSocket integration untuk real-time Kalsehi updates\n4. Build data processing untuk Kalsehi market statistics\n5. Setup automated data collection dari Kalsehi API",
         "status": "pending",
         "priority": "medium"
       },
