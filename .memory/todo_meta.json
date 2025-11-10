@@ -10,8 +10,8 @@
       },
       "2": {
         "id": "2",
-        "content": "Merancang arsitektur website Kalsehi dan database",
-        "details": "1. Design database schema untuk Kalsehi market data, trader activities, user preferences\n2. Plan real-time WebSocket integration untuk live updates\n3. Design UI layout khusus untuk Kalsehi (series, events, markets structure)\n4. Plan authentication system untuk user accounts",
+        "content": "Merancang arsitektur website Kalsehi dengan fitur persis seperti PolyWatch",
+        "details": "1. ✅ Analisis fitur PolyWatch: Peringatan Real-time, Pelacakan Trader, Feed Aktivitas, Profil Trader, Rekomendasi, Tautan Langsung\n2. Adaptasi untuk Kalsehi: Web alerts (vs Telegram), Market tracking (vs trader), Trading feeds, Market recommendations, Direct links\n3. Design database schema untuk Kalsehi market data dan user tracking\n4. Plan real-time WebSocket integration untuk live updates\n5. UI layout persis seperti PolyWatch (dashboard, trader profiles, activity feeds)\n6. Authentication system untuk user accounts dan preferences",
         "status": "in_progress",
         "priority": "high"
       },
