@@ -1,0 +1,48 @@
+{
+  "todos": {
+    "Coordinator": {
+      "1": {
+        "id": "1",
+        "content": "Meneliti API Polymarket dan dokumentasi teknis",
+        "details": "1. Cari tahu endpoint API Polymarket yang tersedia\n2. Pelajari struktur data trading dan trader information\n3. Tentukan bagaimana mengakses real-time data\n4. Identifikasi data yang diperlukan untuk dashboard",
+        "status": "pending",
+        "priority": "high"
+      },
+      "2": {
+        "id": "2",
+        "content": "Merancang arsitektur website dan database",
+        "details": "1. Design database schema untuk trader data, user preferences, dan activity feeds\n2. Plan real-time data structure dan update mechanisms\n3. Design user interface layout dan navigation\n4. Plan authentication system requirements",
+        "status": "pending",
+        "priority": "high"
+      },
+      "3": {
+        "id": "3",
+        "content": "Mendapatkan kredensial Supabase untuk backend",
+        "details": "1. Request Supabase credentials dari user\n2. Setup Supabase project untuk database dan auth\n3. Configure real-time subscriptions untuk live data",
+        "status": "pending",
+        "priority": "high"
+      },
+      "4": {
+        "id": "4",
+        "content": "Mengembangkan frontend dashboard dengan React",
+        "details": "1. Create main dashboard dengan trader activity feed\n2. Build trader profile pages dengan statistics\n3. Implement search dan filter functionality\n4. Create real-time data display components\n5. Design responsive layout untuk mobile dan desktop",
+        "status": "pending",
+        "priority": "medium"
+      },
+      "5": {
+        "id": "5",
+        "content": "Membangun backend dengan Supabase integration",
+        "details": "1. Setup database tables untuk traders, activities, users\n2. Create API endpoints untuk data fetching\n3. Implement real-time subscriptions untuk live updates\n4. Build data processing untuk trader statistics\n5. Setup automated data collection dari Polymarket",
+        "status": "pending",
+        "priority": "medium"
+      },
+      "6": {
+        "id": "6",
+        "content": "Testing dan deployment website",
+        "details": "1. Test semua functionality dan real-time features\n2. Optimize performance untuk real-time data\n3. Deploy ke production environment\n4. Setup monitoring dan error handling",
+        "status": "pending",
+        "priority": "low"
+      }
+    }
+  }
+}
