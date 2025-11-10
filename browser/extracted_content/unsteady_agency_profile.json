@@ -1,0 +1,61 @@
+📄 Extracted from page: Kalshiwatch - Polymarket Trader Tracking
+URL: https://6radt1x5dbce.space.minimax.io/profile/0xb4eea1c82f0c4cf7e02e69212bd447a63314cc59
+
+Extracted content:
+```json
+{
+  "title": "Kalshiwatch - Polymarket Trader Tracking",
+  "url": "https://6radt1x5dbce.space.minimax.io/profile/0xb4eea1c82f0c4cf7e02e69212bd447a63314cc59",
+  "summary": "This page displays the Polymarket trader profile for 'Unsteady-Agency' on Kalshiwatch, providing key performance metrics, a brief bio, and details of their top profitable trade. The trader has a total PnL of $14.0K across all history, with $2.8K in the past month, and has made 1 total trade.",
+  "key_points": [
+    {
+      "trader_name": "Unsteady-Agency"
+    },
+    {
+      "bio": "Run local-cryo sessions by day, run markets by night."
+    },
+    {
+      "current_holdings": "$0"
+    },
+    {
+      "biggest_win": "$0"
+    },
+    {
+      "total_trades": 1
+    },
+    {
+      "join_date": "N/A"
+    },
+    {
+      "total_pnl_all_history": "$14.0K"
+    },
+    {
+      "pnl_past_month": "$2.8K"
+    },
+    {
+      "pnl_history_data_points": [
+        "2025-11",
+        "$0K",
+        "$4K",
+        "$7K",
+        "$11K",
+        "$14K"
+      ]
+    },
+    {
+      "top_profitable_trade": {
+        "event_title": "Will the Government shutdown end by December 31?",
+        "outcome": "No",
+        "profit": "$14.0K"
+      }
+    }
+  ],
+  "relevant_links": [
+    "https://polymarket.com/profile/0xb4eea1c82f0c4cf7e02e69212bd447a63314cc59",
+    "https://polymarket.com/event/will-the-government-shutdown-end-by-december-31-553",
+    "https://x.com/kalshiwatch",
+    "https://t.me/kalshiwatch"
+  ],
+  "file_name": "unsteady_agency_profile.json"
+}
+```
