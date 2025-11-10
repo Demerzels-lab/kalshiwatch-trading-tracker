@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, TrendingUp } from 'lucide-react';
+import { ArrowRight, TrendingUp, HelpCircle } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
+import OnboardingTour from '../components/OnboardingTour';
 
 interface Trader {
   wallet_address: string;
@@ -17,6 +18,22 @@ export default function LandingPage() {
   const [traders, setTraders] = useState<Trader[]>([]);
   const [loading, setLoading] = useState(true);
   const { user } = useAuth();
+  const [showOnboarding, setShowOnboarding] = useState(false);
+
+  useEffect(() => {
+    fetchRecommendedTraders();
+    
+    // Show onboarding for first-time visitors
+    const hasSeenOnboarding = localStorage.getItem('kalshiwatch_onboarding_seen');
+    if (!hasSeenOnboarding) {
+      setShowOnboarding(true);
+    }
+  }, []);
+
+  function handleCompleteOnboarding() {
+    localStorage.setItem('kalshiwatch_onboarding_seen', 'true');
+    setShowOnboarding(false);
+  }
 
   useEffect(() => {
     fetchRecommendedTraders();
@@ -40,6 +57,8 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {showOnboarding && <OnboardingTour onComplete={handleCompleteOnboarding} />}
+      
       <header className="p-6 md:p-8">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <Link to="/" className="inline-block">
@@ -62,14 +81,30 @@ export default function LandingPage() {
                 >
                   Alerts
                 </Link>
+                <Link 
+                  to="/settings" 
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Settings
+                </Link>
               </>
             ) : (
-              <Link 
-                to="/auth" 
-                className="px-6 py-2 bg-primary hover:bg-primary-hover text-primary-foreground rounded-lg font-semibold transition-colors"
-              >
-                Login
-              </Link>
+              <>
+                <button
+                  onClick={() => setShowOnboarding(true)}
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                  title="Tampilkan tutorial"
+                >
+                  <HelpCircle className="w-5 h-5" />
+                  <span className="hidden md:inline">Bantuan</span>
+                </button>
+                <Link 
+                  to="/auth" 
+                  className="px-6 py-2 bg-primary hover:bg-primary-hover text-primary-foreground rounded-lg font-semibold transition-colors"
+                >
+                  Login
+                </Link>
+              </>
             )}
           </div>
         </div>

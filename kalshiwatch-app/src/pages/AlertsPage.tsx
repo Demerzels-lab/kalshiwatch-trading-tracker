@@ -159,6 +159,12 @@ export default function AlertsPage() {
             >
               Watchlist
             </Link>
+            <Link 
+              to="/settings" 
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Settings
+            </Link>
             <button
               onClick={() => signOut()}
               className="text-muted-foreground hover:text-foreground transition-colors"

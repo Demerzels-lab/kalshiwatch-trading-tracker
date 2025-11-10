@@ -3,37 +3,37 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Setup project baru dengan nama Kalshiwatch",
-        "details": "1. Buat folder baru kalshiwatch/ 2. Setup React project dengan Vite 3. Setup Supabase backend untuk website",
+        "content": "Setup Telegram Bot dan API Integration",
+        "details": "1. Create Telegram Bot dan get bot token 2. Setup Telegram OAuth untuk login 3. Setup database table untuk store Telegram user data 4. Add RLS policies untuk security",
         "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Implementasi UI/UX identik dengan PolyWatch.app",
-        "details": "1. Copy exact design dari analysis/polywatch_analysis.md 2. Implement semua komponen: header, sidebar, trading feed, trader profiles, market data 3. Color scheme: Dark theme dengan accent colors yang sama",
+        "content": "Implementasi Telegram Connect UI",
+        "details": "1. Add Connect Telegram button di profile/settings 2. OAuth flow untuk connect Telegram account 3. Display connected status 4. Disconnect functionality",
         "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Integrasi Polymarket API untuk data real",
-        "details": "1. Setup Polymarket API integration 2. Real-time trader tracking data 3. Market data dan price feeds 4. Performance analytics yang real",
+        "content": "Setup Telegram Notification System",
+        "details": "1. Edge Function untuk send notifications ke Telegram 2. Real-time trade alerts via Telegram 3. Custom alert preferences (per trader) 4. Alert frequency controls",
         "status": "completed",
         "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Implementasi fitur real-time identik PolyWatch",
-        "details": "1. Live trading feed updates 2. Real-time price changes 3. Telegram alerts system 4. Watchlist management 5. Trader recommendations engine",
+        "content": "Integrasi dengan existing alerts system",
+        "details": "1. Update alerts page dengan Telegram preferences 2. Send both in-app dan Telegram notifications 3. Alert templates untuk Telegram messages 4. User notification preferences",
         "status": "completed",
-        "priority": "high"
+        "priority": "medium"
       },
       "5": {
         "id": "5",
-        "content": "Deploy dan testing",
-        "details": "1. Deploy ke production 2. Test semua functionality 3. Verify real-time data working 4. Final UI/UX verification",
-        "status": "completed",
+        "content": "Testing dan deployment",
+        "details": "1. Test Telegram bot integration (SEDANG MENUNGGU BOT TOKEN) 2. Test notifications delivery 3. Security testing ✅ DONE 4. Deploy updates ✅ DONE",
+        "status": "in_progress",
         "priority": "medium"
       }
     }

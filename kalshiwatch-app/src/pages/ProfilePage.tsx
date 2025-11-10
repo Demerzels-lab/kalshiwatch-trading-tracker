@@ -218,7 +218,20 @@ export default function ProfilePage() {
               <TrendingUp className="w-6 h-6 text-primary" />
               PnL History
             </h2>
-            <ResponsiveContainer width="100%" height={300}>
+            {profileData.pnlHistory.length === 1 ? (
+              <div className="text-center py-12 space-y-3">
+                <div className="text-4xl font-bold text-primary">
+                  {formatPnL(profileData.pnlHistory[0].value)}
+                </div>
+                <p className="text-muted-foreground">
+                  Trader ini baru memulai trading. Data history lengkap akan tersedia seiring waktu.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Total PnL saat ini: {formatPnL(trader.total_pnl)} dari {trader.total_trades} trade(s)
+                </p>
+              </div>
+            ) : (
+              <ResponsiveContainer width="100%" height={300}>
               <LineChart data={profileData.pnlHistory}>
                 <XAxis 
                   dataKey="date" 
@@ -248,6 +261,7 @@ export default function ProfilePage() {
                 />
               </LineChart>
             </ResponsiveContainer>
+            )}
           </div>
         )}
 
