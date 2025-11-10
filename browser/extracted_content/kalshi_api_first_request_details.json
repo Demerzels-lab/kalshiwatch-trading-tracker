@@ -1,0 +1,41 @@
+📄 Extracted from page: Making Your First Request - API Documentation
+URL: https://docs.kalshi.com/getting_started/making_your_first_request
+
+Extracted content:
+```json
+{
+    "title": "Making Your First Request - API Documentation",
+    "url": "https://docs.kalshi.com/getting_started/making_your_first_request",
+    "summary": "This page guides users on how to make their initial request to the Kalshi API, recommending starting with public endpoints like `GetMarkets`. It highlights that API Keys are essential for accessing authenticated endpoints and suggests using a demo account for risk-free testing. The page also provides developer resources, including Python starter code and a Discord community, and outlines various API-related documentation sections.",
+    "key_points": [
+        "Users should begin by testing public API endpoints, with `GetMarkets` provided as an example.",
+        "API Keys are a prerequisite for accessing and experimenting with authenticated API endpoints.",
+        "A demo environment is available for testing API calls without engaging with real funds.",
+        "The Kalshi API documentation is structured into categories such as 'API Reference' (e.g., for exchange status), 'Websockets', 'SDKs', and 'FIX'.",
+        "Key aspects of the API's structure and functionality covered in related sections include API Keys, Rate Limits and Tiers, Understanding Pagination, Orderbook Responses, and Subpenny Pricing.",
+        "Developer resources include Python starter code (two versions) and a Discord channel for support."
+    ],
+    "relevant_links": [
+        "https://docs.kalshi.com/",
+        "https://docs.kalshi.com/welcome",
+        "https://docs.kalshi.com/getting_started/quick_start_market_data",
+        "https://docs.kalshi.com/api-reference/exchange/get-exchange-status",
+        "https://docs.kalshi.com/websockets/websocket-connection",
+        "https://docs.kalshi.com/sdks/overview",
+        "https://docs.kalshi.com/fix",
+        "https://docs.kalshi.com/changelog",
+        "https://docs.kalshi.com/api-reference/market/get-markets",
+        "https://docs.kalshi.com/getting_started/api_keys",
+        "https://github.com/Kalshi/kalshi-starter-code-python/tree/main",
+        "https://kalshi-public-docs.s3.amazonaws.com/KalshiAPIStarterCodeWithApiKey.zip",
+        "https://discord.gg/kalshi",
+        "https://docs.kalshi.com/getting_started/demo_env",
+        "https://docs.kalshi.com/getting_started/rate_limits",
+        "https://docs.kalshi.com/getting_started/pagination",
+        "https://docs.kalshi.com/getting_started/orderbook_responses",
+        "https://docs.kalshi.com/getting_started/subpenny_pricing",
+        "https://docs.kalshi.com/getting_started/terms"
+    ],
+    "file_name": "kalshi_api_first_request_details.json"
+}
+```

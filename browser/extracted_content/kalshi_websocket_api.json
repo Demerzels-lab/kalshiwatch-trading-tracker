@@ -1,0 +1,207 @@
+📄 Extracted from page: WebSocket Connection - API Documentation
+URL: https://docs.kalshi.com/websockets/websocket-connection
+
+Extracted content:
+```json
+{
+  "title": "WebSocket Connection - API Documentation",
+  "url": "https://docs.kalshi.com/websockets/websocket-connection",
+  "summary": "This page provides comprehensive documentation for the Kalshi WebSocket API, outlining the single connection endpoint and API key authentication method. It details the various command formats for managing subscriptions, including subscribing to specific data channels, unsubscribing, listing active subscriptions, and dynamically updating market tickers for existing subscriptions. The document also presents the JSON message formats for both client commands and server responses, covering successful subscriptions, unsubscriptions, general `ok` responses, subscription listings, and error handling.",
+  "key_points": [
+    "WebSocket Endpoint: `wss://api.elections.kalshi.com`.",
+    "Authentication: API key required during WebSocket handshake.",
+    "All communication occurs through a single WebSocket connection.",
+    "Core Commands: `subscribe`, `unsubscribe`, `list_subscriptions`, `update_subscription`.",
+    "Explicitly mentioned Channels: `orderbook_delta`, `ticker`, `fill`.",
+    "Subscription Management: Supports subscribing to channels with specific market tickers, unsubscribing using subscription IDs (sids), listing all active subscriptions, and updating existing subscriptions by adding or deleting market tickers.",
+    "Message Formats: Detailed JSON structures are provided for all client commands and server responses (e.g., `subscribed`, `unsubscribed`, `ok`, `error`)."
+  ],
+  "relevant_links": [
+    "/websockets/connection-keep-alive",
+    "/websockets/orderbook-updates",
+    "/websockets/market-ticker",
+    "/websockets/public-trades",
+    "/websockets/user-fills",
+    "/websockets/market-positions",
+    "/websockets/market-&-event-lifecycle",
+    "/websockets/multivariate-lookups",
+    "/websockets/communications",
+    "/getting_started/quick_start_websockets"
+  ],
+  "api_details": {
+    "connection_details": {
+      "endpoint": "wss://api.elections.kalshi.com",
+      "authentication": "API key authentication required during WebSocket handshake."
+    },
+    "available_channels": [
+      "orderbook_delta",
+      "ticker",
+      "fill"
+    ],
+    "subscription_methods": [
+      {
+        "command": "subscribe",
+        "description": "Subscribe to one or more channels for a specific market.",
+        "format": {
+          "id": 1,
+          "cmd": "subscribe",
+          "params": {
+            "channels": [
+              "orderbook_delta"
+            ],
+            "market_ticker": "CPI-22DEC-TN0.1"
+          }
+        }
+      },
+      {
+        "command": "unsubscribe",
+        "description": "Cancel one or more active subscriptions by their subscription IDs.",
+        "format": {
+          "id": 124,
+          "cmd": "unsubscribe",
+          "params": {
+            "sids": [
+              1,
+              2
+            ]
+          }
+        }
+      },
+      {
+        "command": "list_subscriptions",
+        "description": "Request a list of all currently active subscriptions.",
+        "format": {
+          "id": 3,
+          "cmd": "list_subscriptions"
+        }
+      },
+      {
+        "command": "update_subscription - add_markets",
+        "description": "Add new market tickers to an existing subscription(s).",
+        "format": {
+          "id": 124,
+          "cmd": "update_subscription",
+          "params": {
+            "sids": [
+              456
+            ],
+            "market_tickers": [
+              "NEW-MARKET-1",
+              "NEW-MARKET-2"
+            ],
+            "action": "add_markets"
+          }
+        }
+      },
+      {
+        "command": "update_subscription - delete_markets",
+        "description": "Remove specified market tickers from an existing subscription(s).",
+        "format": {
+          "id": 125,
+          "cmd": "update_subscription",
+          "params": {
+            "sids": [
+              456
+            ],
+            "market_tickers": [
+              "MARKET-TO-REMOVE-1",
+              "MARKET-TO-REMOVE-2"
+            ],
+            "action": "delete_markets"
+          }
+        }
+      },
+      {
+        "command": "update_subscription - single_sid_format",
+        "description": "Update a single subscription using its SID, by adding market tickers.",
+        "format": {
+          "id": 126,
+          "cmd": "update_subscription",
+          "params": {
+            "sid": 456,
+            "market_tickers": [
+              "NEW-MARKET-3",
+              "NEW-MARKET-4"
+            ],
+            "action": "add_markets"
+          }
+        }
+      }
+    ],
+    "message_formats": {
+      "responses": [
+        {
+          "type": "subscribed",
+          "description": "Server confirmation that a subscription was successful, including the channel and subscription ID.",
+          "format": {
+            "id": 1,
+            "type": "subscribed",
+            "msg": {
+              "channel": "orderbook_delta",
+              "sid": 1
+            }
+          }
+        },
+        {
+          "type": "unsubscribed",
+          "description": "Server confirmation that an unsubscription was successful.",
+          "format": {
+            "sid": 2,
+            "type": "unsubscribed"
+          }
+        },
+        {
+          "type": "ok",
+          "description": "General success response for commands like update_subscription, potentially including affected market tickers.",
+          "format": {
+            "id": 123,
+            "sid": 456,
+            "seq": 222,
+            "type": "ok",
+            "market_tickers": [
+              "MARKET-1",
+              "MARKET-2",
+              "MARKET-3"
+            ]
+          }
+        },
+        {
+          "type": "list_subscriptions_response",
+          "description": "Response to the `list_subscriptions` command, detailing all active subscriptions with their channels and SIDs.",
+          "format": {
+            "id": 3,
+            "type": "ok",
+            "subscriptions": [
+              {
+                "channel": "orderbook_delta",
+                "sid": 1
+              },
+              {
+                "channel": "ticker",
+                "sid": 2
+              },
+              {
+                "channel": "fill",
+                "sid": 3
+              }
+            ]
+          }
+        },
+        {
+          "type": "error",
+          "description": "Server response indicating an error occurred during a command, with an error code and message.",
+          "format": {
+            "id": 123,
+            "type": "error",
+            "msg": {
+              "code": 6,
+              "msg": "Already subscribed"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "file_name": "kalshi_websocket_api.json"
+}
+```

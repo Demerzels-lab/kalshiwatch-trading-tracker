@@ -1,0 +1,141 @@
+📄 Extracted from page: Get Series List - API Documentation
+URL: https://docs.kalshi.com/api-reference/market/get-series-list
+
+Extracted content:
+```json
+{
+  "title": "Get Series List - API Documentation",
+  "url": "https://docs.kalshi.com/api-reference/market/get-series-list",
+  "summary": "This page documents the Kalshi API endpoint `GET /series` which allows users to retrieve a list of series templates. A series represents a template for recurring events that share the same format and rules. The endpoint supports filtering by category and tags, and provides details about each series including ticker, frequency, title, categories, tags, settlement sources, contract URLs, product metadata, and fee information.",
+  "key_points": [
+    {
+      "endpoint_name": "Get Series List",
+      "method": "GET",
+      "path": "/series",
+      "base_url_example": "https://api.elections.kalshi.com/trade-api/v2",
+      "description": "Endpoint for getting data about multiple series with specified filters. A series represents a template for recurring events that follow the same format and rules. This endpoint allows browsing and discovering available series templates by category.",
+      "request_parameters": {
+        "query": [
+          {
+            "name": "category",
+            "type": "string",
+            "description": "Filter by series category."
+          },
+          {
+            "name": "tags",
+            "type": "string",
+            "description": "Filter by series tags."
+          },
+          {
+            "name": "include_product_metadata",
+            "type": "boolean",
+            "default": "false",
+            "description": "Include product metadata in the response."
+          }
+        ]
+      },
+      "response_formats": [
+        {
+          "status_code": 200,
+          "content_type": "application/json",
+          "description": "Series list retrieved successfully.",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "series": {
+                "type": "array",
+                "description": "An array of series objects.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "ticker": { "type": "string" },
+                    "frequency": { "type": "string" },
+                    "title": { "type": "string" },
+                    "category": { "type": "string" },
+                    "tags": {
+                      "type": "array",
+                      "items": { "type": "string" }
+                    },
+                    "settlement_sources": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": { "type": "string" },
+                          "url": { "type": "string" }
+                        }
+                      }
+                    },
+                    "contract_url": { "type": "string" },
+                    "contract_terms_url": { "type": "string" },
+                    "product_metadata": { "type": "object" },
+                    "fee_type": { "type": "string", "example": "quadratic" },
+                    "fee_multiplier": { "type": "number", "example": 123 },
+                    "additional_prohibitions": {
+                      "type": "array",
+                      "items": { "type": "string" }
+                    }
+                  },
+                  "required": [
+                    "ticker", "frequency", "title", "category", "tags",
+                    "settlement_sources", "contract_url", "contract_terms_url",
+                    "product_metadata", "fee_type", "fee_multiplier", "additional_prohibitions"
+                  ]
+                }
+              }
+            },
+            "required": ["series"]
+          },
+          "example_curl": "curl --request GET --url https://api.elections.kalshi.com/trade-api/v2/series",
+          "example_response_body": {
+            "series": [
+              {
+                "ticker": "<string>",
+                "frequency": "<string>",
+                "title": "<string>",
+                "category": "<string>",
+                "tags": [
+                  "<string>"
+                ],
+                "settlement_sources": [
+                  {
+                    "name": "<string>",
+                    "url": "<string>"
+                  }
+                ],
+                "contract_url": "<string>",
+                "contract_terms_url": "<string>",
+                "product_metadata": {},
+                "fee_type": "quadratic",
+                "fee_multiplier": 123,
+                "additional_prohibitions": [
+                  "<string>"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "status_code": 400,
+          "description": "Bad Request"
+        },
+        {
+          "status_code": 500,
+          "description": "Internal Server Error"
+        }
+      ]
+    }
+  ],
+  "relevant_links": [
+    {
+      "text": "Get Series",
+      "url": "/api-reference/market/get-series"
+    },
+    {
+      "text": "Get Markets",
+      "url": "/api-reference/market/get-markets"
+    }
+  ],
+  "file_name": "kalshi_get_series_list_api_details.json"
+}
+```

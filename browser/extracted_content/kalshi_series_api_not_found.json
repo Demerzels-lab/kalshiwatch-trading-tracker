@@ -1,0 +1,22 @@
+📄 Extracted from page: Page Not Found
+URL: https://docs.kalshi.com/api-reference/series/get-series-list
+
+Extracted content:
+```json
+{
+  "title": "Page Not Found",
+  "url": "https://docs.kalshi.com/api-reference/series/get-series-list",
+  "summary": "The requested page, intended for 'series API endpoint information including request parameters and response format', resulted in a 'Page Not Found' (404) error. Consequently, no detailed API endpoint information is available on this page. However, the navigation sidebar and the page footer suggest that the 'Get Series List' endpoint can be found under the `/market` section at the URL `/api-reference/market/get-series-list`.",
+  "key_points": [
+    "The page at the specified URL is a 'Page Not Found' (404) error.",
+    "No detailed API endpoint information, such as request parameters or response format, for 'Get Series List' is present on this page.",
+    "The site's navigation and footer suggest the correct API reference path for 'Get Series List' is `/api-reference/market/get-series-list`.",
+    "Another related endpoint, 'Get Series', is listed under the market API section at `/api-reference/market/get-series`."
+  ],
+  "relevant_links": [
+    "/api-reference/market/get-series-list",
+    "/api-reference/market/get-series"
+  ],
+  "file_name": "kalshi_series_api_not_found.json"
+}
+```

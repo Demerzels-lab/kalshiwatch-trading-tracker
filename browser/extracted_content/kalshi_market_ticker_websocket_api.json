@@ -1,0 +1,49 @@
+📄 Extracted from page: Market Ticker - API Documentation
+URL: https://docs.kalshi.com/websockets/market-ticker
+
+Extracted content:
+```json
+{
+  "title": "Market Ticker - API Documentation",
+  "url": "https://docs.kalshi.com/websockets/market-ticker",
+  "summary": "The Market Ticker WebSocket channel provides real-time updates on market prices, trading volume, and open interest. It is designed to facilitate the display of current market statistics and sends updates whenever any relevant ticker field changes. Users have the flexibility to subscribe to updates for all markets by omitting market specifications, or for specific markets if desired. All WebSocket connections require API key authentication during the handshake.",
+  "key_points": [
+    {
+      "channel_name": "Market Ticker",
+      "purpose": "Provides market price, volume, and open interest updates in real-time.",
+      "update_trigger": "Updates are sent whenever any ticker field changes.",
+      "subscription_options": "Market specification is optional; omitting it receives updates for all markets. Specific markets can also be subscribed to.",
+      "primary_use_case": "Displaying current market prices and statistics.",
+      "websocket_endpoint": "wss://api.elections.kalshi.com/ticker",
+      "security_requirement": "API key authentication is required during the WebSocket handshake.",
+      "message_structure": {
+        "overall_format": {
+          "type": "string (e.g., \"ticker\")",
+          "sid": "integer (Session ID)",
+          "msg": "object (contains detailed market data)"
+        },
+        "msg_object_fields": {
+          "market_ticker": "string (Market identifier, e.g., \"FED-23DEC-T3.00\")",
+          "price": "integer (Current price)",
+          "yes_bid": "integer (Yes bid price)",
+          "yes_ask": "integer (Yes ask price)",
+          "price_dollars": "string (Current price in dollars, e.g., \"0.480\")",
+          "yes_bid_dollars": "string (Yes bid price in dollars, e.g., \"0.345\")",
+          "no_bid_dollars": "string (No bid price in dollars, e.g., \"0.655\")",
+          "volume": "integer (Total trading volume)",
+          "open_interest": "integer (Total open interest)",
+          "dollar_volume": "integer (Trading volume in dollars)",
+          "dollar_open_interest": "integer (Open interest in dollars)",
+          "ts": "integer (Unix timestamp)"
+        }
+      }
+    }
+  ],
+  "relevant_links": [
+    "https://docs.kalshi.com/websockets/websocket-connection",
+    "https://docs.kalshi.com/websockets/orderbook-updates",
+    "https://docs.kalshi.com/websockets/public-trades"
+  ],
+  "file_name": "kalshi_market_ticker_websocket_api.json"
+}
+```

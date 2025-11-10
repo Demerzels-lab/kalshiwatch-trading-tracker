@@ -1,0 +1,136 @@
+📄 Extracted from page: Get Fills - API Documentation
+URL: https://docs.kalshi.com/api-reference/portfolio/get-fills
+
+Extracted content:
+```json
+{
+  "title": "Get Fills - API Documentation",
+  "url": "https://docs.kalshi.com/api-reference/portfolio/get-fills",
+  "summary": "This document details the 'Get Fills' API endpoint, which is used to retrieve all matched trades (fills) for a user's account on Kalshi. A fill signifies that a trade has been successfully matched and executed.",
+  "key_points": [
+    {
+      "aspect": "HTTP Method",
+      "details": "GET"
+    },
+    {
+      "aspect": "Endpoint URL",
+      "details": "/portfolio/fills (Full URL example: https://api.elections.kalshi.com/trade-api/v2/portfolio/fills)"
+    },
+    {
+      "aspect": "Authorization Headers (Required)",
+      "details": [
+        {
+          "name": "KALSHI-ACCESS-KEY",
+          "type": "string",
+          "description": "Your API key ID"
+        },
+        {
+          "name": "KALSHI-ACCESS-SIGNATURE",
+          "type": "string",
+          "description": "RSA-PSS signature of the request"
+        },
+        {
+          "name": "KALSHI-ACCESS-TIMESTAMP",
+          "type": "string",
+          "description": "Request timestamp in milliseconds"
+        }
+      ]
+    },
+    {
+      "aspect": "Query Parameters (Optional for Filtering/Pagination)",
+      "details": [
+        {
+          "name": "ticker",
+          "type": "string",
+          "description": "Filter by market ticker"
+        },
+        {
+          "name": "order_id",
+          "type": "string",
+          "description": "Filter by order ID"
+        },
+        {
+          "name": "min_ts",
+          "type": "integer",
+          "description": "Filter items after this Unix timestamp"
+        },
+        {
+          "name": "max_ts",
+          "type": "integer",
+          "description": "Filter items before this Unix timestamp"
+        },
+        {
+          "name": "limit",
+          "type": "integer",
+          "description": "Number of results per page. Defaults to 100. Maximum value is 200. Required range: 1 <= x <= 200."
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor. Use the cursor value returned from the previous response to get the next page of results. Leave empty for the first page."
+        }
+      ]
+    },
+    {
+      "aspect": "Successful Response (200 OK)",
+      "details": {
+        "content_type": "application/json",
+        "description": "Fills retrieved successfully",
+        "example_body": {
+          "fills": [
+            {
+              "fill_id": "<string>",
+              "trade_id": "<string>",
+              "order_id": "<string>",
+              "client_order_id": "<string>",
+              "ticker": "<string>",
+              "market_ticker": "<string>",
+              "side": "yes",
+              "action": "buy",
+              "count": 123,
+              "price": 123,
+              "yes_price": 123,
+              "no_price": 123,
+              "yes_price_fixed": "<string>",
+              "no_price_fixed": "<string>",
+              "is_taker": true,
+              "created_time": "2023-11-07T05:31:56Z",
+              "ts": 123
+            }
+          ],
+          "cursor": "<string>"
+        },
+        "response_fields": [
+          {
+            "name": "fills",
+            "type": "array of objects",
+            "description": "An array of fill objects",
+            "object_fields": [
+              "fill_id", "trade_id", "order_id", "client_order_id", "ticker", "market_ticker",
+              "side", "action", "count", "price", "yes_price", "no_price", "yes_price_fixed",
+              "no_price_fixed", "is_taker", "created_time", "ts"
+            ]
+          },
+          {
+            "name": "cursor",
+            "type": "string",
+            "description": "Pagination cursor for fetching the next page of results"
+          }
+        ]
+      }
+    },
+    {
+      "aspect": "cURL Example",
+      "details": "curl --request GET \\\n  --url https://api.elections.kalshi.com/trade-api/v2/portfolio/fills \\\n  --header 'KALSHI-ACCESS-KEY: <api-key>' \\\n  --header 'KALSHI-ACCESS-SIGNATURE: <api-key>' \\\n  --header 'KALSHI-ACCESS-TIMESTAMP: <api-key>'"
+    },
+    {
+      "aspect": "Possible HTTP Status Codes",
+      "details": "200 OK, 400 Bad Request, 401 Unauthorized, 500 Internal Server Error"
+    }
+  ],
+  "relevant_links": [
+    "https://docs.kalshi.com/api-reference/portfolio/get-fills"
+  ],
+  "file_name": "kalshi_get_fills_api_documentation.json"
+}
+```

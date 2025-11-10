@@ -1,0 +1,129 @@
+📄 Extracted from page: Get Positions - API Documentation
+URL: https://docs.kalshi.com/api-reference/portfolio/get-positions
+
+Extracted content:
+```json
+{
+  "title": "Get Positions - API Documentation",
+  "url": "https://docs.kalshi.com/api-reference/portfolio/get-positions",
+  "summary": "The 'Get Positions' API endpoint provides comprehensive access to a user's current trading positions on Kalshi. It allows for filtering based on market ticker, event ticker, settlement status, and the presence of non-zero values in specific financial metrics. The endpoint returns detailed position data for both individual markets and aggregated events, including exposure, realized profit/loss, fees paid, and resting order counts, facilitating robust portfolio management.",
+  "key_points": [
+    {
+      "endpoint_name": "Get Positions",
+      "description": "Retrieves a user's current trading positions. Can restrict results to positions with non-zero values for 'position' or 'total_traded' fields. This API is part of the 'portfolio' category.",
+      "http_method": "GET",
+      "endpoint_url_relative": "/portfolio/positions",
+      "endpoint_url_full": "https://api.elections.kalshi.com/trade-api/v2/portfolio/positions",
+      "authorization_headers": [
+        {
+          "name": "KALSHI-ACCESS-KEY",
+          "type": "string",
+          "required": true,
+          "description": "Your API key ID"
+        },
+        {
+          "name": "KALSHI-ACCESS-SIGNATURE",
+          "type": "string",
+          "required": true,
+          "description": "RSA-PSS signature of the request"
+        },
+        {
+          "name": "KALSHI-ACCESS-TIMESTAMP",
+          "type": "string",
+          "required": true,
+          "description": "Request timestamp in milliseconds"
+        }
+      ],
+      "query_parameters": [
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "The Cursor represents a pointer to the next page of records in the pagination. Use the value returned from the previous response to get the next page."
+        },
+        {
+          "name": "limit",
+          "type": "integer",
+          "default": 100,
+          "range": "1 <= x <= 1000",
+          "description": "Parameter to specify the number of results per page."
+        },
+        {
+          "name": "count_filter",
+          "type": "string",
+          "description": "Restricts the positions to those with any of following fields with non-zero values, as a comma separated list. Accepted values: position, total_traded."
+        },
+        {
+          "name": "settlement_status",
+          "type": "enum<string>",
+          "default": "unsettled",
+          "options": [
+            "all",
+            "unsettled",
+            "settled"
+          ],
+          "description": "Settlement status of the markets to return."
+        },
+        {
+          "name": "ticker",
+          "type": "string",
+          "description": "Filter by market ticker."
+        },
+        {
+          "name": "event_ticker",
+          "type": "string",
+          "description": "Event ticker of desired positions. Multiple event tickers can be provided as a comma-separated list (maximum 10)."
+        }
+      ],
+      "request_example": {
+        "format": "cURL",
+        "code": "curl --request GET \\\n  --url https://api.elections.kalshi.com/trade-api/v2/portfolio/positions \\\n  --header 'KALSHI-ACCESS-KEY: <api-key>' \\\n  --header 'KALSHI-ACCESS-SIGNATURE: <api-key>' \\\n  --header 'KALSHI-ACCESS-TIMESTAMP: <api-key>'"
+      },
+      "response_status_codes": {
+        "200": "Positions retrieved successfully",
+        "400": "Bad Request",
+        "401": "Unauthorized",
+        "500": "Internal Server Error"
+      },
+      "response_body_200_application_json": {
+        "cursor": "<string> (The Cursor represents a pointer to the next page of records. Empty if no next page.)",
+        "market_positions": [
+          {
+            "ticker": "<string>",
+            "total_traded": "integer",
+            "total_traded_dollars": "<string>",
+            "position": "integer",
+            "market_exposure": "integer",
+            "market_exposure_dollars": "<string>",
+            "realized_pnl": "integer",
+            "realized_pnl_dollars": "<string>",
+            "resting_orders_count": "integer",
+            "fees_paid": "integer",
+            "fees_paid_dollars": "<string>",
+            "last_updated_ts": "datetime (e.g., 2023-11-07T05:31:56Z)"
+          }
+        ],
+        "event_positions": [
+          {
+            "event_ticker": "<string>",
+            "total_cost": "integer",
+            "total_cost_dollars": "<string>",
+            "total_cost_shares": "integer",
+            "event_exposure": "integer",
+            "event_exposure_dollars": "<string>",
+            "realized_pnl": "integer",
+            "realized_pnl_dollars": "<string>",
+            "resting_order_count": "integer",
+            "fees_paid": "integer",
+            "fees_paid_dollars": "<string>"
+          }
+        ]
+      }
+    }
+  ],
+  "relevant_links": [
+    "https://docs.kalshi.com/api-reference/portfolio/get-balance",
+    "https://docs.kalshi.com/api-reference/portfolio/get-settlements"
+  ],
+  "file_name": "kalshi_get_positions_api_endpoint.json"
+}
+```

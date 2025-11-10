@@ -1,0 +1,36 @@
+📄 Extracted from page: Introduction - API Documentation
+URL: https://docs.kalshi.com/welcome
+
+Extracted content:
+```json
+{
+  "title": "Introduction - API Documentation",
+  "url": "https://docs.kalshi.com/welcome",
+  "summary": "The Kalshi API Documentation Welcome page serves as an introductory guide for traders and developers. It provides an overview of Kalshi's exchange functionality, market details, and API architecture. The page highlights the necessity of agreeing to the Developer Agreement for API usage and acts as a central hub for navigating to essential documentation for getting started, understanding API specifics, and exploring various features like API keys, real-time data, and the demo environment.",
+  "key_points": [
+    "Welcome to Kalshi’s Guide, outlining exchange functionality, market details, and API architecture for traders and developers.",
+    "Users must agree to the Kalshi Developer Agreement to use or access the API.",
+    "Guidance on making the first API call and generating/managing API keys is provided.",
+    "Information on utilizing a safe demo environment for integration testing and understanding API rate limits.",
+    "Access to a complete API reference, a changelog for updates, and a glossary for key terms and concepts.",
+    "Details about the WebSocket API for real-time data streaming and a quick start guide for accessing market data.",
+    "Availability of OpenAPI Specification for API integration, along with links to the Kalshi trading console and Kalshi Academy for educational resources."
+  ],
+  "relevant_links": [
+    "https://kalshi.com/developer-agreement",
+    "/getting_started/making_your_first_request",
+    "/getting_started/api_keys",
+    "/getting_started/demo_env",
+    "/getting_started/rate_limits",
+    "/api-reference",
+    "/changelog",
+    "/getting_started/terms",
+    "/getting_started/quick_start_websockets",
+    "/getting_started/quick_start_market_data",
+    "https://docs.kalshi.com/openapi.yaml",
+    "https://kalshi.com",
+    "https://help.kalshi.com/"
+  ],
+  "file_name": "kalshi_api_welcome.json"
+}
+```

@@ -1,0 +1,96 @@
+📄 Extracted from page: Get Balance - API Documentation
+URL: https://docs.kalshi.com/api-reference/portfolio/get-balance
+
+Extracted content:
+```json
+{
+  "title": "Get Balance - API Documentation",
+  "url": "https://docs.kalshi.com/api-reference/portfolio/get-balance",
+  "summary": "This page documents the 'Get Balance' API endpoint for the Kalshi platform, which allows users to retrieve their available balance and total portfolio value. Both values are returned in cents. The endpoint is part of the 'portfolio' API section and requires specific Kalshi authentication headers for access.",
+  "key_points": [
+    {
+      "endpoint_name": "Get Balance",
+      "description": "Endpoint for getting the balance and portfolio value of a member. Both values are returned in cents.",
+      "http_method": "GET",
+      "relative_url": "/portfolio/balance",
+      "full_endpoint_url_example": "https://api.elections.kalshi.com/trade-api/v2/portfolio/balance",
+      "authentication": "Requires Kalshi authentication headers.",
+      "request_parameters": {
+        "type": "Headers",
+        "parameters": [
+          {
+            "name": "KALSHI-ACCESS-KEY",
+            "type": "string",
+            "location": "header",
+            "required": true,
+            "description": "Your API key ID"
+          },
+          {
+            "name": "KALSHI-ACCESS-SIGNATURE",
+            "type": "string",
+            "location": "header",
+            "required": true,
+            "description": "RSA-PSS signature of the request"
+          },
+          {
+            "name": "KALSHI-ACCESS-TIMESTAMP",
+            "type": "string",
+            "location": "header",
+            "required": true,
+            "description": "Request timestamp in milliseconds"
+          }
+        ]
+      },
+      "response_format": {
+        "status_code": 200,
+        "content_type": "application/json",
+        "description": "Balance retrieved successfully",
+        "example": {
+          "balance": 123,
+          "portfolio_value": 123,
+          "updated_ts": 123
+        },
+        "fields": [
+          {
+            "name": "balance",
+            "type": "integer",
+            "required": true,
+            "description": "Member's available balance in cents. This represents the amount available for trading."
+          },
+          {
+            "name": "portfolio_value",
+            "type": "integer",
+            "required": true,
+            "description": "Member's portfolio value in cents. This is the current value of all positions held."
+          },
+          {
+            "name": "updated_ts",
+            "type": "integer",
+            "required": true,
+            "description": "Unix timestamp of the last update to the balance."
+          }
+        ]
+      },
+      "code_example": {
+        "language": "cURL",
+        "code": "curl --request GET \\\n  --url https://api.elections.kalshi.com/trade-api/v2/portfolio/balance \\\n  --header 'KALSHI-ACCESS-KEY: <api-key>' \\\n  --header 'KALSHI-ACCESS-SIGNATURE: <api-key>' \\\n  --header 'KALSHI-ACCESS-TIMESTAMP: <api-key>'"
+      }
+    }
+  ],
+  "relevant_links": [
+    {
+      "text": "Get User Data Timestamp",
+      "url": "/api-reference/exchange/get-user-data-timestamp"
+    },
+    {
+      "text": "Get Positions",
+      "url": "/api-reference/portfolio/get-positions"
+    },
+    {
+      "text": "API Documentation home page",
+      "url": "/"
+    }
+  ],
+  "file_name": "kalshi_get_balance_api_documentation.json"
+}
+```

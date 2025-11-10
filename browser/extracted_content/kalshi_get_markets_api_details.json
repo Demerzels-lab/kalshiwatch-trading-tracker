@@ -1,0 +1,187 @@
+📄 Extracted from page: Get Markets - API Documentation
+URL: https://docs.kalshi.com/api-reference/market/get-markets
+
+Extracted content:
+```json
+{
+  "title": "Get Markets - API Documentation",
+  "url": "https://docs.kalshi.com/api-reference/market/get-markets",
+  "summary": "This page details the 'Get Markets' API endpoint, which allows users to retrieve a list of market data. It specifies the HTTP method, endpoint URL, available request parameters for filtering and pagination, and the comprehensive schema of the market data returned in the response.",
+  "key_points": [
+    {
+      "endpoint_name": "Get Markets",
+      "method": "GET",
+      "path": "/markets",
+      "full_url_example": "https://api.elections.kalshi.com/trade-api/v2/markets",
+      "description": "Retrieves a list of market data, allowing filtering by status and other criteria.",
+      "request_parameters": [
+        {
+          "name": "limit",
+          "type": "integer",
+          "default": 100,
+          "range": "1 <= x <= 1000",
+          "description": "Number of results per page."
+        },
+        {
+          "name": "cursor",
+          "type": "string",
+          "description": "Pagination cursor. Use the cursor value returned from the previous response to get the next page of results. Leave empty for the first page."
+        },
+        {
+          "name": "event_ticker",
+          "type": "string",
+          "description": "Event ticker of desired positions. Multiple event tickers can be provided as a comma-separated list (maximum 10)."
+        },
+        {
+          "name": "series_ticker",
+          "type": "string",
+          "description": "Filter by series ticker."
+        },
+        {
+          "name": "max_close_ts",
+          "type": "integer",
+          "description": "Filter items that close before this Unix timestamp."
+        },
+        {
+          "name": "min_close_ts",
+          "type": "integer",
+          "description": "Filter items that close after this Unix timestamp."
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Filter by market status. Comma-separated list. Possible values: 'unopened', 'open', 'closed', 'settled'. Leave empty to return markets with any status."
+        },
+        {
+          "name": "tickers",
+          "type": "string",
+          "description": "Filter by specific market tickers. Comma-separated list of market tickers to retrieve."
+        },
+        {
+          "name": "mve_filter",
+          "type": "enum<string>",
+          "available_options": ["only", "exclude"],
+          "description": "Filter by multivariate events (combos). 'only' returns only multivariate events, 'exclude' excludes multivariate events."
+        }
+      ],
+      "response_formats": [
+        {
+          "status_code": 200,
+          "content_type": "application/json",
+          "description": "Markets retrieved successfully.",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "markets": {
+                "type": "array",
+                "required": true,
+                "description": "An array of market objects.",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "ticker": { "type": "string" },
+                    "event_ticker": { "type": "string" },
+                    "market_type": { "type": "string", "example": "binary" },
+                    "title": { "type": "string" },
+                    "subtitle": { "type": "string" },
+                    "yes_sub_title": { "type": "string" },
+                    "no_sub_title": { "type": "string" },
+                    "open_time": { "type": "string", "format": "date-time" },
+                    "close_time": { "type": "string", "format": "date-time" },
+                    "expected_expiration_time": { "type": "string", "format": "date-time" },
+                    "expiration_time": { "type": "string", "format": "date-time" },
+                    "latest_expiration_time": { "type": "string", "format": "date-time" },
+                    "settlement_timer_seconds": { "type": "integer" },
+                    "status": { "type": "string", "example": "initialized" },
+                    "response_price_units": { "type": "string", "example": "cents" },
+                    "yes_bid": { "type": "integer" },
+                    "yes_bid_dollars": { "type": "string" },
+                    "yes_ask": { "type": "integer" },
+                    "yes_ask_dollars": { "type": "string" },
+                    "no_bid": { "type": "integer" },
+                    "no_bid_dollars": { "type": "string" },
+                    "no_ask": { "type": "integer" },
+                    "no_ask_dollars": { "type": "string" },
+                    "last_price": { "type": "integer" },
+                    "last_price_dollars": { "type": "string" },
+                    "volume": { "type": "integer" },
+                    "volume_24h": { "type": "integer" },
+                    "result": { "type": "string", "example": "yes" },
+                    "can_close_early": { "type": "boolean" },
+                    "open_interest": { "type": "integer" },
+                    "notional_value": { "type": "integer" },
+                    "notional_value_dollars": { "type": "string" },
+                    "previous_yes_bid": { "type": "integer" },
+                    "previous_yes_bid_dollars": { "type": "string" },
+                    "previous_yes_ask": { "type": "integer" },
+                    "previous_yes_ask_dollars": { "type": "string" },
+                    "previous_price": { "type": "integer" },
+                    "previous_price_dollars": { "type": "string" },
+                    "liquidity": { "type": "integer" },
+                    "liquidity_dollars": { "type": "string" },
+                    "settlement_value": { "type": "integer" },
+                    "settlement_value_dollars": { "type": "string" },
+                    "expiration_value": { "type": "string" },
+                    "category": { "type": "string" },
+                    "risk_limit_cents": { "type": "integer" },
+                    "fee_waiver_expiration_time": { "type": "string", "format": "date-time" },
+                    "early_close_condition": { "type": "string" },
+                    "tick_size": { "type": "integer" },
+                    "strike_type": { "type": "string", "example": "greater" },
+                    "floor_strike": { "type": "integer" },
+                    "cap_strike": { "type": "integer" },
+                    "functional_strike": { "type": "string" },
+                    "custom_strike": { "type": "object" },
+                    "rules_primary": { "type": "string" },
+                    "rules_secondary": { "type": "string" },
+                    "mve_collection_ticker": { "type": "string" },
+                    "mve_selected_legs": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "event_ticker": { "type": "string" },
+                          "market_ticker": { "type": "string" },
+                          "side": { "type": "string" }
+                        }
+                      }
+                    },
+                    "primary_participant_key": { "type": "string" },
+                    "price_level_structure": { "type": "string" },
+                    "price_ranges": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "start": { "type": "string" },
+                          "end": { "type": "string" },
+                          "step": { "type": "string" }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "cursor": { "type": "string", "required": true, "description": "Pagination cursor for the next page of results." }
+            }
+          }
+        },
+        { "status_code": 400, "description": "Bad Request" },
+        { "status_code": 401, "description": "Unauthorized" },
+        { "status_code": 500, "description": "Internal Server Error" }
+      ]
+    }
+  ],
+  "relevant_links": [
+    {
+      "text": "Get Series List",
+      "url": "/api-reference/market/get-series-list"
+    },
+    {
+      "text": "Get Market",
+      "url": "/api-reference/market/get-market"
+    }
+  ],
+  "file_name": "kalshi_get_markets_api_details.json"
+}
+```

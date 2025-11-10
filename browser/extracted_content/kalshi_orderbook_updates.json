@@ -1,0 +1,105 @@
+📄 Extracted from page: Orderbook Updates - API Documentation
+URL: https://docs.kalshi.com/websockets/orderbook-updates
+
+Extracted content:
+```json
+{
+  "title": "Orderbook Updates - API Documentation",
+  "url": "https://docs.kalshi.com/websockets/orderbook-updates",
+  "summary": "This page details the Kalshi Orderbook Updates WebSocket channel, which provides real-time price level changes and incremental updates necessary for building and maintaining a live orderbook.",
+  "key_points": [
+    {
+      "heading": "Purpose",
+      "description": "Provides real-time orderbook price level changes to maintain a live orderbook."
+    },
+    {
+      "heading": "Endpoint & Connection",
+      "description": "The base WebSocket endpoint is wss://api.elections.kalshi.com. API key authentication is required and should be provided during the WebSocket handshake."
+    },
+    {
+      "heading": "Subscription Requirements",
+      "description": "To subscribe, market specification is required: use 'market_ticker' (string) for a single market or 'market_tickers' (array of strings) for multiple markets."
+    },
+    {
+      "heading": "Message Flow",
+      "description": "The channel first sends an 'orderbook_snapshot' message, followed by incremental 'orderbook_delta' updates to reflect changes."
+    }
+  ],
+  "message_structures": [
+    {
+      "name": "Orderbook Snapshot",
+      "description": "A complete view of the order book's aggregated price levels for a specific market.",
+      "schema": {
+        "type": "string",
+        "sid": "integer",
+        "seq": "integer",
+        "msg": {
+          "market_ticker": "string",
+          "yes": "array of [integer (price), integer (quantity)]",
+          "yes_dollars": "array of [string (price as '0.000'), integer (quantity)]",
+          "no": "array of [integer (price), integer (quantity)]",
+          "no_dollars": "array of [string (price as '0.000'), integer (quantity)]"
+        }
+      },
+      "example": {
+        "type": "orderbook_snapshot",
+        "sid": 2,
+        "seq": 2,
+        "msg": {
+          "market_ticker": "FED-23DEC-T3.00",
+          "yes": [
+            [8, 300],
+            [22, 333]
+          ],
+          "yes_dollars": [
+            ["0.080", 300],
+            ["0.220", 333]
+          ],
+          "no": [
+            [54, 20],
+            [56, 146]
+          ],
+          "no_dollars": [
+            ["0.540", 20],
+            ["0.560", 146]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Orderbook Delta",
+      "description": "An incremental update to be applied to the current order book view.",
+      "schema": {
+        "type": "string",
+        "sid": "integer",
+        "seq": "integer",
+        "msg": {
+          "market_ticker": "string",
+          "price": "integer",
+          "price_dollars": "string",
+          "delta": "integer",
+          "side": "string ('yes' or 'no')"
+        }
+      },
+      "example": {
+        "type": "orderbook_delta",
+        "sid": 2,
+        "seq": 3,
+        "msg": {
+          "market_ticker": "FED-23DEC-T3.00",
+          "price": 96,
+          "price_dollars": "0.960",
+          "delta": -54,
+          "side": "yes"
+        }
+      }
+    }
+  ],
+  "relevant_links": [
+    "/websockets/websocket-connection",
+    "/websockets/connection-keep-alive",
+    "/websockets/market-ticker"
+  ],
+  "file_name": "kalshi_orderbook_updates.json"
+}
+```
