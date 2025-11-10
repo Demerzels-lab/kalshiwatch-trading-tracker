@@ -29,7 +29,7 @@ export default function SettingsPage() {
   const [connectingGroup, setConnectingGroup] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
 
-  const BOT_USERNAME = '@KalshiwatchBot'; // Update this with actual bot username
+  const BOT_USERNAME = '@kalshiwatch_bot';
 
   useEffect(() => {
     if (user) {
