@@ -315,7 +315,7 @@ export default function ProfilePage() {
           </a>
           <span>•</span>
           <a 
-            href="https://t.me/kalshiwatch" 
+            href="https://t.me/kalshiwatch_bot" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-foreground transition-colors"

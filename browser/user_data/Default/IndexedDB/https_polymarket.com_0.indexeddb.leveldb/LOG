@@ -1,0 +1,6 @@
+2025/11/10-11:05:56.039 cc2 Creating DB /workspace/browser/user_data/Default/IndexedDB/https_polymarket.com_0.indexeddb.leveldb since it was missing.
+2025/11/10-11:05:56.059 cc2 Reusing MANIFEST /workspace/browser/user_data/Default/IndexedDB/https_polymarket.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/11/10-11:06:00.447 cc2 Level-0 table #5: started
+2025/11/10-11:06:00.455 cc2 Level-0 table #5: 4597 bytes OK
+2025/11/10-11:06:00.459 cc2 Delete type=0 #3
+2025/11/10-11:06:00.460 cc2 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
