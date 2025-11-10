@@ -5,21 +5,21 @@
         "id": "1",
         "content": "Analisis website polywatch.app untuk memahami struktur data trader",
         "details": "1. Telusuri website polywatch.app\n2. Klik beberapa profile recommended traders\n3. Catat semua informasi yang ditampilkan (data, statistik, trade history, dll)\n4. Identifikasi sumber data yang digunakan\n5. Dokumentasi struktur lengkap untuk replikasi",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
         "content": "Update website Kalshiwatch untuk menampilkan data trader yang lengkap",
         "details": "1. Modifikasi ProfilePage.tsx untuk menampilkan semua data yang sama dengan polywatch.app\n2. Update Edge Functions untuk mengambil data yang lebih lengkap jika diperlukan\n3. Ensure semua informasi trader ditampilkan secara akurat\n4. Test di multiple trader profiles",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
         "content": "Verifikasi dan deployment final",
         "details": "1. Test website Kalshiwatch dengan berbagai profile trader\n2. Ensure data yang ditampilkan sesuai dengan polywatch.app\n3. Deploy final version\n4. Dokumentasi perubahan yang dibuat",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       }
     }

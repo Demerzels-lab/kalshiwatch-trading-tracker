@@ -59,6 +59,30 @@ Successfully built and deployed Kalshiwatch - 100% clone of PolyWatch.app using 
 - Previous: https://busfvujgj1sb.space.minimax.io
 - Status: Production-Ready - Telegram Bot @kalshiwatch_bot ACTIVE
 - Performance: 56% bundle size reduction (871 kB → 379 kB main)
+
+## Current Update: Enhanced Trader Profile Display (2025-11-10 21:31) ✅ COMPLETED
+Goal: Update Kalshiwatch to show comprehensive trader data like polywatch.app
+
+**Implemented:**
+- ✅ Updated `get-trader-profile` edge function with accurate monthly PnL calculation (past 30 days)
+- ✅ Changed PnL history from monthly to daily data points (1-day fidelity)
+- ✅ Updated ProfilePage.tsx to display monthly_pnl from API (removed hardcoded 20%)
+- ✅ All 6 statistics displayed: Current Holdings, Biggest Win, Total Trades, Joined Platform, Total PnL, Monthly PnL
+- ✅ Updated `get-recommended-traders` to prioritize traders with multiple trades (total_trades > 1)
+- ✅ Deployed to: https://y715vhtcxk15.space.minimax.io
+
+**Data Verification:**
+- API Test (Plump-Shadow trader):
+  * Total Trades: 21 ✅
+  * Total PnL: $664.90 ✅
+  * Monthly PnL: $1960.92 ✅ (calculated from past 30 days)
+  * Top 10 Trades: Available ✅
+  * PnL History: Daily data points ✅
+
+**Notes:**
+- PnL chart displays line graph when trader has multiple daily data points
+- Fallback message shown for traders with single data point (expected behavior)
+- Homepage now shows traders with multiple trades for better demo
 - Features Implemented:
   * ✅ Landing page with 7 recommended traders
   * ✅ Profile pages with detailed trader stats

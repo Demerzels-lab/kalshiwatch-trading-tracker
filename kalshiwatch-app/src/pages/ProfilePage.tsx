@@ -198,9 +198,9 @@ export default function ProfilePage() {
           <StatCard label="Current Holdings" value={formatPnL(trader.current_holdings)} />
           <StatCard label="Biggest Win" value={formatPnL(trader.biggest_win)} />
           <StatCard label="Total Trades" value={trader.total_trades || 0} />
-          <StatCard label="Join Date" value={trader.join_date ? new Date(trader.join_date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : 'N/A'} />
+          <StatCard label="Joined Platform" value={trader.join_date ? new Date(trader.join_date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : 'N/A'} />
           <StatCard label="Total PnL (All History)" value={formatPnL(trader.total_pnl)} highlight />
-          <StatCard label="PnL (Past Month)" value={formatPnL(trader.total_pnl * 0.2)} highlight />
+          <StatCard label="Monthly PnL (Past Month)" value={formatPnL(trader.monthly_pnl || 0)} highlight />
         </div>
 
         {profileData.pnlHistory && profileData.pnlHistory.length > 0 && (

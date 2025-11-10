@@ -39,10 +39,10 @@ Deno.serve(async (req) => {
             traderWallets = recommended.map((r: any) => r.trader_wallet);
         }
 
-        // If less than 7, get top performers
+        // If less than 7, get top performers (prioritize traders with multiple trades)
         if (traderWallets.length < 7) {
             const topTradersResponse = await fetch(
-                `${supabaseUrl}/rest/v1/traders?order=total_pnl.desc&limit=${7 - traderWallets.length}`,
+                `${supabaseUrl}/rest/v1/traders?total_trades=gt.1&order=total_pnl.desc&limit=${7 - traderWallets.length}`,
                 {
                     headers: {
                         'Authorization': `Bearer ${serviceRoleKey}`,

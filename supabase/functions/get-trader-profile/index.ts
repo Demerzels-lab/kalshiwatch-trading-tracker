@@ -80,36 +80,50 @@ Deno.serve(async (req) => {
         );
 
         let pnlHistory = [];
+        let monthlyPnL = 0;
+        
         if (allTradesResponse.ok) {
             const allTrades = await allTradesResponse.json();
             
-            // Calculate cumulative PnL over time
-            let cumulativePnL = 0;
-            const pnlData = allTrades.map((trade: any) => {
-                cumulativePnL += trade.profit_loss || 0;
-                return {
-                    timestamp: trade.timestamp,
-                    pnl: cumulativePnL
-                };
+            // Calculate monthly PnL (past 30 days)
+            const thirtyDaysAgo = new Date();
+            thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+            
+            const recentTrades = allTrades.filter((trade: any) => {
+                const tradeDate = new Date(trade.timestamp);
+                return tradeDate >= thirtyDaysAgo;
             });
-
-            // Group by month for graph
-            const monthlyPnL = new Map();
-            for (const point of pnlData) {
-                const date = new Date(point.timestamp);
-                const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
-                monthlyPnL.set(monthKey, point.pnl);
+            
+            monthlyPnL = recentTrades.reduce((sum: number, trade: any) => {
+                return sum + (trade.profit_loss || 0);
+            }, 0);
+            
+            // Calculate cumulative PnL over time for graph (daily data points)
+            let cumulativePnL = 0;
+            const dailyPnL = new Map();
+            
+            for (const trade of allTrades) {
+                cumulativePnL += trade.profit_loss || 0;
+                const date = new Date(trade.timestamp);
+                const dateKey = date.toISOString().split('T')[0]; // YYYY-MM-DD format
+                dailyPnL.set(dateKey, cumulativePnL);
             }
 
-            pnlHistory = Array.from(monthlyPnL.entries()).map(([month, pnl]) => ({
-                date: month,
+            pnlHistory = Array.from(dailyPnL.entries()).map(([date, pnl]) => ({
+                date: date,
                 value: pnl
             }));
         }
 
+        // Enhance profile with calculated monthly PnL
+        const enhancedProfile = {
+            ...trader,
+            monthly_pnl: monthlyPnL
+        };
+
         return new Response(JSON.stringify({
             data: {
-                profile: trader,
+                profile: enhancedProfile,
                 topTrades: topTrades,
                 pnlHistory: pnlHistory
             }
