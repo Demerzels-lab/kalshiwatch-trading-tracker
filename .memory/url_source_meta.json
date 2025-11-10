@@ -1,0 +1,35 @@
+{
+  "_source_id": 4,
+  "sources": {
+    "PolyWatch App Analysis": {
+      "https://polywatch.app/": {
+        "id": 1,
+        "publisher": "PolyWatch",
+        "url": "https://polywatch.app/",
+        "title": "PolyWatch Main Landing Page",
+        "info": "Main homepage with recommended traders list, branding, and hero section. Contains 7 trader profiles with basic statistics and 'Watch' functionality."
+      },
+      "https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292": {
+        "id": 2,
+        "publisher": "PolyWatch",
+        "url": "https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+        "title": "Dropper Trader Profile Page",
+        "info": "Complete trader profile with $170.8k holdings, +$604.1k total PnL, 1,330 trades, 10 most profitable trades, and real-time trading activity feed."
+      },
+      "https://polywatch.app/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe": {
+        "id": 3,
+        "publisher": "PolyWatch",
+        "url": "https://polywatch.app/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+        "title": "YatSen Trader Profile Page",
+        "info": "Trader profile with $70.9k holdings, +$2.2m total PnL, 530 trades, 3x higher profitability than Dropper, focused on esports and politics."
+      },
+      "https://pump.fun/coin/5gtiGnsMhHEbpgY8SUkdYifR6Au3kjRHM6QJpbtzpump": {
+        "id": 4,
+        "publisher": "Pump.fun",
+        "url": "https://pump.fun/coin/5gtiGnsMhHEbpgY8SUkdYifR6Au3kjRHM6QJpbtzpump",
+        "title": "Pump.fun Integration",
+        "info": "External partnership link found in footer, indicating integration with pump.fun for promotional purposes."
+      }
+    }
+  }
+}

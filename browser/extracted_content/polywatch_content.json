@@ -1,0 +1,182 @@
+📄 Extracted from page: PolyWatch
+URL: https://polywatch.app/
+
+Extracted content:
+```json
+{
+  "title": "PolyWatch",
+  "url": "https://polywatch.app/",
+  "summary": "PolyWatch is a service designed to track trader activity on Polymarket, a prediction market platform, and provide users with real-time alerts via Telegram. The website prominently displays a live feed of recent buy and sell orders from various traders across different markets (e.g., political events, cryptocurrency price movements, sports outcomes). It also features a curated list of 'Recommended traders' with their total and monthly profit statistics, allowing users to identify and potentially follow successful traders.",
+  "key_points": [
+    "Provides real-time Telegram alerts for Polymarket trading activity.",
+    "Enables tracking of specific traders on the Polymarket platform.",
+    "Displays a live feed of recent buy and sell orders, detailing the trader, market, price, and amount.",
+    "Highlights 'Recommended traders' by showcasing their total and past month's profit performance.",
+    "Aims to help users monitor significant movements and profitable strategies on Polymarket."
+  ],
+  "headings": [
+    "PolyWatch",
+    "Recommended traders"
+  ],
+  "tagline": "Real-time Telegram alerts",
+  "main_description": "Track Polymarket traders and get instant Telegram alerts",
+  "call_to_action": "Get started",
+  "navigation_items": [
+    {
+      "text": "Home (logo)",
+      "url": "/"
+    }
+  ],
+  "recommended_traders": [
+    {
+      "name": "scottilicious",
+      "profile_url": "/profile/0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+      "total_profit": "+$1299.6k",
+      "past_month_profit": "+$156.6k",
+      "action_text": "Watch"
+    },
+    {
+      "name": "YatSen",
+      "profile_url": "/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+      "total_profit": "+$2241.6k",
+      "past_month_profit": "+$208.6k",
+      "action_text": "Watch"
+    },
+    {
+      "name": "GreekGamblerPM",
+      "profile_url": "/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb",
+      "total_profit": "+$12.4k",
+      "past_month_profit": "+$23.9",
+      "action_text": "Watch"
+    },
+    {
+      "name": "Dropper",
+      "profile_url": "/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+      "total_profit": "+$604.1k",
+      "past_month_profit": "+$51.4k",
+      "action_text": "Watch"
+    },
+    {
+      "name": "Euan",
+      "profile_url": "/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1",
+      "total_profit": "+$233.5k",
+      "past_month_profit": "+$43.2k",
+      "action_text": "Watch"
+    },
+    {
+      "name": "25usdc",
+      "profile_url": "/profile/0x75e765216a57942d738d880ffcda854d9f869080",
+      "total_profit": "+$74.4k",
+      "past_month_profit": "+$41.3k",
+      "action_text": "Watch"
+    },
+    {
+      "name": "Car",
+      "profile_url": "/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
+      "total_profit": "+$698.2k",
+      "past_month_profit": "+$60.5k",
+      "action_text": "Watch"
+    }
+  ],
+  "live_trading_feed_sample": [
+    {
+      "trader": "Eatpraylove",
+      "action": "BUY",
+      "market_slug": "california-redistricting-referendum-passes",
+      "market_display_name": "california-redistricting-referendum-passes",
+      "price_per_share": "99.5¢",
+      "total_amount": "$12.37",
+      "polymarket_url": "https://polymarket.com/event/california-redistricting-referendum-passes/california-redistricting-referendum-passes"
+    },
+    {
+      "trader": "Eatpraylove",
+      "action": "SELL",
+      "market_slug": "maduro-out-in-2025",
+      "market_display_name": "maduro-out-in-2025-411",
+      "price_per_share": "12.0¢",
+      "total_amount": "$0.80",
+      "polymarket_url": "https://polymarket.com/event/maduro-out-in-2025/maduro-out-in-2025-411"
+    },
+    {
+      "trader": "classified",
+      "action": "BUY",
+      "market_slug": "us-x-venezuela-military-engagement-by-october-31",
+      "market_display_name": "us-x-venezuela-military-engagement-by-november-30-216-397-226-467-735-374-192",
+      "price_per_share": "10.0¢",
+      "total_amount": "$8.03",
+      "polymarket_url": "https://polymarket.com/event/us-x-venezuela-military-engagement-by-october-31/us-x-venezuela-military-engagement-by-november-30-216-397-226-467-735-374-192"
+    },
+    {
+      "trader": "q44tech",
+      "action": "BUY",
+      "market_slug": "btc-updown-15m-1762760700",
+      "market_display_name": "btc-updown-15m-1762760700",
+      "price_per_share": "64.0¢",
+      "total_amount": "$14.72",
+      "polymarket_url": "https://polymarket.com/event/btc-updown-15m-1762760700/btc-updown-15m-1762760700"
+    },
+    {
+      "trader": "q44tech",
+      "action": "SELL",
+      "market_slug": "xrp-up-or-down-november-10-2am-et",
+      "market_display_name": "xrp-up-or-down-november-10-2am-et",
+      "price_per_share": "91.0¢",
+      "total_amount": "$9.10",
+      "polymarket_url": "https://polymarket.com/event/xrp-up-or-down-november-10-2am-et/xrp-up-or-down-november-10-2am-et"
+    },
+    {
+      "trader": "sovereign2013",
+      "action": "BUY",
+      "market_slug": "nba-sas-chi-2025-11-11",
+      "market_display_name": "nba-sas-chi-2025-11-11-total-234pt5",
+      "price_per_share": "49.0¢",
+      "total_amount": "$98.00",
+      "polymarket_url": "https://polymarket.com/event/nba-sas-chi-2025-11-11/nba-sas-chi-2025-11-11-total-234pt5"
+    },
+    {
+      "trader": "Qualitative",
+      "action": "BUY",
+      "market_slug": "eth-updown-15m-1762760700",
+      "market_display_name": "eth-updown-15m-1762760700",
+      "price_per_share": "51.6¢",
+      "total_amount": "$12.38",
+      "polymarket_url": "https://polymarket.com/event/eth-updown-15m-1762760700/eth-updown-15m-1762760700"
+    },
+    {
+      "trader": "LambSaauce",
+      "action": "BUY",
+      "market_slug": "bitcoin-up-or-down-november-10-2am-et",
+      "market_display_name": "bitcoin-up-or-down-november-10-2am-et",
+      "price_per_share": "18.0¢",
+      "total_amount": "$9.00",
+      "polymarket_url": "https://polymarket.com/event/bitcoin-up-or-down-november-10-2am-et/bitcoin-up-or-down-november-10-2am-et"
+    }
+  ],
+  "other_textual_content": [
+    "pump.fun/coin/5gtiGnsMhHEbpgY8SUkdYifR6Au3kjRHM6QJpbtzpump"
+  ],
+  "relevant_links": [
+    "https://polymarket.com/event/california-redistricting-referendum-passes/california-redistricting-referendum-passes",
+    "https://polymarket.com/event/maduro-out-in-2025/maduro-out-in-2025-411",
+    "https://polymarket.com/event/us-x-venezuela-military-engagement-by-october-31/us-x-venezuela-military-engagement-by-november-30-216-397-226-467-735-374-192",
+    "https://polymarket.com/event/btc-updown-15m-1762760700/btc-updown-15m-1762760700",
+    "https://polymarket.com/event/xrp-up-or-down-november-10-2am-et/xrp-up-or-down-november-10-2am-et",
+    "https://polymarket.com/event/nba-sas-chi-2025-11-11/nba-sas-chi-2025-11-11-total-234pt5",
+    "https://polymarket.com/event/nba-atl-lac-2025-11-11/nba-atl-lac-2025-11-11-spread-home-3pt5",
+    "https://polymarket.com/event/nba-cle-mia-2025-11-11/nba-cle-mia-2025-11-11-total-246pt5",
+    "https://polymarket.com/event/eth-updown-15m-1762760700/eth-updown-15m-1762760700",
+    "https://polymarket.com/event/bitcoin-up-or-down-november-10-2am-et/bitcoin-up-or-down-november-10-2am-et",
+    "https://polymarket.com/event/solana-up-or-down-november-10-2am-et/solana-up-or-down-november-10-2am-et",
+    "/",
+    "/profile/0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+    "/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+    "/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb",
+    "/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+    "/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1",
+    "/profile/0x75e765216a57942d738d880ffcda854d9f869080",
+    "/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
+    "https://pump.fun/coin/5gtiGnsMhHEbpgY8SUkdYifR6Au3kjRHM6QJpbtzpump"
+  ],
+  "file_name": "polywatch_content.json"
+}
+```

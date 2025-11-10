@@ -1,0 +1,149 @@
+📄 Extracted from page: PolyWatch
+URL: https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292
+
+Extracted content:
+```json
+{
+  "title": "PolyWatch",
+  "url": "https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+  "summary": "This page provides a detailed profile for the Polymarket trader 'Dropper' on PolyWatch, showcasing their trading performance and interests. It includes key financial metrics such as current holdings, total trades, biggest single win, and profit/loss (PnL) data for all history and the past month. The profile also highlights various keywords indicating the trader's areas of interest and lists their top ten most profitable trades with their outcomes.",
+  "key_points": [
+    {
+      "trader_name": "Dropper"
+    },
+    {
+      "polymarket_profile_url": "https://polymarket.com/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292"
+    },
+    {
+      "current_holdings": "$170.8k"
+    },
+    {
+      "biggest_win": "$2.2m"
+    },
+    {
+      "total_trades": 1330
+    },
+    {
+      "joined_date": "Jul 2024"
+    },
+    {
+      "pnl": {
+        "all_history": "+$604.1k",
+        "past_month": "+$51.4k"
+      }
+    },
+    {
+      "keywords": [
+        "video views",
+        "xAI",
+        "#1 searched person",
+        "Zohran",
+        "NYC mayoral election",
+        "Katy Perry",
+        "MegaETH public sale",
+        "Hamilton",
+        "Leclerc",
+        "strike",
+        "relationship",
+        "Venezuela",
+        "OTLY",
+        "AI model",
+        "MrBeast",
+        "Charlie Kirk",
+        "Trump",
+        "US",
+        "Andy Byron",
+        "Gaza",
+        "U.S.",
+        "Israel",
+        "Luigi Mangione",
+        "China",
+        "Oatly Group",
+        "named storms",
+        "Google",
+        "Lebanon",
+        "Justin Trudeau",
+        "export ban"
+      ]
+    },
+    {
+      "top_profitable_trades": [
+        {
+          "event": "Will Kim Moon-soo be the People's Power Party candidate for president?",
+          "outcome": "Yes",
+          "profit": "+$2.2m",
+          "link": "https://polymarket.com/event/people-power-party-ppp-presidential-candidate/will-kim-moon-soo-be-the-peoples-power-party-candidate-for-president"
+        },
+        {
+          "event": "Is there more than 147341858 Troy Ounces of Gold in Fort Knox?",
+          "outcome": "Yes",
+          "profit": "+$92.6k",
+          "link": "https://polymarket.com/event/how-much-gold-is-there-in-fort-knox/is-there-more-than-147341858-troy-ounces-of-gold-in-fort-knox"
+        },
+        {
+          "event": "Will Lee Jae-myung be elected the next president of South Korea?",
+          "outcome": "Yes",
+          "profit": "+$49.7k",
+          "link": "https://polymarket.com/event/next-president-of-south-korea/will-lee-jae-myung-be-elected-the-next-president-of-south-korea"
+        },
+        {
+          "event": "Will MrBeast raise $40M for clean water by August 31?",
+          "outcome": "No",
+          "profit": "+$43.3k",
+          "link": "https://polymarket.com/event/will-mrbeast-raise-40m-for-clean-water-by-august-31/will-mrbeast-raise-40m-for-clean-water-by-august-31"
+        },
+        {
+          "event": "Will South Korea presidential election winner get over 50% of votes?",
+          "outcome": "Yes",
+          "profit": "+$36.4k",
+          "link": "https://polymarket.com/event/will-south-korea-presidential-election-winner-get-over-50-of-votes/will-south-korea-presidential-election-winner-get-over-50-of-votes"
+        },
+        {
+          "event": "Will Nicușor Dan win by 6–12%?",
+          "outcome": "Yes",
+          "profit": "+$30.0k",
+          "link": "https://polymarket.com/event/romanian-presidential-election-margin-of-victory/will-nicuor-dan-win-by-612"
+        },
+        {
+          "event": "Lord Miles completes 40-day water fast in the desert?",
+          "outcome": "Yes",
+          "profit": "+$27.7k",
+          "link": "https://polymarket.com/event/lord-miles-completes-40-day-water-fast-in-the-dessert/lord-miles-completes-40-day-water-fast-in-the-dessert"
+        },
+        {
+          "event": "Will Kim Moon-soo be elected the next president of South Korea?",
+          "outcome": "Yes",
+          "profit": "+$23.9k",
+          "link": "https://polymarket.com/event/next-president-of-south-korea/will-kim-moon-soo-be-elected-the-next-president-of-south-korea"
+        },
+        {
+          "event": "Will Zelenskyy wear a suit before July?",
+          "outcome": "No",
+          "profit": "+$23.2k",
+          "link": "https://polymarket.com/event/will-zelenskyy-wear-a-suit-before-july/will-zelenskyy-wear-a-suit-before-july"
+        },
+        {
+          "event": "Hyperliquid daily fees above $8M in 2025?",
+          "outcome": "No",
+          "profit": "+$19.4k",
+          "link": "https://polymarket.com/event/hyperliquid-daily-fees-above-8m-in-2025/hyperliquid-daily-fees-above-8m-in-2025"
+        }
+      ]
+    }
+  ],
+  "relevant_links": [
+    "https://polymarket.com/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+    "https://polymarket.com/event/people-power-party-ppp-presidential-candidate/will-kim-moon-soo-be-the-peoples-power-party-candidate-for-president",
+    "https://polymarket.com/event/how-much-gold-is-there-in-fort-knox/is-there-more-than-147341858-troy-ounces-of-gold-in-fort-knox",
+    "https://polymarket.com/event/next-president-of-south-korea/will-lee-jae-myung-be-elected-the-next-president-of-south-korea",
+    "https://polymarket.com/event/will-mrbeast-raise-40m-for-clean-water-by-august-31/will-mrbeast-raise-40m-for-clean-water-by-august-31",
+    "https://polymarket.com/event/will-south-korea-presidential-election-winner-get-over-50-of-votes/will-south-korea-presidential-election-winner-get-over-50-of-votes",
+    "https://polymarket.com/event/romanian-presidential-election-margin-of-victory/will-nicuor-dan-win-by-612",
+    "https://polymarket.com/event/lord-miles-completes-40-day-water-fast-in-the-dessert/lord-miles-completes-40-day-water-fast-in-the-dessert",
+    "https://polymarket.com/event/next-president-of-south-korea/will-kim-moon-soo-be-elected-the-next-president-of-south-korea",
+    "https://polymarket.com/event/will-zelenskyy-wear-a-suit-before-july/will-zelenskyy-wear-a-suit-before-july",
+    "https://polymarket.com/event/hyperliquid-daily-fees-above-8m-in-2025/hyperliquid-daily-fees-above-8m-in-2025"
+  ],
+  "file_name": "dropper_polymarket_profile.json"
+}
+```

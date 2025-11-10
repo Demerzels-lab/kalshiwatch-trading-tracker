@@ -1,0 +1,157 @@
+📄 Extracted from page: PolyWatch
+URL: https://polywatch.app/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe
+
+Extracted content:
+```json
+{
+  "title": "PolyWatch - YatSen Profile",
+  "url": "https://polywatch.app/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+  "summary": "This page provides a profile overview for the PolyWatch trader 'YatSen', identified by the address 0x5bffcf561bcae83af680ad600cb99f1184d6ffbe. It displays key trading statistics, profit and loss data, and a list of top profitable trades. The trader joined in June 2024 and has accumulated a significant total profit. The page also includes an X (Twitter) handle associated with the profile and a list of keywords representing their trading interests. Notably, the initial blocks of content on the page appear to be a general log of recent trades made by various other users on the platform, not specific to YatSen's trading history beyond the aggregated statistics.",
+  "key_points": [
+    {
+      "section": "Trader Identity",
+      "name": "YatSen",
+      "polymarket_profile_link": "https://polymarket.com/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+      "x_handle": "@HarveyMackinto2"
+    },
+    {
+      "section": "Trading Statistics",
+      "current_holdings": "$70.9k",
+      "biggest_win": "$1.9m",
+      "total_trades": 530,
+      "joined_date": "Jun 2024",
+      "pnl": {
+        "total_all_history_1d_fidelity": "+$2.2m",
+        "past_month": "+$208.6k"
+      }
+    },
+    {
+      "section": "Keywords/Interests",
+      "list": [
+        "public sale",
+        "commitment",
+        "interest rates",
+        "Esports",
+        "T1",
+        "KT Rolster",
+        "Top Esports",
+        "token",
+        "Trump",
+        "Xi Jinping",
+        "bps",
+        "G2 Esports",
+        "BO5",
+        "meeting",
+        "Fed",
+        "Anyone's Legend",
+        "Mega",
+        "ETH",
+        "Gen.G",
+        "Stable",
+        "LoL"
+      ]
+    },
+    {
+      "section": "Top Profitable Trades",
+      "trades": [
+        {
+          "title": "Will Kamala Harris win the 2024 US Presidential Election?",
+          "outcome": "Yes",
+          "profit": "+$1.9m",
+          "link": "https://polymarket.com/event/presidential-election-winner-2024/will-kamala-harris-win-the-2024-us-presidential-election"
+        },
+        {
+          "title": "Will Donald Trump win the 2024 US Presidential Election?",
+          "outcome": "No",
+          "profit": "+$1.1m",
+          "link": "https://polymarket.com/event/presidential-election-winner-2024/will-donald-trump-win-the-2024-us-presidential-election"
+        },
+        {
+          "title": "Fed decreases interest rates by 50+ bps after September 2024 meeting?",
+          "outcome": "Yes",
+          "profit": "+$1.0m",
+          "link": "https://polymarket.com/event/fed-interest-rates-september-2024/fed-decreases-interest-rates-by-50-bps-after-september-2024-meeting"
+        },
+        {
+          "title": "Will Tim Walz be the 2024 Democratic VP nominee?",
+          "outcome": "Yes",
+          "profit": "+$727.5k",
+          "link": "https://polymarket.com/event/democratic-vp-nominee/will-tim-walz-be-the-2024-democratic-vp-nominee"
+        },
+        {
+          "title": "Will Zelenskyy wear a suit before July?",
+          "outcome": "Yes",
+          "profit": "+$711.4k",
+          "link": "https://polymarket.com/event/will-zelenskyy-wear-a-suit-before-july/will-zelenskyy-wear-a-suit-before-july"
+        },
+        {
+          "title": "Will Lee Jae-myung be elected the next president of South Korea?",
+          "outcome": "Yes",
+          "profit": "+$614.6k",
+          "link": "https://polymarket.com/event/next-president-of-south-korea/will-lee-jae-myung-be-elected-the-next-president-of-south-korea"
+        },
+        {
+          "title": "Will Kamala Harris win the 2024 Democratic Presidential Nomination?",
+          "outcome": "Yes",
+          "profit": "+$613.5k",
+          "link": "https://polymarket.com/event/democratic-nominee-2024/will-kamala-harris-win-the-2024-democratic-presidential-nomination"
+        },
+        {
+          "title": "Fed decreases interest rates by 25 bps after September 2025 meeting?",
+          "outcome": "Yes",
+          "profit": "+$496.5k",
+          "link": "https://polymarket.com/event/fed-decision-in-september/fed-decreases-interest-rates-by-25-bps-after-september-2025-meeting"
+        },
+        {
+          "title": "Will Kim Moon-soo be the People's Power Party candidate for president?",
+          "outcome": "Yes",
+          "profit": "+$416.8k",
+          "link": "https://polymarket.com/event/people-power-party-ppp-presidential-candidate/will-kim-moon-soo-be-the-peoples-power-party-candidate-for-president"
+        },
+        {
+          "title": "Will Donald Trump win the popular vote in the 2024 Presidential Election?",
+          "outcome": "Yes",
+          "profit": "+$230.4k",
+          "link": "https://polymarket.com/event/presidential-election-popular-vote-winner-2024/will-donald-trump-win-the-popular-vote-in-the-2024-presidential-election"
+        }
+      ]
+    },
+    {
+      "section": "General Page Activity (not YatSen's trades)",
+      "description": "The page includes a feed of recent trade activities by various users on the platform (e.g., Car, leegunner, Qualitative, LambSaauce, Halfapound). These entries follow a format like `[TraderName]·[BUY/SELL]·[MarketEventSlug]@[Price]¢·[Amount]$[↗](Link)`. This feed is distinct from YatSen's specific profile metrics and top trades.",
+      "example_trades": [
+        "Car·BUY·what-will-happen-before-gta-vi/will-jesus-christ-return-before-gta-vi-665@51.0¢·$11.98",
+        "leegunner·BUY·afc-north-winner-1/will-the-pittsburgh-steelers-win-the-afc-north-1@25.0¢·$57.50",
+        "Qualitative·BUY·btc-updown-15m-1762760700/btc-updown-15m-1762760700@23.0¢·$2.07"
+      ]
+    },
+    {
+      "section": "Missing Sections/Limited Data",
+      "missing_information": [
+        "Detailed historical PnL graphs or daily/weekly PnL breakdowns.",
+        "Win/Loss ratio or percentage for YatSen's trades.",
+        "Average profit/loss per trade.",
+        "Breakdown of YatSen's trades by market category (e.g., politics, crypto, esports).",
+        "Risk metrics such as maximum drawdown.",
+        "A comprehensive, chronological list of all 530 trades made by YatSen (only top profitable trades are listed).",
+        "A biography or self-description from the trader.",
+        "Social engagement metrics on PolyWatch (e.g., followers, following, comments)."
+      ]
+    }
+  ],
+  "relevant_links": [
+    "https://polymarket.com/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+    "https://polymarket.com/event/presidential-election-winner-2024/will-kamala-harris-win-the-2024-us-presidential-election",
+    "https://polymarket.com/event/presidential-election-winner-2024/will-donald-trump-win-the-2024-us-presidential-election",
+    "https://polymarket.com/event/fed-interest-rates-september-2024/fed-decreases-interest-rates-by-50-bps-after-september-2024-meeting",
+    "https://polymarket.com/event/democratic-vp-nominee/will-tim-walz-be-the-2024-democratic-vp-nominee",
+    "https://polymarket.com/event/will-zelenskyy-wear-a-suit-before-july/will-zelenskyy-wear-a-suit-before-july",
+    "https://polymarket.com/event/next-president-of-south-korea/will-lee-jae-myung-be-elected-the-next-president-of-south-korea",
+    "https://polymarket.com/event/democratic-nominee-2024/will-kamala-harris-win-the-2024-democratic-presidential-nomination",
+    "https://polymarket.com/event/fed-decision-in-september/fed-decreases-interest-rates-by-25-bps-after-september-2025-meeting",
+    "https://polymarket.com/event/people-power-party-ppp-presidential-candidate/will-kim-moon-soo-be-the-peoples-power-party-candidate-for-president",
+    "https://polymarket.com/event/presidential-election-popular-vote-winner-2024/will-donald-trump-win-the-popular-vote-in-the-2024-presidential-election"
+  ],
+  "file_name": "polywatch_yatsen_profile.json"
+}
+```

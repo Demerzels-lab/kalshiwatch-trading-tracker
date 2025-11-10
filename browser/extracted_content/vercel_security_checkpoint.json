@@ -1,0 +1,23 @@
+📄 Extracted from page: Vercel Security Checkpoint
+URL: https://kalshi.com/social/leaderboard
+
+Extracted content:
+```json
+{
+    "title": "Vercel Security Checkpoint",
+    "url": "https://kalshi.com/social/leaderboard",
+    "summary": "This page is a Vercel Security Checkpoint indicating that the user's browser failed to be verified. It instructs the user to enable JavaScript to continue browsing. A specific error code '10' is displayed, along with a unique identifier. It also provides a link for website owners to address the issue.",
+    "key_points": [
+        "The page is a Vercel Security Checkpoint.",
+        "Browser verification failed.",
+        "User is instructed to 'Enable JavaScript to continue'.",
+        "An error 'Code 10' is displayed.",
+        "A unique identifier (e.g., 'iad1::1762762628-4vFd2IcsuHoJqdtIKd6ukz1R1CtYR5tI') is visible.",
+        "A link is provided for website owners to fix the issue."
+    ],
+    "relevant_links": [
+        "https://vercel.link/security-checkpoint"
+    ],
+    "file_name": "vercel_security_checkpoint.json"
+}
+```
