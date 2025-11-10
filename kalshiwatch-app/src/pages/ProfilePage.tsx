@@ -177,15 +177,6 @@ export default function ProfilePage() {
               >
                 {watchLoading ? 'Loading...' : isWatching ? 'Watching' : 'Watch'}
               </button>
-              <a 
-                href={`https://polymarket.com/profile/${trader.wallet_address}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 border border-muted hover:border-foreground rounded-md font-semibold transition-colors flex items-center gap-2"
-              >
-                View on Polymarket
-                <ExternalLink className="w-4 h-4" />
-              </a>
             </div>
           </div>
         </div>
@@ -286,15 +277,6 @@ export default function ProfilePage() {
                     <span className="text-primary font-bold text-lg">
                       {formatPnL(trade.profit_loss)}
                     </span>
-                    <a 
-                      href={`https://polymarket.com/event/${trade.market_slug}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline text-sm flex items-center gap-1"
-                    >
-                      View Event
-                      <ExternalLink className="w-3 h-3" />
-                    </a>
                   </div>
                 </div>
               ))}
