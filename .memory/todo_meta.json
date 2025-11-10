@@ -3,38 +3,38 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Analisis mendalam website PolyWatch.app",
-        "details": "1. ✅ Extract semua content dari https://polywatch.app/\n2. ✅ Analyze layout structure, design elements, color scheme, typography\n3. ✅ Document semua pages, components, dan user flow\n4. ✅ Identify semua fitur dan functionality\n5. ✅ Create detailed plan untuk cloning\n\nHasil: File analysis/polywatch_analysis.md (301 baris) dengan detail spesifik untuk cloning 100% akurat",
-        "status": "completed",
+        "content": "Setup project baru dengan nama Kalshiwatch",
+        "details": "1. Buat folder baru kalshiwatch/ 2. Setup React project dengan Vite 3. Setup Supabase backend untuk website",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Delete website Kalsehi tracker yang lama",
-        "details": "1. ✅ Remove project yang sudah dibuat sebelumnya (kalsehi-tracker folder deleted)\n2. ✅ Clean up workspace untuk proyek baru\n3. ✅ Prepare fresh start untuk project cloning",
-        "status": "completed",
+        "content": "Implementasi UI/UX identik dengan PolyWatch.app",
+        "details": "1. Copy exact design dari analysis/polywatch_analysis.md 2. Implement semua komponen: header, sidebar, trading feed, trader profiles, market data 3. Color scheme: Dark theme dengan accent colors yang sama",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Clone website PolyWatch.app persis untuk Kalsehi",
-        "details": "1. Recreate exact UI/UX dari PolyWatch.app\n2. Copy semua layout, navigation, dan component structure\n3. Replicate semua pages dan functionality\n4. Adapt semua content untuk Kalsehi (ganti Polymarket -> Kalsehi)\n5. Keep exact same design, colors, typography, spacing\n6. Maintain identical user flow dan behavior",
-        "status": "in_progress",
+        "content": "Integrasi Polymarket API untuk data real",
+        "details": "1. Setup Polymarket API integration 2. Real-time trader tracking data 3. Market data dan price feeds 4. Performance analytics yang real",
+        "status": "pending",
         "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Setup backend baru untuk project clone",
-        "details": "1. Get fresh Supabase credentials untuk project baru\n2. Setup database dengan same structure seperti PolyWatch\n3. Create edge functions untuk Kalsehi API integration\n4. Setup real-time features persis seperti PolyWatch",
+        "content": "Implementasi fitur real-time identik PolyWatch",
+        "details": "1. Live trading feed updates 2. Real-time price changes 3. Telegram alerts system 4. Watchlist management 5. Trader recommendations engine",
         "status": "pending",
-        "priority": "medium"
+        "priority": "high"
       },
       "5": {
         "id": "5",
-        "content": "Testing dan deployment website clone",
-        "details": "1. Test semua functionality yang cloned\n2. Verify design sama persis dengan PolyWatch.app\n3. Test Kalsehi data integration\n4. Deploy ke production",
+        "content": "Deploy dan testing",
+        "details": "1. Deploy ke production 2. Test semua functionality 3. Verify real-time data working 4. Final UI/UX verification",
         "status": "pending",
-        "priority": "low"
+        "priority": "medium"
       }
     }
   }
