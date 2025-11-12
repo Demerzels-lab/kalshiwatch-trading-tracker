@@ -10,8 +10,10 @@ interface Trader {
   name: string;
   pseudonym: string;
   total_pnl: number;
+  monthly_pnl?: number;
   total_trades: number;
   profile_image: string;
+  performance_score?: number;
 }
 
 export default function LandingPage() {
@@ -178,13 +180,29 @@ export default function LandingPage() {
 
 function TraderCard({ trader }: { trader: Trader }) {
   const formatPnL = (pnl: number) => {
-    if (pnl >= 1000000) return `+$${(pnl / 1000000).toFixed(1)}M`;
-    if (pnl >= 1000) return `+$${(pnl / 1000).toFixed(1)}K`;
-    return `+$${pnl.toFixed(0)}`;
+    if (pnl >= 1000000) return `$${(pnl / 1000000).toFixed(2)}M`;
+    if (pnl >= 1000) return `$${(pnl / 1000).toFixed(0)}K`;
+    return `$${pnl.toFixed(0)}`;
   };
 
+  const getPerformanceBadge = (score?: number) => {
+    if (!score) return null;
+    if (score >= 95) return { text: 'Hottest', color: 'bg-red-500/10 text-red-500 border-red-500/20' };
+    if (score >= 85) return { text: 'Consistent', color: 'bg-blue-500/10 text-blue-500 border-blue-500/20' };
+    if (score >= 75) return { text: 'Stable', color: 'bg-green-500/10 text-green-500 border-green-500/20' };
+    return { text: 'Active', color: 'bg-gray-500/10 text-gray-500 border-gray-500/20' };
+  };
+
+  const badge = getPerformanceBadge(trader.performance_score);
+
   return (
-    <div className="bg-card rounded-lg p-6 border border-muted/20 hover:border-primary/50 transition-colors">
+    <div className="bg-card rounded-lg p-6 border border-muted/20 hover:border-primary/50 transition-colors relative">
+      {badge && (
+        <div className={`absolute top-3 right-3 px-2 py-1 rounded-full text-xs font-semibold border ${badge.color}`}>
+          {badge.text}
+        </div>
+      )}
+      
       <Link to={`/profile/${trader.wallet_address}`} className="block mb-4">
         <div className="flex items-center gap-3 mb-3">
           {trader.profile_image && (
@@ -200,22 +218,36 @@ function TraderCard({ trader }: { trader: Trader }) {
         </div>
       </Link>
       
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <TrendingUp className="w-4 h-4 text-primary" />
-          <span className="text-foreground font-medium">
-            {formatPnL(trader.total_pnl)}
-          </span>
+      <div className="space-y-2 mb-4">
+        <div className="flex items-center justify-between">
+          <span className="text-sm text-muted-foreground">Total PnL</span>
+          <div className="flex items-center gap-2">
+            <TrendingUp className="w-4 h-4 text-primary" />
+            <span className="text-foreground font-bold">
+              {formatPnL(trader.total_pnl)}
+            </span>
+          </div>
         </div>
+        
+        {trader.monthly_pnl !== undefined && trader.monthly_pnl > 0 && (
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-muted-foreground">Monthly PnL</span>
+            <span className="text-primary font-semibold">
+              +{formatPnL(trader.monthly_pnl)}
+            </span>
+          </div>
+        )}
+      </div>
+      
+      <div className="flex items-center justify-between pt-3 border-t border-muted/20">
+        <p className="text-sm text-muted-foreground">
+          {trader.total_trades} trades
+        </p>
         
         <button className="px-4 py-2 bg-primary hover:bg-primary-hover text-primary-foreground rounded-md text-sm font-semibold transition-colors">
           Watch
         </button>
       </div>
-      
-      <p className="text-sm text-muted-foreground mt-2">
-        {trader.total_trades} trades
-      </p>
     </div>
   );
 }

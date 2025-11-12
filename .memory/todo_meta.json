@@ -5,7 +5,7 @@
         "id": "1",
         "content": "Ekstrak data trader dari polywatch.app",
         "details": "Get recommended traders data: fengdubiying ($2.97M), YatSen ($2.24M), scottilicious ($1.30M) dan data lainnya dengan API atau scraping",
-        "status": "pending",
+        "status": "in_progress",
         "priority": "high"
       },
       "2": {
