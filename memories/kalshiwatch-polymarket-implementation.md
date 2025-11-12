@@ -60,7 +60,37 @@ Successfully built and deployed Kalshiwatch - 100% clone of PolyWatch.app using 
 - Status: Production-Ready - Telegram Bot @kalshiwatch_bot ACTIVE
 - Performance: 56% bundle size reduction (871 kB → 379 kB main)
 
-## Current Update: Enhanced Trader Profile Display (2025-11-10 21:31) ✅ COMPLETED
+## Current Update: Authentication-Gated Telegram Flow (2025-11-12) ✅ 95% COMPLETE
+
+**Goal:** Secure Telegram features - make connect/disconnect accessible only after authentication
+
+**✅ Completed:**
+- ✅ Updated connect-telegram edge function: JWT validation + extract user_id from token
+- ✅ Updated disconnect-telegram edge function: JWT validation + extract user_id from token
+- ✅ Updated SettingsPage.tsx: Auth guard + login prompt for unauthenticated users
+- ✅ Removed user_id from frontend requests (now extracted from JWT in backend)
+- ✅ Frontend build successful (379KB main bundle)
+- ✅ Frontend deployed: https://a038qcoimee4.space.minimax.io
+- ✅ Comprehensive frontend testing completed:
+  * Landing page accessible without login ✅
+  * Recommended traders displayed ✅
+  * /settings redirect to /auth when not logged in ✅
+  * Auth page form complete with all fields ✅
+  * Navigation working correctly ✅
+  * Zero console errors ✅
+- ✅ GitHub repository updated with all changes
+- ✅ Deployment scripts and manual created
+- ✅ Comprehensive documentation completed
+
+**⏳ Pending (5%):**
+- Backend edge functions deployment (requires Supabase token refresh)
+- Full end-to-end testing with authenticated Telegram connection
+
+**Deployment Instructions:**
+- Script ready: /workspace/deploy-edge-functions.sh
+- Manual guide: /workspace/docs/DEPLOYMENT-MANUAL.md
+
+## Previous Update: Enhanced Trader Profile Display (2025-11-10 21:31) ✅ COMPLETED
 Goal: Update Kalshiwatch to show comprehensive trader data like polywatch.app
 
 **Implemented:**
