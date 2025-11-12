@@ -47,7 +47,15 @@ Deno.serve(async (req) => {
         const traders = await traderResponse.json();
         
         if (traders.length === 0) {
-            throw new Error('Trader not found');
+            return new Response(JSON.stringify({
+                error: {
+                    code: 'TRADER_NOT_FOUND',
+                    message: 'Trader not found'
+                }
+            }), {
+                status: 404,
+                headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+            });
         }
 
         const trader = traders[0];
@@ -161,20 +169,20 @@ Deno.serve(async (req) => {
             }
         }
 
-        // Enhance profile with calculated data
+        // Enhance profile with calculated data (use existing values if no trades)
         const enhancedProfile = {
             ...trader,
-            monthly_pnl: monthlyPnL,
-            current_holdings: currentHoldings,
-            biggest_win: biggestWin,
-            join_date: joinDate
+            monthly_pnl: trader.monthly_pnl || monthlyPnL || 0,
+            current_holdings: trader.current_holdings || currentHoldings || 0,
+            biggest_win: trader.biggest_win || biggestWin || 0,
+            join_date: trader.join_date || joinDate || new Date().toISOString()
         };
 
         return new Response(JSON.stringify({
             data: {
                 profile: enhancedProfile,
-                topTrades: topTrades,
-                pnlHistory: pnlHistory
+                topTrades: topTrades || [],
+                pnlHistory: pnlHistory || []
             }
         }), {
             headers: { ...corsHeaders, 'Content-Type': 'application/json' }

@@ -1,0 +1,124 @@
+📄 Extracted from page: PolyWatch
+URL: https://polywatch.app/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb
+
+Extracted content:
+```json
+{
+  "title": "PolyWatch",
+  "url": "https://polywatch.app/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb",
+  "summary": "This page provides a performance overview and trading statistics for the PolyWatch profile 'GreekGamblerPM'. It highlights key financial metrics such as current holdings, biggest win, total trades, and profit/loss over various periods. Additionally, it lists the top 10 most profitable trades made by the user, including the event, outcome, and profit for each.",
+  "key_points": [
+    {
+      "metric": "Profile Name",
+      "value": "GreekGamblerPM"
+    },
+    {
+      "metric": "Profile Description",
+      "value": "GreekGamblerPM on X. Posting my picks with reasoning"
+    },
+    {
+      "metric": "Current Holdings",
+      "value": "$5.0k"
+    },
+    {
+      "metric": "Biggest Win",
+      "value": "$1.5k"
+    },
+    {
+      "metric": "Total Trades",
+      "value": "300"
+    },
+    {
+      "metric": "Joined",
+      "value": "Feb 2025"
+    },
+    {
+      "metric": "User PnL (all history, 1d fidelity)",
+      "value": "+$11.8k total"
+    },
+    {
+      "metric": "User PnL (past month)",
+      "value": "-$585.71"
+    },
+    {
+      "metric": "Top Profitable Trades",
+      "trades": [
+        {
+          "event": "Will Trump say \"MAGA\" or \"Make America Great Again\" during the Fox News interview on July 12?",
+          "outcome": "Yes",
+          "profit": "+$1.5k",
+          "link": "https://polymarket.com/event/what-will-trump-during-his-fox-news-interview-on-july-12/will-trump-say-maga-or-make-america-great-again-during-the-fox-news-interview-on-july-12"
+        },
+        {
+          "event": "Will Monad perform an airdrop by October 31?",
+          "outcome": "No",
+          "profit": "+$920.41",
+          "link": "https://polymarket.com/event/monad-airdrop-by/will-monad-perform-an-airdrop-by-october-31"
+        },
+        {
+          "event": "Will Trump say \"Apple\" during tariff event on April 2?",
+          "outcome": "Yes",
+          "profit": "+$735.54",
+          "link": "https://polymarket.com/event/what-will-trump-say-during-tariff-event-on-april-2/will-trump-say-apple-during-tariff-event-on-april-2"
+        },
+        {
+          "event": "Will Trump say \"Fake News\" during the Fox News interview on July 12?",
+          "outcome": "Yes",
+          "profit": "+$519.32",
+          "link": "https://polymarket.com/event/what-will-trump-during-his-fox-news-interview-on-july-12/will-trump-say-fake-news-during-the-fox-news-interview-on-july-12"
+        },
+        {
+          "event": "Will Trump say \"Big Beautiful Bill\" during his 4th of July remarks?",
+          "outcome": "No",
+          "profit": "+$511.03",
+          "link": "https://polymarket.com/event/what-will-trump-say-during-his-independence-day-remarks-on-july-4/will-trump-say-big-beautiful-bill-during-his-4th-of-july-remarks"
+        },
+        {
+          "event": "Will Trump say \"Freedom\" 2+ times during his 250th Army Anniversary remarks on June 14?",
+          "outcome": "No",
+          "profit": "+$490.07",
+          "link": "https://polymarket.com/event/what-will-trump-say-during-his-250th-army-anniversary-remarks-on-june-14/will-trump-say-freedom-2-times-during-his-250th-army-anniversary-remarks-on-june-14"
+        },
+        {
+          "event": "Will Elon say \"DOGE\" 7+ times during Baier interview on Thursday?",
+          "outcome": "Yes",
+          "profit": "+$387.61",
+          "link": "https://polymarket.com/event/what-will-elon-say-during-baier-interview/will-elon-say-doge-7-times-during-baier-interview-on-thursday"
+        },
+        {
+          "event": "Will Germany finish in the 2025 Eurovision top 10?",
+          "outcome": "No",
+          "profit": "+$363.30",
+          "link": "https://polymarket.com/event/eurovision-2025-top-10/will-germany-finish-in-the-2025-eurovision-top-10"
+        },
+        {
+          "event": "Will Ross Ulbricht say \"Silk Road\" during Bitcoin 2025 appearance on May 29?",
+          "outcome": "Yes",
+          "profit": "+$347.67",
+          "link": "https://polymarket.com/event/what-will-ross-ulbricht-say-at-the-bitcoin-2025-conference/will-ross-ulbricht-say-silk-road-during-bitcoin-2025-appearance-on-may-29"
+        },
+        {
+          "event": "Will Luxembourg qualify for the Eurovision 2025 grand final?",
+          "outcome": "Yes",
+          "profit": "+$340.59",
+          "link": "https://polymarket.com/event/eurovision-2025-semi-final-2-qualifiers/will-luxembourg-qualify-for-the-eurovision-2025-grand-final"
+        }
+      ]
+    }
+  ],
+  "relevant_links": [
+    "https://polymarket.com/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb",
+    "https://polymarket.com/event/what-will-trump-during-his-fox-news-interview-on-july-12/will-trump-say-maga-or-make-america-great-again-during-the-fox-news-interview-on-july-12",
+    "https://polymarket.com/event/monad-airdrop-by/will-monad-perform-an-airdrop-by-october-31",
+    "https://polymarket.com/event/what-will-trump-say-during-tariff-event-on-april-2/will-trump-say-apple-during-tariff-event-on-april-2",
+    "https://polymarket.com/event/what-will-trump-during-his-fox-news-interview-on-july-12/will-trump-say-fake-news-during-the-fox-news-interview-on-july-12",
+    "https://polymarket.com/event/what-will-trump-say-during-his-independence-day-remarks-on-july-4/will-trump-say-big-beautiful-bill-during-his-4th-of-july-remarks",
+    "https://polymarket.com/event/what-will-trump-say-during-his-250th-army-anniversary-remarks-on-june-14/will-trump-say-freedom-2-times-during-his-250th-army-anniversary-remarks-on-june-14",
+    "https://polymarket.com/event/what-will-elon-say-during-baier-interview/will-elon-say-doge-7-times-during-baier-interview-on-thursday",
+    "https://polymarket.com/event/eurovision-2025-top-10/will-germany-finish-in-the-2025-eurovision-top-10",
+    "https://polymarket.com/event/what-will-ross-ulbricht-say-at-the-bitcoin-2025-conference/will-ross-ulbricht-say-silk-road-during-bitcoin-2025-appearance-on-may-29",
+    "https://polymarket.com/event/eurovision-2025-semi-final-2-qualifiers/will-luxembourg-qualify-for-the-eurovision-2025-grand-final"
+  ],
+  "file_name": "polywatch_greekgamblerpm_stats.json"
+}
+```

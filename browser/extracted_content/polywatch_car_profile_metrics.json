@@ -1,0 +1,113 @@
+📄 Extracted from page: PolyWatch
+URL: https://polywatch.app/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b
+
+Extracted content:
+```json
+{
+  "title": "PolyWatch",
+  "url": "https://polywatch.app/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
+  "summary": "This page displays the performance metrics and trading statistics for a user profile named 'Car' on PolyWatch, an application powered by PredictFolio.com. It shows current holdings, biggest single win, total number of trades, join date, overall profit and loss (PnL), and a list of top profitable trades with their respective outcomes and gains.",
+  "key_points": [
+    {
+      "metric": "Current Holdings",
+      "value": "$413.7k"
+    },
+    {
+      "metric": "Biggest Win",
+      "value": "$32.0k"
+    },
+    {
+      "metric": "Total Trades",
+      "value": 4340
+    },
+    {
+      "metric": "Joined",
+      "value": "Feb 2024"
+    },
+    {
+      "metric": "User PnL (all history, 1d fidelity)",
+      "total": "+$700.9k",
+      "past_month": "+$58.8k"
+    },
+    {
+      "top_profitable_trades": [
+        {
+          "event": "Will Zelenskyy wear a suit before July?",
+          "outcome": "Yes",
+          "profit": "+$32.0k",
+          "link": "https://polymarket.com/event/will-zelenskyy-wear-a-suit-before-july/will-zelenskyy-wear-a-suit-before-july"
+        },
+        {
+          "event": "Israel x Hamas ceasefire by October 31?",
+          "outcome": "Yes",
+          "profit": "+$28.0k",
+          "link": "https://polymarket.com/event/israel-x-hamas-ceasefire-by-october-31/israel-x-hamas-ceasefire-by-october-31"
+        },
+        {
+          "event": "US military action against Iran by Saturday?",
+          "outcome": "Yes",
+          "profit": "+$19.8k",
+          "link": "https://polymarket.com/event/us-military-action-against-iran-by-saturday/us-military-action-against-iran-by-saturday"
+        },
+        {
+          "event": "Fordow nuclear facility destroyed before July?",
+          "outcome": "Yes",
+          "profit": "+$17.3k",
+          "link": "https://polymarket.com/event/fordow-nuclear-facility-destroyed-before-july/fordow-nuclear-facility-destroyed-before-july"
+        },
+        {
+          "event": "Will Trump launch a coin before the election?",
+          "outcome": "Yes",
+          "profit": "+$16.7k",
+          "link": "https://polymarket.com/event/will-trump-launch-a-coin-before-the-election/will-trump-launch-a-coin-before-the-election"
+        },
+        {
+          "event": "Trump ends Ukraine war in first 90 days?",
+          "outcome": "No",
+          "profit": "+$14.7k",
+          "link": "https://polymarket.com/event/trump-wins-ends-ukraine-war-in-90-days/trump-wins-ends-ukraine-war-in-90-days"
+        },
+        {
+          "event": "Ukraine agrees to Trump mineral deal before April?",
+          "outcome": "Yes",
+          "profit": "+$13.3k",
+          "link": "https://polymarket.com/event/ukraine-agrees-to-give-trump-rare-earth-metals-before-april/ukraine-agrees-to-give-trump-rare-earth-metals-before-april"
+        },
+        {
+          "event": "US military action against Iran before July?",
+          "outcome": "Yes",
+          "profit": "+$12.6k",
+          "link": "https://polymarket.com/event/us-military-action-against-iran-before-july/us-military-action-against-iran-before-july"
+        },
+        {
+          "event": "Will Israel invade Lebanon in September?",
+          "outcome": "No",
+          "profit": "+$12.0k",
+          "link": "https://polymarket.com/event/will-israel-invade-lebanon-in-september/will-israel-invade-lebanon-in-september"
+        },
+        {
+          "event": "Will MrBeast raise $40M for clean water by August 31?",
+          "outcome": "No",
+          "profit": "+$11.9k",
+          "link": "https://polymarket.com/event/will-mrbeast-raise-40m-for-clean-water-by-august-31/will-mrbeast-raise-40m-for-clean-water-by-august-31"
+        }
+      ]
+    }
+  ],
+  "relevant_links": [
+    "https://polymarket.com/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
+    "https://polymarket.com/event/gamb-quarterly-earnings-nongaap-eps-11-13-2025-0pt16/gamb-quarterly-earnings-nongaap-eps-11-13-2025-0pt16",
+    "https://polymarket.com/event/nba-gsw-sas-2025-11-12/nba-gsw-sas-2025-11-12",
+    "https://polymarket.com/event/nba-mem-bos-2025-11-12/nba-mem-bos-2025-11-12",
+    "https://polymarket.com/event/xrp-updown-15m-1762939800/xrp-updown-15m-1762939800",
+    "https://polymarket.com/event/maduro-out-in-2025/maduro-out-by-march-31-2026",
+    "https://polymarket.com/event/nothing-ever-happens-russia-edition/nothing-ever-happens-russia-edition",
+    "https://polymarket.com/event/who-will-trump-pardon-in-2025/will-trump-pardon-hunter-biden-in-2025-336",
+    "https://polymarket.com/event/maduro-out-in-2025/maduro-out-in-2025-411",
+    "https://polymarket.com/event/btc-updown-15m-1762939800/btc-updown-15m-1762939800",
+    "https://polymarket.com/event/sol-updown-15m-1762939800/sol-updown-15m-1762939800",
+    "https://polymarket.com/event/eth-updown-15m-1762939800/eth-updown-15m-1762939800"
+  ],
+  "file_name": "polywatch_car_profile_metrics.json"
+}
+```

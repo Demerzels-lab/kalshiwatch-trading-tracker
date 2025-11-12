@@ -3,38 +3,38 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Ekstrak data trader dari polywatch.app",
-        "details": "Get recommended traders data: fengdubiying ($2.97M), YatSen ($2.24M), scottilicious ($1.30M) dan data lainnya dengan API atau scraping",
+        "content": "Fix duplicate traders di recommended traders section",
+        "details": "Remove duplicate entries, clean database data, ensure unique trader profiles dengan proper wallet addresses",
         "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Update database schema untuk recommended traders",
-        "details": "Modify traders table untuk include data dari polywatch: total_profit, monthly_profit, performance_score, is_recommended flag",
+        "content": "Fix trader not found error saat click nama trader",
+        "details": "Implement proper trader detail page, routing, dan data fetching. Ensure navigation from recommended traders ke profile trader works",
         "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Implementasi API endpoint untuk recommended traders",
-        "details": "Create Supabase edge function untuk fetch dan serve recommended traders data dengan pagination dan filtering",
+        "content": "Tambah jumlah recommended traders",
+        "details": "Add more traders dari polywatch.app untuk expand recommendations section, target minimal 15-20 top traders",
         "status": "completed",
-        "priority": "high"
+        "priority": "medium"
       },
       "4": {
         "id": "4",
-        "content": "Update frontend untuk display recommended traders",
-        "details": "Modify UI components untuk show recommended traders section dengan cards, performance metrics, dan action buttons",
+        "content": "Implement watchlist functionality dengan authentication",
+        "details": "When logged-in user clicks 'Watch' button, save trader ke watchlist database with user association. Show watchlist di user dashboard",
         "status": "completed",
-        "priority": "medium"
+        "priority": "high"
       },
       "5": {
         "id": "5",
-        "content": "Setup sync mechanism untuk update trader data",
-        "details": "Create automated sync from polywatch data to keep Kalshiwatch trader data fresh dan up-to-date",
+        "content": "Update database schema untuk watchlist",
+        "details": "Create/modify watchlist tables, user_trader_relations, untuk support authenticated watch functionality",
         "status": "completed",
-        "priority": "medium"
+        "priority": "high"
       }
     }
   }

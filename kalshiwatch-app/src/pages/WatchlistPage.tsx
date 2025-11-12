@@ -3,18 +3,22 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { Trash2, ExternalLink } from 'lucide-react';
 import { supabase } from '../lib/supabase';
+import { toast } from 'sonner';
 
 interface WatchlistItem {
   id: string;
-  trader_wallet: string;
-  created_at: string;
+  wallet_address: string;
+  added_at: string;
   trader: {
+    wallet_address: string;
     name: string;
     pseudonym: string;
     profile_image: string;
     total_pnl: number;
+    monthly_pnl: number;
     total_trades: number;
     win_rate: number;
+    performance_score: number;
   };
 }
 
@@ -33,39 +37,19 @@ export default function WatchlistPage() {
     try {
       setLoading(true);
       
-      // Get watchlist items
-      const { data: watchlistData, error: watchlistError } = await supabase
-        .from('watchlist')
-        .select('id, trader_wallet, created_at')
-        .eq('user_id', user?.id)
-        .order('created_at', { ascending: false });
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        setLoading(false);
+        return;
+      }
 
-      if (watchlistError) throw watchlistError;
+      // Use edge function to get watchlist with trader details
+      const { data, error } = await supabase.functions.invoke('get-user-watchlist');
 
-      if (watchlistData && watchlistData.length > 0) {
-        // Get trader details for each watchlist item
-        const wallets = watchlistData.map(item => item.trader_wallet);
-        const { data: tradersData, error: tradersError } = await supabase
-          .from('traders')
-          .select('wallet_address, name, pseudonym, profile_image, total_pnl, total_trades, win_rate')
-          .in('wallet_address', wallets);
+      if (error) throw error;
 
-        if (tradersError) throw tradersError;
-
-        // Merge data
-        const mergedData = watchlistData.map(watchItem => ({
-          ...watchItem,
-          trader: tradersData?.find(t => t.wallet_address === watchItem.trader_wallet) || {
-            name: 'Unknown',
-            pseudonym: 'Unknown',
-            profile_image: '',
-            total_pnl: 0,
-            total_trades: 0,
-            win_rate: 0
-          }
-        }));
-
-        setWatchlist(mergedData);
+      if (data?.data) {
+        setWatchlist(data.data);
       }
     } catch (error) {
       console.error('Error fetching watchlist:', error);
@@ -74,19 +58,20 @@ export default function WatchlistPage() {
     }
   }
 
-  async function handleRemoveFromWatchlist(watchlistId: string) {
+  async function handleRemoveFromWatchlist(walletAddress: string) {
     try {
-      const { error } = await supabase
-        .from('watchlist')
-        .delete()
-        .eq('id', watchlistId);
+      const { error } = await supabase.functions.invoke('remove-from-watchlist', {
+        body: { wallet_address: walletAddress }
+      });
 
       if (error) throw error;
 
       // Update local state
-      setWatchlist(prev => prev.filter(item => item.id !== watchlistId));
+      setWatchlist(prev => prev.filter(item => item.wallet_address !== walletAddress));
+      toast.success('Trader berhasil dihapus dari watchlist!');
     } catch (error) {
       console.error('Error removing from watchlist:', error);
+      toast.error('Gagal menghapus dari watchlist');
     }
   }
 
@@ -159,22 +144,22 @@ export default function WatchlistPage() {
                 key={item.id}
                 className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors"
               >
-                <Link to={`/profile/${item.trader_wallet}`}>
+                <Link to={`/profile/${item.wallet_address}`}>
                   <div className="flex items-start gap-4 mb-4">
                     {item.trader.profile_image ? (
                       <img 
                         src={item.trader.profile_image} 
-                        alt={item.trader.name}
+                        alt={item.trader.pseudonym || item.trader.name}
                         className="w-12 h-12 rounded-full"
                       />
                     ) : (
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
-                        {item.trader.name.charAt(0)}
+                        {(item.trader.pseudonym || item.trader.name || 'T').charAt(0).toUpperCase()}
                       </div>
                     )}
                     <div className="flex-1 min-w-0">
-                      <h3 className="font-semibold truncate">{item.trader.name}</h3>
-                      <p className="text-sm text-muted-foreground truncate">{item.trader.pseudonym}</p>
+                      <h3 className="font-semibold truncate">{item.trader.pseudonym || item.trader.name || 'Unknown'}</h3>
+                      <p className="text-sm text-muted-foreground truncate">{item.trader.wallet_address.slice(0, 10)}...</p>
                     </div>
                   </div>
 
@@ -198,14 +183,14 @@ export default function WatchlistPage() {
 
                 <div className="flex gap-2">
                   <button
-                    onClick={() => handleRemoveFromWatchlist(item.id)}
+                    onClick={() => handleRemoveFromWatchlist(item.wallet_address)}
                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-red-500/10 hover:bg-red-500/20 text-red-500 rounded-lg transition-colors"
                   >
                     <Trash2 className="w-4 h-4" />
                     Hapus
                   </button>
                   <Link
-                    to={`/profile/${item.trader_wallet}`}
+                    to={`/profile/${item.wallet_address}`}
                     className="flex items-center justify-center px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg transition-colors"
                   >
                     <ExternalLink className="w-4 h-4" />

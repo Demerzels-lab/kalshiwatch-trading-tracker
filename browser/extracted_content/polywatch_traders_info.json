@@ -1,0 +1,95 @@
+📄 Extracted from page: PolyWatch
+URL: https://polywatch.app/
+
+Extracted content:
+```json
+{
+  "title": "PolyWatch",
+  "url": "https://polywatch.app/",
+  "summary": "This page provides real-time tracking for Polymarket traders and their performance metrics. It highlights a list of 'Recommended traders' along with their total Profit and Loss (PnL) and monthly PnL, allowing users to monitor their activities and get instant Telegram alerts.",
+  "key_points": [
+    "PolyWatch tracks Polymarket traders.",
+    "The page lists several recommended traders with their performance metrics.",
+    "Metrics include total PnL and PnL for the past month.",
+    "Each trader has a unique username and associated wallet address, linked via a profile URL.",
+    "Users can monitor traders and receive Telegram alerts."
+  ],
+  "relevant_links": [
+    "https://polywatch.app/profile/0x17db3fcd93ba12d38382a0cade24b200185c5f6d",
+    "https://polywatch.app/profile/0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+    "https://polywatch.app/profile/0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+    "https://polywatch.app/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+    "https://polywatch.app/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb",
+    "https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+    "https://polywatch.app/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1",
+    "https://polywatch.app/profile/0x75e765216a57942d738d880ffcda854d9f869080",
+    "https://polywatch.app/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b"
+  ],
+  "traders": [
+    {
+      "username": "fengdubiying",
+      "wallet_address": "0x17db3fcd93ba12d38382a0cade24b200185c5f6d",
+      "total_pnl": "+$2970.2k",
+      "monthly_pnl": "+$2952.0k",
+      "profile_url": "https://polywatch.app/profile/0x17db3fcd93ba12d38382a0cade24b200185c5f6d"
+    },
+    {
+      "username": "AgricultureSecretary",
+      "wallet_address": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+      "total_pnl": "+$334.4k",
+      "monthly_pnl": "+$72.3k",
+      "profile_url": "https://polywatch.app/profile/0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834"
+    },
+    {
+      "username": "scottilicious",
+      "wallet_address": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+      "total_pnl": "+$1301.4k",
+      "monthly_pnl": "+$111.8k",
+      "profile_url": "https://polywatch.app/profile/0x000d257d2dc7616feaef4ae0f14600fdf50a758e"
+    },
+    {
+      "username": "YatSen",
+      "wallet_address": "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+      "total_pnl": "+$2242.6k",
+      "monthly_pnl": "+$194.6k",
+      "profile_url": "https://polywatch.app/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe"
+    },
+    {
+      "username": "GreekGamblerPM",
+      "wallet_address": "0x6770bf688b8121331b1c5cfd7723ebd4152545fb",
+      "total_pnl": "+$11.8k",
+      "monthly_pnl": "-$585.7",
+      "profile_url": "https://polywatch.app/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb"
+    },
+    {
+      "username": "Dropper",
+      "wallet_address": "0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+      "total_pnl": "+$605.0k",
+      "monthly_pnl": "+$48.7k",
+      "profile_url": "https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292"
+    },
+    {
+      "username": "Euan",
+      "wallet_address": "0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1",
+      "total_pnl": "+$234.5k",
+      "monthly_pnl": "+$43.6k",
+      "profile_url": "https://polywatch.app/profile/0xdd225a03cd7ed89e3931906c67c5ab31cf89ef1"
+    },
+    {
+      "username": "25usdc",
+      "wallet_address": "0x75e765216a57942d738d880ffcda854d9f869080",
+      "total_pnl": "+$77.5k",
+      "monthly_pnl": "+$42.9k",
+      "profile_url": "https://polywatch.app/profile/0x75e765216a57942d738d880ffcda854d9f869080"
+    },
+    {
+      "username": "Car",
+      "wallet_address": "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
+      "total_pnl": "+$700.9k",
+      "monthly_pnl": "+$58.8k",
+      "profile_url": "https://polywatch.app/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b"
+    }
+  ],
+  "file_name": "polywatch_traders_info.json"
+}
+```

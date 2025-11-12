@@ -5,6 +5,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'rec
 import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
+import { toast } from 'sonner';
 
 export default function ProfilePage() {
   const { walletAddress } = useParams<{ walletAddress: string }>();
@@ -47,15 +48,15 @@ export default function ProfilePage() {
     if (!user || !walletAddress) return;
 
     try {
-      const { data, error } = await supabase
-        .from('watchlist')
-        .select('id')
-        .eq('user_id', user.id)
-        .eq('trader_wallet', walletAddress)
-        .maybeSingle();
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) return;
+
+      const { data, error } = await supabase.functions.invoke('check-is-watched', {
+        body: { wallet_address: walletAddress }
+      });
 
       if (error) throw error;
-      setIsWatching(!!data);
+      setIsWatching(data?.is_watched || false);
     } catch (error) {
       console.error('Error checking watch status:', error);
     }
@@ -69,31 +70,34 @@ export default function ProfilePage() {
 
     setWatchLoading(true);
     try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        navigate('/auth');
+        return;
+      }
+
       if (isWatching) {
         // Remove from watchlist
-        const { error } = await supabase
-          .from('watchlist')
-          .delete()
-          .eq('user_id', user.id)
-          .eq('trader_wallet', walletAddress);
+        const { error } = await supabase.functions.invoke('remove-from-watchlist', {
+          body: { wallet_address: walletAddress }
+        });
 
         if (error) throw error;
         setIsWatching(false);
+        toast.success('Trader berhasil dihapus dari watchlist!');
       } else {
         // Add to watchlist
-        const { error } = await supabase
-          .from('watchlist')
-          .insert({
-            user_id: user.id,
-            trader_wallet: walletAddress
-          });
+        const { error } = await supabase.functions.invoke('add-to-watchlist', {
+          body: { wallet_address: walletAddress }
+        });
 
         if (error) throw error;
         setIsWatching(true);
+        toast.success('Trader berhasil ditambahkan ke watchlist!');
       }
     } catch (error: any) {
       console.error('Error toggling watch:', error);
-      alert('Gagal mengubah watch status: ' + error.message);
+      toast.error('Gagal mengubah watch status: ' + error.message);
     } finally {
       setWatchLoading(false);
     }

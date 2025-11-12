@@ -1,0 +1,139 @@
+{
+  "extraction_date": "2025-11-12T17:42:07",
+  "platform": "PolyWatch",
+  "url": "https://polywatch.app",
+  "methodology": "Data scraped from homepage and individual trader profiles",
+  "data_limitation": "Only 9 traders visible on homepage, requesting 16-20 provides data for ranks 6-10",
+  "traders": [
+    {
+      "estimated_rank": 6,
+      "pseudonym": "GreekGamblerPM",
+      "wallet_address": "0x6770bf688b8121331b1c5cfd7723ebd4152545fb",
+      "total_pnl": "$11.8k",
+      "monthly_pnl": "-$585.71",
+      "win_rate": "Not available - requires manual calculation",
+      "total_trades": 300,
+      "current_holdings": "$5.0k",
+      "biggest_win": "$1.5k",
+      "joined": "Feb 2025",
+      "top_trade": {
+        "event": "Will Trump say 'MAGA' or 'Make America Great Again' during the Fox News interview on July 12?",
+        "outcome": "Yes",
+        "profit": "+$1.5k"
+      },
+      "profile_url": "https://polywatch.app/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb"
+    },
+    {
+      "estimated_rank": 7,
+      "pseudonym": "Dropper",
+      "wallet_address": "0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+      "total_pnl": "$605.0k",
+      "monthly_pnl": "+$48.7k",
+      "win_rate": "Not available - requires manual calculation",
+      "total_trades": 1332,
+      "current_holdings": "$224,100",
+      "biggest_win": "$2,200,000",
+      "joined": "July 2024",
+      "top_trade": {
+        "event": "Will Kim Moon-soo be the People's Power Party candidate for president?",
+        "outcome": "Yes",
+        "profit": "+$2,200,000"
+      },
+      "profile_url": "https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292"
+    },
+    {
+      "estimated_rank": 8,
+      "pseudonym": "Euan",
+      "wallet_address": "0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1",
+      "total_pnl": "$234.5k",
+      "monthly_pnl": "+$43.6k",
+      "win_rate": "Not available - requires manual calculation",
+      "total_trades": 1486,
+      "current_holdings": "$140.0k",
+      "biggest_win": "$47.9k",
+      "joined": "Nov 2024",
+      "top_trade": {
+        "event": "Lord Miles completes 40-day water fast in the desert?",
+        "outcome": "No",
+        "profit": "+$47.9k"
+      },
+      "profile_url": "https://polywatch.app/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1"
+    },
+    {
+      "estimated_rank": 9,
+      "pseudonym": "25usdc",
+      "wallet_address": "0x75e765216a57942d738d880ffcda854d9f869080",
+      "total_pnl": "$77.5k",
+      "monthly_pnl": "+$42.9k",
+      "win_rate": "Not available - requires manual calculation",
+      "total_trades": 2146,
+      "current_holdings": "$60.3k",
+      "biggest_win": "$5.5k",
+      "joined": "Nov 2024",
+      "top_trade": {
+        "event": "Will ChatGPT be #1 Free App in the US Apple App Store on November 7?",
+        "outcome": "No",
+        "profit": "+$5.5k"
+      },
+      "profile_url": "https://polywatch.app/profile/0x75e765216a57942d738d880ffcda854d9f869080"
+    },
+    {
+      "estimated_rank": 10,
+      "pseudonym": "Car",
+      "wallet_address": "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
+      "total_pnl": "$700.9k",
+      "monthly_pnl": "+$58.8k",
+      "win_rate": "Not available - requires manual calculation",
+      "total_trades": 4340,
+      "current_holdings": "$413.7k",
+      "biggest_win": "$32.0k",
+      "joined": "Feb 2024",
+      "top_trade": {
+        "event": "Will Zelenskyy wear a suit before July?",
+        "outcome": "Yes",
+        "profit": "+$32.0k"
+      },
+      "profile_url": "https://polywatch.app/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b"
+    }
+  ],
+  "summary": {
+    "total_traders_scraped": 5,
+    "data_completeness": {
+      "pseudonym": "Complete",
+      "wallet_address": "Complete",
+      "total_pnl": "Complete",
+      "monthly_pnl": "Complete",
+      "win_rate": "Missing - requires calculation from individual trades",
+      "total_trades": "Complete",
+      "current_holdings": "Complete",
+      "biggest_win": "Complete"
+    },
+    "top_performers_by_pnl": [
+      {"pseudonym": "Car", "total_pnl": "$700.9k"},
+      {"pseudonym": "Dropper", "total_pnl": "$605.0k"},
+      {"pseudonym": "Euan", "total_pnl": "$234.5k"}
+    ],
+    "biggest_wins": [
+      {"pseudonym": "Dropper", "biggest_win": "$2,200,000"},
+      {"pseudonym": "Euan", "biggest_win": "$47.9k"},
+      {"pseudonym": "Car", "biggest_win": "$32.0k"}
+    ],
+    "most_active_traders": [
+      {"pseudonym": "Car", "total_trades": 4340},
+      {"pseudonym": "25usdc", "total_trades": 2146},
+      {"pseudonym": "Dropper", "total_trades": 1332}
+    ]
+  },
+  "screenshots_taken": [
+    "polywatch_homepage_traders.png",
+    "polywatch_final_leaderboard_screenshot.png"
+  ],
+  "extracted_files": [
+    "polywatch_traders_info.json",
+    "polywatch_greekgamblerpm_stats.json",
+    "polywatch_dropper_profile_stats.json",
+    "euan_polywatch_profile_metrics.json",
+    "polywatch_25usdc_profile_metrics.json",
+    "polywatch_car_profile_metrics.json"
+  ]
+}

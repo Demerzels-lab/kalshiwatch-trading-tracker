@@ -1,0 +1,45 @@
+📄 Extracted from page: PolyWatch
+URL: https://polywatch.app/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1
+
+Extracted content:
+```json
+{
+  "title": "PolyWatch",
+  "url": "https://polywatch.app/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1",
+  "summary": "This PolyWatch profile page for user 'Euan' provides a snapshot of their trading performance and statistics on Polymarket. It includes key metrics such as current holdings, biggest single win, total number of trades, and overall PnL (Profit and Loss) for all history and the past month. Additionally, it lists the top ten most profitable trades made by Euan, detailing the event, outcome, and the profit generated from each.",
+  "key_points": [
+    "Profile Name: Euan",
+    "Current Holdings: $140.0k",
+    "Biggest Win: $47.9k",
+    "Total Trades: 1486",
+    "Joined: Nov 2024",
+    "User PnL (all history, 1d fidelity): +$234.5k total",
+    "User PnL (past month): +$43.6k",
+    "Top Profitable Trades:",
+    "- Lord Miles completes 40-day water fast in the desert? (Outcome: No): +$47.9k",
+    "- Ukraine agrees to Trump mineral deal before April? (Outcome: Yes): +$18.3k",
+    "- OpenAI browser by October 31? (Outcome: Yes): +$15.5k",
+    "- Trump ends Ukraine war in first 90 days? (Outcome: Yes): +$12.8k",
+    "- Will MrBeast raise $40M for clean water by August 31? (Outcome: No): +$11.4k",
+    "- Rockets vs. Hawks (Outcome: Hawks): +$10.2k",
+    "- Taylor Swift shown on the Super Bowl LIX broadcast 1 time? (Outcome: Yes): +$10.1k",
+    "- Will Karol Nawrocki be the next President of Poland? (Outcome: Yes): +$7.8k",
+    "- Will Pierre Poilievre be the next Canadian Prime Minister? (Outcome: No): +$7.8k",
+    "- Will Donald Trump say \"China\" during Crypto Summit on Friday? (Outcome: No): +$7.3k"
+  ],
+  "relevant_links": [
+    "https://polymarket.com/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1",
+    "https://polymarket.com/event/lord-miles-completes-40-day-water-fast-in-the-dessert/lord-miles-completes-40-day-water-fast-in-the-dessert",
+    "https://polymarket.com/event/ukraine-agrees-to-give-trump-rare-earth-metals-before-april/ukraine-agrees-to-give-trump-rare-earth-metals-before-april",
+    "https://polymarket.com/event/openai-browser-by-october-31/openai-browser-by-october-31",
+    "https://polymarket.com/event/trump-wins-ends-ukraine-war-in-90-days/trump-wins-ends-ukraine-war-in-90-days",
+    "https://polymarket.com/event/will-mrbeast-raise-40m-for-clean-water-by-august-31/will-mrbeast-raise-40m-for-clean-water-by-august-31",
+    "https://polymarket.com/event/nba-hou-atl-2025-01-11/nba-hou-atl-2025-01-11",
+    "https://polymarket.com/event/super-bowl-lix-how-many-times-will-taylor-swift-be-shown-on-broadcast/taylor-swift-shown-on-the-super-bowl-lix-broadcast-1-time",
+    "https://polymarket.com/event/poland-presidential-election/will-karol-nawrocki-be-the-next-president-of-poland",
+    "https://polymarket.com/event/next-prime-minster-of-canada/will-pierre-poilievre-be-the-next-canadian-prime-minister",
+    "https://polymarket.com/event/what-will-trump-say-during-crypto-summit-on-friday/will-donald-trump-say-china-during-crypto-summit-on-friday"
+  ],
+  "file_name": "euan_polywatch_profile_metrics.json"
+}
+```

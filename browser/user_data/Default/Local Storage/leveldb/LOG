@@ -1,3 +1,6 @@
 2025/11/12-07:44:16.985 206 Reusing MANIFEST /workspace/browser/user_data/Default/Local Storage/leveldb/MANIFEST-000001
 2025/11/12-07:44:16.993 206 Recovering log #4
 2025/11/12-07:44:16.997 206 Reusing old log /workspace/browser/user_data/Default/Local Storage/leveldb/000004.log 
+2025/11/12-09:43:38.903 207 Level-0 table #8: started
+2025/11/12-09:43:38.913 207 Level-0 table #8: 28252 bytes OK
+2025/11/12-09:43:38.923 207 Delete type=0 #4

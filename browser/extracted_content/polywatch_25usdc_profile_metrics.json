@@ -1,0 +1,116 @@
+📄 Extracted from page: PolyWatch
+URL: https://polywatch.app/profile/0x75e765216a57942d738d880ffcda854d9f869080
+
+Extracted content:
+```json
+{
+  "title": "PolyWatch",
+  "url": "https://polywatch.app/profile/0x75e765216a57942d738d880ffcda854d9f869080",
+  "summary": "This PolyWatch profile page for user '25usdc' provides an overview of their trading performance and statistics on Polymarket. It includes current holdings, biggest win, total and monthly PnL, total trades, join date, and a list of their top profitable trades.",
+  "key_points": [
+    {
+      "metric_name": "Current Holdings",
+      "value": "$60.3k"
+    },
+    {
+      "metric_name": "Biggest Win",
+      "value": "$5.5k"
+    },
+    {
+      "metric_name": "Total Trades",
+      "value": 2146
+    },
+    {
+      "metric_name": "Joined",
+      "value": "Nov 2024"
+    },
+    {
+      "metric_name": "User PnL (all history, 1d fidelity)",
+      "value": "+$77.5k"
+    },
+    {
+      "metric_name": "User PnL (past month)",
+      "value": "+$42.9k"
+    },
+    {
+      "section": "Top Profitable Trades",
+      "trades": [
+        {
+          "description": "Will ChatGPT be #1 Free App in the US Apple App Store on November 7?",
+          "outcome": "No",
+          "profit": "+$5.5k",
+          "link": "https://polymarket.com/event/1-free-app-in-the-us-apple-app-store-on-november-7/will-chatgpt-be-1-free-app-in-the-us-apple-app-store-on-november-7"
+        },
+        {
+          "description": "Will Monad perform an airdrop by October 31?",
+          "outcome": "No",
+          "profit": "+$3.8k",
+          "link": "https://polymarket.com/event/monad-airdrop-by/will-monad-perform-an-airdrop-by-october-31"
+        },
+        {
+          "description": "Will MrBeast raise $40M for clean water by August 31?",
+          "outcome": "No",
+          "profit": "+$3.4k",
+          "link": "https://polymarket.com/event/will-mrbeast-raise-40m-for-clean-water-by-august-31/will-mrbeast-raise-40m-for-clean-water-by-august-31"
+        },
+        {
+          "description": "Will DeepSeek’s DeepSeek V3.1 Chat win the NOF1.ai competition?",
+          "outcome": "No",
+          "profit": "+$2.9k",
+          "link": "https://polymarket.com/event/nof1ai-ai-trading-competition-winner/will-deepseeks-deepseek-v3pt1-chat-be-the-most-profitable-ai-on-nof1ai-on-october-24"
+        },
+        {
+          "description": "Will Mikie Sherrill win by 12-15%?",
+          "outcome": "Yes",
+          "profit": "+$2.8k",
+          "link": "https://polymarket.com/event/new-jersey-governor-election-margin-of-victory/will-mikie-sherrill-win-by-12-15"
+        },
+        {
+          "description": "Will Trump say \"Kamala\" during \"60 Minutes\" on November 2?",
+          "outcome": "No",
+          "profit": "+$2.7k",
+          "link": "https://polymarket.com/event/what-will-trump-say-during-60-minutes-on-november-2/will-trump-say-kamala-during-60-minutes-on-november-2"
+        },
+        {
+          "description": "OpenAI browser by October 31?",
+          "outcome": "Yes",
+          "profit": "+$2.7k",
+          "link": "https://polymarket.com/event/openai-browser-by-october-31/openai-browser-by-october-31"
+        },
+        {
+          "description": "Will Gemini 3.0 be released by November 15?",
+          "outcome": "No",
+          "profit": "+$2.6k",
+          "link": "https://polymarket.com/event/gemini-3pt0-released-by/will-gemini-3pt0-be-released-by-november-15"
+        },
+        {
+          "description": "Will Israel strike Lebanon on November 4?",
+          "outcome": "No",
+          "profit": "+$2.4k",
+          "link": "https://polymarket.com/event/will-israel-strike-lebanon-on/will-israel-strike-lebanon-on-november-4"
+        },
+        {
+          "description": "Will Abigail Spanberger win by 15-18%?",
+          "outcome": "No",
+          "profit": "+$2.1k",
+          "link": "https://polymarket.com/event/virginia-governor-election-margin-of-victory/will-abigail-spanberger-win-by-15-18"
+        }
+      ]
+    }
+  ],
+  "relevant_links": [
+    "https://polymarket.com/profile/0x75e765216a57942d738d880ffcda854d9f869080",
+    "https://polymarket.com/event/1-free-app-in-the-us-apple-app-store-on-november-7/will-chatgpt-be-1-free-app-in-the-us-apple-app-store-on-november-7",
+    "https://polymarket.com/event/monad-airdrop-by/will-monad-perform-an-airdrop-by-october-31",
+    "https://polymarket.com/event/will-mrbeast-raise-40m-for-clean-water-by-august-31/will-mrbeast-raise-40m-for-clean-water-by-august-31",
+    "https://polymarket.com/event/nof1ai-ai-trading-competition-winner/will-deepseeks-deepseek-v3pt1-chat-be-the-most-profitable-ai-on-nof1ai-on-october-24",
+    "https://polymarket.com/event/new-jersey-governor-election-margin-of-victory/will-mikie-sherrill-win-by-12-15",
+    "https://polymarket.com/event/what-will-trump-say-during-60-minutes-on-november-2/will-trump-say-kamala-during-60-minutes-on-november-2",
+    "https://polymarket.com/event/openai-browser-by-october-31/openai-browser-by-october-31",
+    "https://polymarket.com/event/gemini-3pt0-released-by/will-gemini-3pt0-be-released-by-november-15",
+    "https://polymarket.com/event/will-israel-strike-lebanon-on/will-israel-strike-lebanon-on-november-4",
+    "https://polymarket.com/event/virginia-governor-election-margin-of-victory/will-abigail-spanberger-win-by-15-18"
+  ],
+  "file_name": "polywatch_25usdc_profile_metrics.json"
+}
+```

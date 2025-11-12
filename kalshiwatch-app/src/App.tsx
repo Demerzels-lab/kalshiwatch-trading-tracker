@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import { Toaster } from 'sonner';
 
 // Eager load landing page for instant access
 import LandingPage from './pages/LandingPage';
@@ -29,6 +30,12 @@ function App() {
     <Router>
       <AuthProvider>
         <div className="min-h-screen bg-background text-foreground">
+          <Toaster 
+            position="top-right"
+            theme="dark"
+            richColors
+            closeButton
+          />
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<LandingPage />} />
