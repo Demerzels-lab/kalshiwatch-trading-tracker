@@ -3,30 +3,37 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Analisis struktur kode existing",
-        "details": "✅ SELESAI: Repo analysis menunjukkan:\n- Supabase functions: connect-telegram, disconnect-telegram, send-telegram-notification, telegram-webhook\n- React structure: components/, contexts/, hooks/, pages/\n- Current flow: Telegram accessible without login",
-        "status": "completed",
+        "content": "Ekstrak data trader dari polywatch.app",
+        "details": "Get recommended traders data: fengdubiying ($2.97M), YatSen ($2.24M), scottilicious ($1.30M) dan data lainnya dengan API atau scraping",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Implementasi Authentication-based User Flow",
-        "details": "Modify user flow so that:\n1. Landing page accessible\n2. Telegram features (connect/disconnect) only accessible after login\n3. Add authentication check in telegram-related components\n4. Add login prompt when user tries to access telegram features\n5. Update telegram integration edge functions to require auth",
-        "status": "completed",
+        "content": "Update database schema untuk recommended traders",
+        "details": "Modify traders table untuk include data dari polywatch: total_profit, monthly_profit, performance_score, is_recommended flag",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Update UI/UX untuk Authentication Flow",
-        "details": "UI/UX modifications needed:\n1. Update telegram connection buttons to show login requirement\n2. Add authentication modal/popup for unlogged users\n3. Update navigation to show login state\n4. Add protected route guards\n5. Update telegram section UI to show auth status",
-        "status": "completed",
+        "content": "Implementasi API endpoint untuk recommended traders",
+        "details": "Create Supabase edge function untuk fetch dan serve recommended traders data dengan pagination dan filtering",
+        "status": "pending",
         "priority": "high"
       },
       "4": {
         "id": "4",
-        "content": "Test dan Deploy changes",
-        "details": "✅ COMPLETED: Frontend deployed dan tested di https://a038qcoimee4.space.minimax.io\n✅ COMPLETED: GitHub repo updated dengan latest changes\n✅ COMPLETED: JWT validation implemented di backend\n⏳ PENDING: Supabase token refresh needed untuk deploy edge functions\n\nRemaining: 5% - Deploy edge functions after token refresh",
-        "status": "in_progress",
+        "content": "Update frontend untuk display recommended traders",
+        "details": "Modify UI components untuk show recommended traders section dengan cards, performance metrics, dan action buttons",
+        "status": "pending",
+        "priority": "medium"
+      },
+      "5": {
+        "id": "5",
+        "content": "Setup sync mechanism untuk update trader data",
+        "details": "Create automated sync from polywatch data to keep Kalshiwatch trader data fresh dan up-to-date",
+        "status": "pending",
         "priority": "medium"
       }
     }

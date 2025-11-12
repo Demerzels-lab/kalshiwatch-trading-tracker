@@ -1,0 +1,85 @@
+📄 Extracted from page: PolyWatch
+URL: https://polywatch.app/
+
+Extracted content:
+```json
+{
+    "title": "PolyWatch",
+    "url": "https://polywatch.app/",
+    "summary": "The page displays a list of 'Recommended traders' on PolyWatch, showcasing their key performance metrics. This includes their total profit and profit earned in the past month. Each trader also has a link to their individual profile on the platform.",
+    "key_points": [
+        "List of recommended traders with their performance statistics.",
+        "Performance metrics include total profit and profit for the past month.",
+        "Individual profile links are available for each listed trader.",
+        "The page also indicates the ability to 'Watch' traders, likely for real-time alerts."
+    ],
+    "traders": [
+        {
+            "name": "fengdubiying",
+            "total_profit": "+$2969.7k",
+            "past_month_profit": "+$2951.5k",
+            "profile_url": "https://polywatch.app/profile/0x17db3fcd93ba12d38382a0cade24b200185c5f6d"
+        },
+        {
+            "name": "AgricultureSecretary",
+            "total_profit": "+$334.5k",
+            "past_month_profit": "+$72.3k",
+            "profile_url": "https://polywatch.app/profile/0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834"
+        },
+        {
+            "name": "scottilicious",
+            "total_profit": "+$1301.1k",
+            "past_month_profit": "+$111.5k",
+            "profile_url": "https://polywatch.app/profile/0x000d257d2dc7616feaef4ae0f14600fdf50a758e"
+        },
+        {
+            "name": "YatSen",
+            "total_profit": "+$2242.6k",
+            "past_month_profit": "+$194.6k",
+            "profile_url": "https://polywatch.app/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe"
+        },
+        {
+            "name": "GreekGamblerPM",
+            "total_profit": "+$11.8k",
+            "past_month_profit": "-$587.7",
+            "profile_url": "https://polywatch.app/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb"
+        },
+        {
+            "name": "Dropper",
+            "total_profit": "+$605.2k",
+            "past_month_profit": "+$48.8k",
+            "profile_url": "https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292"
+        },
+        {
+            "name": "Euan",
+            "total_profit": "+$235.1k",
+            "past_month_profit": "+$44.2k",
+            "profile_url": "https://polywatch.app/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1"
+        },
+        {
+            "name": "25usdc",
+            "total_profit": "+$77.9k",
+            "past_month_profit": "+$43.3k",
+            "profile_url": "https://polywatch.app/profile/0x75e765216a57942d738d880ffcda854d9f869080"
+        },
+        {
+            "name": "Car",
+            "total_profit": "+$700.6k",
+            "past_month_profit": "+$58.5k",
+            "profile_url": "https://polywatch.app/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b"
+        }
+    ],
+    "relevant_links": [
+        "https://polywatch.app/profile/0x17db3fcd93ba12d38382a0cade24b200185c5f6d",
+        "https://polywatch.app/profile/0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+        "https://polywatch.app/profile/0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+        "https://polywatch.app/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+        "https://polywatch.app/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb",
+        "https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+        "https://polywatch.app/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1",
+        "https://polywatch.app/profile/0x75e765216a57942d738d880ffcda854d9f869080",
+        "https://polywatch.app/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b"
+    ],
+    "file_name": "polywatch_traders.json"
+}
+```
