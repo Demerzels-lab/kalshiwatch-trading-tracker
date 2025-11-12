@@ -16,18 +16,53 @@ Deno.serve(async (req) => {
     try {
         const supabaseUrl = Deno.env.get('SUPABASE_URL');
         const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
+        const supabaseAnonKey = Deno.env.get('SUPABASE_ANON_KEY');
 
-        if (!supabaseUrl || !serviceRoleKey) {
+        if (!supabaseUrl || !serviceRoleKey || !supabaseAnonKey) {
             throw new Error('Supabase configuration missing');
         }
 
+        // Extract and validate JWT token from Authorization header
+        const authHeader = req.headers.get('Authorization');
+        if (!authHeader || !authHeader.startsWith('Bearer ')) {
+            return new Response(JSON.stringify({
+                error: {
+                    code: 'UNAUTHORIZED',
+                    message: 'Authentication required. Please login to disconnect Telegram.'
+                }
+            }), {
+                status: 401,
+                headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+            });
+        }
+
+        const token = authHeader.replace('Bearer ', '');
+
+        // Verify JWT token and get user
+        const verifyResponse = await fetch(`${supabaseUrl}/auth/v1/user`, {
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'apikey': supabaseAnonKey
+            }
+        });
+
+        if (!verifyResponse.ok) {
+            return new Response(JSON.stringify({
+                error: {
+                    code: 'INVALID_TOKEN',
+                    message: 'Invalid or expired authentication token. Please login again.'
+                }
+            }), {
+                status: 401,
+                headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+            });
+        }
+
+        const { id: user_id } = await verifyResponse.json();
+
         // Get request data
         const requestData = await req.json();
-        const { user_id, chat_id } = requestData;
-
-        if (!user_id) {
-            throw new Error('user_id is required');
-        }
+        const { chat_id } = requestData;
 
         // Build query - if chat_id provided, disconnect specific chat, otherwise all
         let query = `user_id=eq.${user_id}`;

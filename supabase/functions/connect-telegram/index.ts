@@ -16,9 +16,10 @@ Deno.serve(async (req) => {
     try {
         const supabaseUrl = Deno.env.get('SUPABASE_URL');
         const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
+        const supabaseAnonKey = Deno.env.get('SUPABASE_ANON_KEY');
         const telegramBotToken = Deno.env.get('TELEGRAM_BOT_TOKEN');
 
-        if (!supabaseUrl || !serviceRoleKey) {
+        if (!supabaseUrl || !serviceRoleKey || !supabaseAnonKey) {
             throw new Error('Supabase configuration missing');
         }
 
@@ -26,10 +27,47 @@ Deno.serve(async (req) => {
             throw new Error('Telegram Bot Token not configured');
         }
 
+        // Extract and validate JWT token from Authorization header
+        const authHeader = req.headers.get('Authorization');
+        if (!authHeader || !authHeader.startsWith('Bearer ')) {
+            return new Response(JSON.stringify({
+                error: {
+                    code: 'UNAUTHORIZED',
+                    message: 'Authentication required. Please login to connect Telegram.'
+                }
+            }), {
+                status: 401,
+                headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+            });
+        }
+
+        const token = authHeader.replace('Bearer ', '');
+
+        // Verify JWT token and get user
+        const verifyResponse = await fetch(`${supabaseUrl}/auth/v1/user`, {
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'apikey': supabaseAnonKey
+            }
+        });
+
+        if (!verifyResponse.ok) {
+            return new Response(JSON.stringify({
+                error: {
+                    code: 'INVALID_TOKEN',
+                    message: 'Invalid or expired authentication token. Please login again.'
+                }
+            }), {
+                status: 401,
+                headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+            });
+        }
+
+        const { id: user_id } = await verifyResponse.json();
+
         // Get request data
         const requestData = await req.json();
         const { 
-            user_id, 
             telegram_user_id, 
             chat_id, 
             username, 
@@ -39,8 +77,8 @@ Deno.serve(async (req) => {
             group_title 
         } = requestData;
 
-        if (!user_id || !chat_id) {
-            throw new Error('user_id and chat_id are required');
+        if (!chat_id) {
+            throw new Error('chat_id is required');
         }
 
         if (chat_type === 'private' && !telegram_user_id) {

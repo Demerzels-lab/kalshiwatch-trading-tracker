@@ -19,7 +19,7 @@ interface TelegramConnection {
 }
 
 export default function SettingsPage() {
-  const { user, signOut } = useAuth();
+  const { user, signOut, loading: authLoading } = useAuth();
   const [telegramConnections, setTelegramConnections] = useState<TelegramConnection[]>([]);
   const [loading, setLoading] = useState(true);
   const [showInstructions, setShowInstructions] = useState(false);
@@ -30,6 +30,13 @@ export default function SettingsPage() {
   const [copySuccess, setCopySuccess] = useState(false);
 
   const BOT_USERNAME = '@kalshiwatch_bot';
+
+  // Redirect to auth if not logged in
+  useEffect(() => {
+    if (!authLoading && !user) {
+      window.location.href = '/auth';
+    }
+  }, [user, authLoading]);
 
   useEffect(() => {
     if (user) {
@@ -67,7 +74,7 @@ export default function SettingsPage() {
 
     try {
       const { error } = await supabase.functions.invoke('disconnect-telegram', {
-        body: { user_id: user?.id, chat_id: chatId }
+        body: { chat_id: chatId }
       });
 
       if (error) throw error;
@@ -92,7 +99,6 @@ export default function SettingsPage() {
       
       const { error } = await supabase.functions.invoke('connect-telegram', {
         body: {
-          user_id: user?.id,
           chat_id: groupChatId.trim(),
           chat_type: 'group',
           group_title: groupTitle.trim() || 'Telegram Group',
@@ -126,6 +132,38 @@ export default function SettingsPage() {
 
   const personalConnections = telegramConnections.filter(c => c.chat_type === 'private');
   const groupConnections = telegramConnections.filter(c => c.chat_type !== 'private');
+
+  // Show loading while checking authentication
+  if (authLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+          <p className="mt-4 text-muted-foreground">Memuat...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // If not authenticated, show login prompt
+  if (!user) {
+    return (
+      <div className="min-h-screen flex items-center justify-center px-6">
+        <div className="max-w-md text-center">
+          <h1 className="text-3xl font-bold mb-4">Login Diperlukan</h1>
+          <p className="text-muted-foreground mb-8">
+            Anda harus login untuk mengakses pengaturan dan menghubungkan akun Telegram.
+          </p>
+          <Link 
+            to="/auth" 
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-hover text-primary-foreground rounded-lg font-semibold transition-colors"
+          >
+            Login Sekarang
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen">
