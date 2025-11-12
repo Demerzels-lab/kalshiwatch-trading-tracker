@@ -12,6 +12,7 @@ const AuthPage = lazy(() => import('./pages/AuthPage'));
 const WatchlistPage = lazy(() => import('./pages/WatchlistPage'));
 const AlertsPage = lazy(() => import('./pages/AlertsPage'));
 const SettingsPage = lazy(() => import('./pages/SettingsPage'));
+const HowItWorksPage = lazy(() => import('./pages/HowItWorksPage'));
 
 // Loading component
 function PageLoader() {
@@ -19,7 +20,7 @@ function PageLoader() {
     <div className="min-h-screen flex items-center justify-center">
       <div className="text-center">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
-        <p className="mt-4 text-muted-foreground">Memuat halaman...</p>
+        <p className="mt-4 text-muted-foreground">Loading page...</p>
       </div>
     </div>
   );
@@ -44,6 +45,7 @@ function App() {
               <Route path="/watchlist" element={<WatchlistPage />} />
               <Route path="/alerts" element={<AlertsPage />} />
               <Route path="/settings" element={<SettingsPage />} />
+              <Route path="/how-it-works" element={<HowItWorksPage />} />
             </Routes>
           </Suspense>
         </div>

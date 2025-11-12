@@ -98,7 +98,7 @@ export default function AlertsPage() {
       fetchAlerts();
     } catch (error: any) {
       console.error('Error adding alert:', error);
-      alert('Gagal menambahkan alert: ' + error.message);
+      alert('Failed to add alert: ' + error.message);
     } finally {
       setFormLoading(false);
     }
@@ -180,7 +180,7 @@ export default function AlertsPage() {
           <div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Alert Saya</h1>
             <p className="text-muted-foreground">
-              Kelola notifikasi untuk trader yang Anda pantau
+              Manage notifications for traders you monitor
             </p>
           </div>
           <button
@@ -249,7 +249,7 @@ export default function AlertsPage() {
                   type="text"
                   value={telegramChatId}
                   onChange={(e) => setTelegramChatId(e.target.value)}
-                  placeholder="Kosongkan jika tidak menggunakan Telegram"
+                  placeholder="Leave empty if not using Telegram"
                   className="w-full px-4 py-2 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
@@ -260,7 +260,7 @@ export default function AlertsPage() {
                   disabled={formLoading}
                   className="flex-1 bg-primary hover:bg-primary-hover text-primary-foreground py-2 rounded-lg font-semibold transition-colors disabled:opacity-50"
                 >
-                  {formLoading ? 'Menyimpan...' : 'Simpan Alert'}
+                  {formLoading ? 'Saving...' : 'Save Alert'}
                 </button>
                 <button
                   type="button"
@@ -277,13 +277,13 @@ export default function AlertsPage() {
         {loading ? (
           <div className="text-center py-12">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
-            <p className="mt-4 text-muted-foreground">Memuat alerts...</p>
+            <p className="mt-4 text-muted-foreground">Loading alerts...</p>
           </div>
         ) : alerts.length === 0 ? (
           <div className="text-center py-12 bg-card border border-border rounded-lg">
             <Bell className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
             <p className="text-muted-foreground mb-4">
-              Belum ada alert yang dibuat
+              No alerts created yet
             </p>
             <button
               onClick={() => setShowAddForm(true)}

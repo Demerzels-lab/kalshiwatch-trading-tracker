@@ -68,10 +68,10 @@ export default function WatchlistPage() {
 
       // Update local state
       setWatchlist(prev => prev.filter(item => item.wallet_address !== walletAddress));
-      toast.success('Trader berhasil dihapus dari watchlist!');
+      toast.success('Trader successfully removed from watchlist!');
     } catch (error) {
       console.error('Error removing from watchlist:', error);
-      toast.error('Gagal menghapus dari watchlist');
+      toast.error('Failed to remove from watchlist');
     }
   }
 
@@ -123,18 +123,18 @@ export default function WatchlistPage() {
         {loading ? (
           <div className="text-center py-12">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
-            <p className="mt-4 text-muted-foreground">Memuat watchlist...</p>
+            <p className="mt-4 text-muted-foreground">Loading watchlist...</p>
           </div>
         ) : watchlist.length === 0 ? (
           <div className="text-center py-12 bg-card border border-border rounded-lg">
             <p className="text-muted-foreground mb-4">
-              Watchlist Anda masih kosong
+              Your watchlist is empty
             </p>
             <Link 
               to="/" 
               className="inline-block bg-primary hover:bg-primary-hover text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-colors"
             >
-              Jelajahi Trader
+              Explore Traders
             </Link>
           </div>
         ) : (
@@ -187,7 +187,7 @@ export default function WatchlistPage() {
                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-red-500/10 hover:bg-red-500/20 text-red-500 rounded-lg transition-colors"
                   >
                     <Trash2 className="w-4 h-4" />
-                    Hapus
+                    Remove
                   </button>
                   <Link
                     to={`/profile/${item.wallet_address}`}

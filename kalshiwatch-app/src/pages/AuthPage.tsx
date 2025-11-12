@@ -30,7 +30,7 @@ export default function AuthPage() {
         });
         if (error) throw error;
         
-        setSuccessMessage('Email reset password telah dikirim! Silakan cek inbox Anda.');
+        setSuccessMessage('Password reset email sent! Please check your inbox.');
         setEmail('');
         setShowResetPassword(false);
       } else if (isLogin) {
@@ -39,7 +39,7 @@ export default function AuthPage() {
         
         // Check if email is not confirmed
         if (result.data?.user && !result.data.user.email_confirmed_at) {
-          setError('Email belum diverifikasi. Silakan cek inbox Anda untuk link verifikasi.');
+          setError('Email not verified. Please check your inbox for verification link.');
           setLoading(false);
           return;
         }
@@ -48,20 +48,20 @@ export default function AuthPage() {
       } else {
         // Signup flow
         await signUp(email, password);
-        setSuccessMessage('Akun berhasil dibuat! Silakan cek email Anda untuk verifikasi.');
+        setSuccessMessage('Account created successfully! Please check your email for verification.');
         setEmail('');
         setPassword('');
       }
     } catch (err: any) {
       // Improve error messages
-      let errorMessage = err.message || 'Terjadi kesalahan';
+      let errorMessage = err.message || 'An error occurred';
       
       if (errorMessage.includes('Invalid login credentials')) {
-        errorMessage = 'Email atau password salah. Pastikan akun sudah diverifikasi.';
+        errorMessage = 'Incorrect email or password. Make sure account is verified.';
       } else if (errorMessage.includes('Email not confirmed')) {
         errorMessage = 'Email belum diverifikasi. Silakan cek inbox Anda.';
       } else if (errorMessage.includes('User already registered')) {
-        errorMessage = 'Email sudah terdaftar. Gunakan form Login atau reset password.';
+        errorMessage = 'Email already registered. Use Login form or reset password.';
       }
       
       setError(errorMessage);
@@ -75,7 +75,7 @@ export default function AuthPage() {
       <header className="p-6 md:p-8">
         <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
           <ArrowLeft className="w-5 h-5" />
-          <span>Kembali ke Beranda</span>
+          <span>Back to Home</span>
         </Link>
       </header>
 

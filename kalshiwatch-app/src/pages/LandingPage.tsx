@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, TrendingUp, HelpCircle } from 'lucide-react';
+import { ArrowRight, TrendingUp, HelpCircle, BookOpen } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
@@ -89,16 +89,29 @@ export default function LandingPage() {
                 >
                   Settings
                 </Link>
+                <Link 
+                  to="/how-it-works" 
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  How It Works
+                </Link>
               </>
             ) : (
               <>
+                <Link 
+                  to="/how-it-works" 
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <BookOpen className="w-5 h-5" />
+                  <span className="hidden md:inline">How It Works</span>
+                </Link>
                 <button
                   onClick={() => setShowOnboarding(true)}
                   className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-                  title="Tampilkan tutorial"
+                  title="Show tutorial"
                 >
                   <HelpCircle className="w-5 h-5" />
-                  <span className="hidden md:inline">Bantuan</span>
+                  <span className="hidden md:inline">Help</span>
                 </button>
                 <Link 
                   to="/auth" 

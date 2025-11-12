@@ -7,33 +7,33 @@ interface OnboardingTourProps {
 
 const steps = [
   {
-    title: 'Selamat Datang di Kalshiwatch!',
-    description: 'Platform untuk tracking trader Kalshi dan menerima alert real-time. Mari kita lihat fitur-fitur utama.',
+    title: 'Welcome to Kalshiwatch!',
+    description: 'Platform for tracking Kalshi traders and receiving real-time alerts. Let\'s explore the main features.',
     image: null,
   },
   {
-    title: 'Pantau Trader Favorit',
-    description: 'Klik pada kartu trader untuk melihat profile lengkap mereka, termasuk PnL history, statistik trading, dan top profitable trades.',
+    title: 'Monitor Your Favorite Traders',
+    description: 'Click on trader cards to view their complete profile, including PnL history, trading statistics, and top profitable trades.',
     highlight: 'trader-cards',
   },
   {
-    title: 'Watch Trader',
-    description: 'Klik tombol "Watch" di profile trader untuk menambahkan mereka ke watchlist Anda. Anda bisa mengakses watchlist dari menu di header.',
+    title: 'Watch Traders',
+    description: 'Click the "Watch" button on a trader\'s profile to add them to your watchlist. You can access your watchlist from the menu in the header.',
     highlight: 'watch-button',
   },
   {
-    title: 'Buat Custom Alerts',
-    description: 'Di halaman Alerts, Anda bisa membuat notifikasi custom berdasarkan trade baru, profit threshold, atau volume threshold untuk setiap trader.',
+    title: 'Create Custom Alerts',
+    description: 'On the Alerts page, you can create custom notifications based on new trades, profit thresholds, or volume thresholds for each trader.',
     highlight: 'alerts-menu',
   },
   {
-    title: 'Hubungkan Telegram',
-    description: 'Di Settings, hubungkan akun Telegram Anda untuk menerima alert real-time langsung di Telegram. Tidak akan melewatkan trade penting lagi!',
+    title: 'Connect Telegram',
+    description: 'In Settings, connect your Telegram account to receive real-time alerts directly on Telegram. Never miss an important trade again!',
     highlight: 'settings-menu',
   },
   {
-    title: 'Siap Mulai!',
-    description: 'Anda sudah siap untuk memulai tracking trader Kalshi. Jelajahi platform dan temukan trader terbaik untuk diikuti!',
+    title: 'Ready to Start!',
+    description: 'You\'re all set to start tracking Kalshi traders. Explore the platform and find the best traders to follow!',
     image: null,
   },
 ];
@@ -97,7 +97,7 @@ export default function OnboardingTour({ onComplete }: OnboardingTourProps) {
               onClick={handleSkip}
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              Lewati
+              Skip
             </button>
 
             <div className="flex gap-3">
@@ -107,14 +107,14 @@ export default function OnboardingTour({ onComplete }: OnboardingTourProps) {
                   className="flex items-center gap-2 px-6 py-3 bg-muted hover:bg-muted/80 rounded-lg transition-colors"
                 >
                   <ChevronLeft className="w-4 h-4" />
-                  Kembali
+                  Back
                 </button>
               )}
               <button
                 onClick={handleNext}
                 className="flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-hover text-primary-foreground rounded-lg font-semibold transition-colors"
               >
-                {currentStep === steps.length - 1 ? 'Mulai' : 'Lanjut'}
+                {currentStep === steps.length - 1 ? 'Get Started' : 'Continue'}
                 {currentStep < steps.length - 1 && <ChevronRight className="w-4 h-4" />}
               </button>
             </div>

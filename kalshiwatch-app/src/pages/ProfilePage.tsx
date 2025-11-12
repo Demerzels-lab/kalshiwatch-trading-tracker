@@ -84,7 +84,7 @@ export default function ProfilePage() {
 
         if (error) throw error;
         setIsWatching(false);
-        toast.success('Trader berhasil dihapus dari watchlist!');
+        toast.success('Trader successfully removed from watchlist!');
       } else {
         // Add to watchlist
         const { error } = await supabase.functions.invoke('add-to-watchlist', {
@@ -93,11 +93,11 @@ export default function ProfilePage() {
 
         if (error) throw error;
         setIsWatching(true);
-        toast.success('Trader berhasil ditambahkan ke watchlist!');
+        toast.success('Trader successfully added to watchlist!');
       }
     } catch (error: any) {
       console.error('Error toggling watch:', error);
-      toast.error('Gagal mengubah watch status: ' + error.message);
+      toast.error('Failed to change watch status: ' + error.message);
     } finally {
       setWatchLoading(false);
     }
@@ -279,10 +279,10 @@ export default function ProfilePage() {
                 <TrendingUp className="w-8 h-8 text-muted-foreground" />
               </div>
               <p className="text-lg font-medium text-foreground">
-                Belum ada riwayat trading yang tercatat
+                No trading history recorded yet
               </p>
               <p className="text-muted-foreground max-w-md mx-auto">
-                Trader ini belum memiliki data riwayat trading. Riwayat trading akan ditampilkan setelah trader melakukan transaksi pertama mereka.
+                This trader has no trading history data yet. Trading history will be displayed after the trader makes their first transaction.
               </p>
             </div>
           </div>
@@ -300,7 +300,7 @@ export default function ProfilePage() {
                   {formatPnL(profileData.pnlHistory[0].value)}
                 </div>
                 <p className="text-muted-foreground">
-                  Trader ini baru memulai trading. Data history lengkap akan tersedia seiring waktu.
+                  This trader just started trading. Complete history data will be available over time.
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Total PnL saat ini: {formatPnL(trader.total_pnl)} dari {trader.total_trades} trade(s)
