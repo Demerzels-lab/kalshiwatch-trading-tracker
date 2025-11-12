@@ -1,0 +1,87 @@
+📄 Extracted from page: PolyWatch
+URL: https://polywatch.app/
+
+Extracted content:
+```json
+{
+  "title": "PolyWatch",
+  "url": "https://polywatch.app/",
+  "summary": "PolyWatch is a platform designed to track Polymarket traders and provide real-time Telegram alerts. The page highlights a section of recommended traders, displaying their performance metrics such as total PnL and monthly PnL, along with links to their profiles.",
+  "key_points": [
+    "PolyWatch tracks Polymarket traders.",
+    "It offers real-time Telegram alerts.",
+    "The platform features a list of recommended traders.",
+    "For each recommended trader, it shows their username, total Profit and Loss (PnL), and monthly PnL.",
+    "Profile URLs are provided for each recommended trader to view more details."
+  ],
+  "recommended_traders": [
+    {
+      "username": "fengdubiying",
+      "total_pnl": "+$2969.7k",
+      "monthly_pnl": "+$2951.5k",
+      "profile_url": "https://polywatch.app/profile/0x17db3fcd93ba12d38382a0cade24b200185c5f6d"
+    },
+    {
+      "username": "AgricultureSecretary",
+      "total_pnl": "+$334.5k",
+      "monthly_pnl": "+$72.3k",
+      "profile_url": "https://polywatch.app/profile/0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834"
+    },
+    {
+      "username": "scottilicious",
+      "total_pnl": "+$1301.1k",
+      "monthly_pnl": "+$111.5k",
+      "profile_url": "https://polywatch.app/profile/0x000d257d2dc7616feaef4ae0f14600fdf50a758e"
+    },
+    {
+      "username": "YatSen",
+      "total_pnl": "+$2242.6k",
+      "monthly_pnl": "+$194.6k",
+      "profile_url": "https://polywatch.app/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe"
+    },
+    {
+      "username": "GreekGamblerPM",
+      "total_pnl": "+$11.8k",
+      "monthly_pnl": "-$587.7",
+      "profile_url": "https://polywatch.app/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb"
+    },
+    {
+      "username": "Dropper",
+      "total_pnl": "+$605.2k",
+      "monthly_pnl": "+$48.8k",
+      "profile_url": "https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292"
+    },
+    {
+      "username": "Euan",
+      "total_pnl": "+$235.1k",
+      "monthly_pnl": "+$44.2k",
+      "profile_url": "https://polywatch.app/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1"
+    },
+    {
+      "username": "25usdc",
+      "total_pnl": "+$77.9k",
+      "monthly_pnl": "+$43.3k",
+      "profile_url": "https://polywatch.app/profile/0x75e765216a57942d738d880ffcda854d9f869080"
+    },
+    {
+      "username": "Car",
+      "total_pnl": "+$700.6k",
+      "monthly_pnl": "+$58.5k",
+      "profile_url": "https://polywatch.app/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b"
+    }
+  ],
+  "relevant_links": [
+    "https://polywatch.app/",
+    "https://polywatch.app/profile/0x17db3fcd93ba12d38382a0cade24b200185c5f6d",
+    "https://polywatch.app/profile/0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+    "https://polywatch.app/profile/0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+    "https://polywatch.app/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+    "https://polywatch.app/profile/0x6770bf688b8121331b1c5cfd7723ebd4152545fb",
+    "https://polywatch.app/profile/0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+    "https://polywatch.app/profile/0xdd225a03cd7ed89e3931906c67c75ab31cf89ef1",
+    "https://polywatch.app/profile/0x75e765216a57942d738d880ffcda854d9f869080",
+    "https://polywatch.app/profile/0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b"
+  ],
+  "file_name": "polywatch_recommended_traders.json"
+}
+```

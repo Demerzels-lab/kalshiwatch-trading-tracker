@@ -1,0 +1,32 @@
+📄 Extracted from page: Kalshiwatch PolyWatch Integration
+URL: https://tc8xr9t8r4na.space.minimax.io/
+
+Extracted content:
+```json
+{
+  "title": "Kalshiwatch PolyWatch Integration",
+  "url": "https://tc8xr9t8r4na.space.minimax.io/",
+  "summary": "Kalshiwatch is a service that tracks Kalshi traders and provides instant Telegram bot alerts. The page features a 'Recommended traders' section, highlighting top-performing traders with detailed metrics such as Total PnL, Monthly PnL, and the number of trades. The section categorizes traders as 'Hottest', 'Active', or 'Consistent'.",
+  "key_points": [
+    "Trader: fengdubiying (Hottest); Profile: /profile/fengdubiying_wallet_001; Total PnL: $2.97M; Monthly PnL: +$2.95M; Trades: 150.",
+    "Trader: fengdubiying (Hottest); Profile: /profile/0x17db3fcd93ba12d38382a0cade24b200185c5f6d; Total PnL: $2.97M; Monthly PnL: +$2.95M; Trades: 0.",
+    "Trader: YatSen (Active); Profile: /profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe; Total PnL: $2.24M; Monthly PnL: +$195K; Trades: 0.",
+    "Trader: YatSen (Hottest); Profile: /profile/yatsen_wallet_001; Total PnL: $2.24M; Monthly PnL: +$194K; Trades: 200.",
+    "Trader: scottilicious (Active); Profile: /profile/0x000d257d2dc7616feaef4ae0f14600fdf50a758e; Total PnL: $1.30M; Monthly PnL: +$112K; Trades: 0.",
+    "Trader: scottilicious (Consistent); Profile: /profile/scottilicious_wallet_001; Total PnL: $1.30M; Monthly PnL: +$111K; Trades: 180.",
+    "Trader: ill_fun (Consistent); Profile: /profile/ill_fun_wallet_001; Total PnL: $851K; Monthly PnL: +$91K; Trades: 120."
+  ],
+  "relevant_links": [
+    "https://x.com/kalshiwatch",
+    "https://t.me/kalshiwatch_bot",
+    "/profile/fengdubiying_wallet_001",
+    "/profile/0x17db3fcd93ba12d38382a0cade24b200185c5f6d",
+    "/profile/0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+    "/profile/yatsen_wallet_001",
+    "/profile/0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+    "/profile/scottilicious_wallet_001",
+    "/profile/ill_fun_wallet_001"
+  ],
+  "file_name": "kalshiwatch_trader_data.json"
+}
+```

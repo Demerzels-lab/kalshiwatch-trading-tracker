@@ -5,35 +5,35 @@
         "id": "1",
         "content": "Ekstrak data trader dari polywatch.app",
         "details": "Get recommended traders data: fengdubiying ($2.97M), YatSen ($2.24M), scottilicious ($1.30M) dan data lainnya dengan API atau scraping",
-        "status": "in_progress",
+        "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
         "content": "Update database schema untuk recommended traders",
         "details": "Modify traders table untuk include data dari polywatch: total_profit, monthly_profit, performance_score, is_recommended flag",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
         "content": "Implementasi API endpoint untuk recommended traders",
         "details": "Create Supabase edge function untuk fetch dan serve recommended traders data dengan pagination dan filtering",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "4": {
         "id": "4",
         "content": "Update frontend untuk display recommended traders",
         "details": "Modify UI components untuk show recommended traders section dengan cards, performance metrics, dan action buttons",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       },
       "5": {
         "id": "5",
         "content": "Setup sync mechanism untuk update trader data",
         "details": "Create automated sync from polywatch data to keep Kalshiwatch trader data fresh dan up-to-date",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       }
     }
