@@ -3,23 +3,30 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Analisis website polywatch.app untuk memahami struktur data trader",
-        "details": "1. Telusuri website polywatch.app\n2. Klik beberapa profile recommended traders\n3. Catat semua informasi yang ditampilkan (data, statistik, trade history, dll)\n4. Identifikasi sumber data yang digunakan\n5. Dokumentasi struktur lengkap untuk replikasi",
+        "content": "Analisis struktur kode existing",
+        "details": "✅ SELESAI: Repo analysis menunjukkan:\n- Supabase functions: connect-telegram, disconnect-telegram, send-telegram-notification, telegram-webhook\n- React structure: components/, contexts/, hooks/, pages/\n- Current flow: Telegram accessible without login",
         "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Update website Kalshiwatch untuk menampilkan data trader yang lengkap",
-        "details": "1. Modifikasi ProfilePage.tsx untuk menampilkan semua data yang sama dengan polywatch.app\n2. Update Edge Functions untuk mengambil data yang lebih lengkap jika diperlukan\n3. Ensure semua informasi trader ditampilkan secara akurat\n4. Test di multiple trader profiles",
-        "status": "completed",
+        "content": "Implementasi Authentication-based User Flow",
+        "details": "Modify user flow so that:\n1. Landing page accessible\n2. Telegram features (connect/disconnect) only accessible after login\n3. Add authentication check in telegram-related components\n4. Add login prompt when user tries to access telegram features\n5. Update telegram integration edge functions to require auth",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Verifikasi dan deployment final",
-        "details": "1. Test website Kalshiwatch dengan berbagai profile trader\n2. Ensure data yang ditampilkan sesuai dengan polywatch.app\n3. Deploy final version\n4. Dokumentasi perubahan yang dibuat",
-        "status": "completed",
+        "content": "Update UI/UX untuk Authentication Flow",
+        "details": "UI/UX modifications needed:\n1. Update telegram connection buttons to show login requirement\n2. Add authentication modal/popup for unlogged users\n3. Update navigation to show login state\n4. Add protected route guards\n5. Update telegram section UI to show auth status",
+        "status": "pending",
+        "priority": "high"
+      },
+      "4": {
+        "id": "4",
+        "content": "Test dan Deploy changes",
+        "details": "Final testing:\n1. Test authentication flow\n2. Test telegram integration gated by auth\n3. Verify UI/UX changes work properly\n4. Deploy to production\n5. Update GitHub repo with changes",
+        "status": "pending",
         "priority": "medium"
       }
     }
