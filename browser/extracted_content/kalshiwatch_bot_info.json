@@ -1,0 +1,22 @@
+📄 Extracted from page: Telegram: Launch @kalshiwatch_bot
+URL: https://t.me/kalshiwatch_bot
+
+Extracted content:
+```json
+{
+    "title": "Telegram: Launch @kalshiwatch_bot",
+    "url": "https://t.me/kalshiwatch_bot",
+    "summary": "This page serves as a launch point for the 'Kalshiwatch Bot' on Telegram. It displays the bot's name and username, providing a direct link to start interaction with the bot within the Telegram application. It also includes a link to download Telegram if the user does not have it installed.",
+    "key_points": [
+        "Bot Name: Kalshiwatch Bot",
+        "Bot Username: @kalshiwatch_bot",
+        "Purpose: To launch or access the Kalshiwatch Bot via the Telegram application.",
+        "Requirement: Telegram application must be installed to launch the bot directly."
+    ],
+    "relevant_links": [
+        "//telegram.org/dl?tme=68795c0e8144342182_4487018405462576142",
+        "tg://resolve?domain=kalshiwatch_bot"
+    ],
+    "file_name": "kalshiwatch_bot_info.json"
+}
+```
