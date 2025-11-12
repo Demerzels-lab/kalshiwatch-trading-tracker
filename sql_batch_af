@@ -1,0 +1,50 @@
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'afee30e5-6300-4741-9206-d44a7be855d2',
+    'unsteady_agency',
+    'EU Interest Rates > 4% by Year End',
+    'Win',
+    5687.33,
+    '2024-03-20 00:00:00',
+    4266.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '6a0c9e09-3704-407c-b406-fb82a0e90536',
+    'unsteady_agency',
+    'EU Interest Rates > 4% by Year End',
+    'Win',
+    2712.8,
+    '2024-08-04 00:00:00',
+    5710.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'a236292b-913b-4f13-a992-d1b3d0996008',
+    'all_boar',
+    'China GDP Growth > 5% in 2024',
+    'Win',
+    5400.07,
+    '2024-09-16 00:00:00',
+    6251.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'be163af8-f2d2-43fb-8ee3-54a409719848',
+    'all_boar',
+    'Marvel Movie > $1B Box Office 2024',
+    'Win',
+    5339.31,
+    '2024-05-18 00:00:00',
+    7238.0,
+    'High'
+);

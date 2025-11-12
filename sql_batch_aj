@@ -1,0 +1,50 @@
+    'Loss',
+    -2022.31,
+    '2024-01-06 00:00:00',
+    6632.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '10f3feb4-63fd-4f00-8868-5f52dd99c630',
+    'yao2019m',
+    'S&P 500 > 5,500 by Dec 2024',
+    'Loss',
+    -2708.09,
+    '2024-11-28 00:00:00',
+    5809.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '61589067-c278-4c44-957d-e252586e8e18',
+    'yao2019m',
+    '2024 US Presidential Election - Trump Win',
+    'Loss',
+    -2995.51,
+    '2024-03-21 00:00:00',
+    7041.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '11382f04-b026-450c-b238-5bebc6895bbf',
+    'YatSen',
+    'Lakers Make NBA Finals',
+    'Win',
+    1857.91,
+    '2024-11-06 00:00:00',
+    2703.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '557c4a24-9685-45f3-a3fc-0d9d6707a2dc',
+    'YatSen',
+    'Taylor Swift Album > 1M First Week',
+    'Win',
+    1179.84,

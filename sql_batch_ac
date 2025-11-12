@@ -1,0 +1,50 @@
+    'outlying_talking',
+    'NFL Championship Game Close (>7 pts)',
+    'Win',
+    4035.25,
+    '2024-09-30 00:00:00',
+    6089.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'c9185682-e7a5-440e-a302-3594e3006282',
+    'outlying_talking',
+    'Marvel Movie > $1B Box Office 2024',
+    'Win',
+    2645.94,
+    '2024-08-19 00:00:00',
+    3202.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '5056badb-9154-4091-8bc5-fbe9fca8f11f',
+    'outlying_talking',
+    'Marvel Movie > $1B Box Office 2024',
+    'Win',
+    2600.58,
+    '2024-02-12 00:00:00',
+    5069.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'c8321139-2142-41d0-a92e-630329d7178d',
+    'outlying_talking',
+    'NFL Championship Game Close (>7 pts)',
+    'Win',
+    1130.68,
+    '2024-05-09 00:00:00',
+    1203.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'c31ca195-67e7-4081-a211-ac21c601a425',
+    'outlying_talking',
+    '2024 Senate Control - Democrats',

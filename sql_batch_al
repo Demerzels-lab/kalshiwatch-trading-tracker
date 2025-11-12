@@ -1,0 +1,50 @@
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'ec3a915e-4888-4b82-97dd-e5ef26074001',
+    'scottilicious',
+    'Lakers Make NBA Finals',
+    'Win',
+    298.3,
+    '2024-12-10 00:00:00',
+    1018.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '7303deb4-05bf-4196-ad87-7bd9a8ce65db',
+    'scottilicious',
+    '2024 US Presidential Election - Harris Win',
+    'Loss',
+    -841.13,
+    '2024-04-28 00:00:00',
+    2362.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'ac391d60-f4e8-4290-a935-410cabe0a787',
+    'scottilicious',
+    'Oscars Best Picture Predictable',
+    'Loss',
+    -892.09,
+    '2024-04-09 00:00:00',
+    2369.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '2b97d5c6-d857-4468-a874-1138375cdec1',
+    'scottilicious',
+    'Federal Funds Rate > 5.25% in 2024',
+    'Loss',
+    -3527.18,
+    '2024-09-04 00:00:00',
+    4547.0,
+    'Low'
+);

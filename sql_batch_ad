@@ -1,0 +1,50 @@
+    'Loss',
+    -3168.16,
+    '2024-03-25 00:00:00',
+    6772.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '475f1b86-cddc-4592-8e6e-4569ce014b45',
+    'ill_fun',
+    'China GDP Growth > 5% in 2024',
+    'Win',
+    5636.59,
+    '2024-02-10 00:00:00',
+    6022.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '1b09a989-e20d-4a4d-bd7c-a199d943c3f4',
+    'ill_fun',
+    'Lakers Make NBA Finals',
+    'Win',
+    4426.95,
+    '2024-08-28 00:00:00',
+    3013.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'a7d07e36-a061-4ea0-8079-115087871324',
+    'ill_fun',
+    'S&P 500 > 5,500 by Dec 2024',
+    'Win',
+    2704.69,
+    '2024-06-14 00:00:00',
+    2371.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'b2ce1f12-5595-4254-af4d-d56d38a17c14',
+    'ill_fun',
+    'US Unemployment Rate > 4.5% by Year End',
+    'Loss',
+    -4565.12,

@@ -1,0 +1,50 @@
+) VALUES (
+    '614b47f0-fd00-4144-88c2-6dbdc16c3864',
+    'fengdubiying_polywatch',
+    '2024 US Presidential Election - Trump Win',
+    'Win',
+    7027.51,
+    '2024-01-10 00:00:00',
+    7250.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'dc238336-6c3c-453d-9179-0d2f929a69e1',
+    'fengdubiying_polywatch',
+    'Super Bowl LVIX > 120M Viewers',
+    'Win',
+    4913.36,
+    '2024-11-30 00:00:00',
+    4417.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'f24e6c82-2af5-427a-843a-97b22f130776',
+    'fengdubiying_polywatch',
+    'US Unemployment Rate > 4.5% by Year End',
+    'Win',
+    1780.31,
+    '2024-07-26 00:00:00',
+    3593.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'b8e3963d-491d-4726-8ec6-8815f98af533',
+    'fengdubiying_polywatch',
+    'Taylor Swift Album > 1M First Week',
+    'Loss',
+    -1033.2,
+    '2024-10-14 00:00:00',
+    3356.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'ecba2bba-5531-4f49-871b-8ff4bdb5f59b',

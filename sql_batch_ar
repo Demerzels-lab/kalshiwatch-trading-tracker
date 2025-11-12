@@ -1,0 +1,50 @@
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'e64cfb7a-37ef-4eea-8f45-f703cadf85df',
+    'Euan',
+    'NVIDIA Stock > $800 by End 2024',
+    'Win',
+    247.62,
+    '2024-06-02 00:00:00',
+    3843.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '51eade65-bcb5-4aa0-b73b-3b172d9b1d5f',
+    'Euan',
+    'Ukraine-Russia War Ends in 2024',
+    'Loss',
+    -574.78,
+    '2024-02-02 00:00:00',
+    1139.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '262f6007-92e2-4a42-be27-2a4a33f04a53',
+    'Euan',
+    'Federal Funds Rate > 5.25% in 2024',
+    'Loss',
+    -818.71,
+    '2024-04-02 00:00:00',
+    1964.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '19bfbca2-af92-46a1-bedb-b496e8ab273d',
+    'Euan',
+    'EU Interest Rates > 4% by Year End',
+    'Loss',
+    -3797.6,
+    '2024-05-10 00:00:00',
+    5594.0,
+    'Medium'
+);

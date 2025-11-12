@@ -1,0 +1,50 @@
+) VALUES (
+    'f91439ab-dc17-460c-95c1-cf7a6e7ced40',
+    'fengdubiying',
+    '2024 US Presidential Election - Trump Win',
+    'Win',
+    8972.78,
+    '2024-05-02 00:00:00',
+    9260.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '474dd087-574e-4940-a29c-5ff0828160e0',
+    'fengdubiying',
+    '2024 US Presidential Election - Harris Win',
+    'Win',
+    6589.86,
+    '2024-11-20 00:00:00',
+    7793.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '36dd1811-2e00-4ac9-b703-47a24c7c005d',
+    'fengdubiying',
+    '2024 Senate Control - Democrats',
+    'Loss',
+    -1090.44,
+    '2024-09-20 00:00:00',
+    8781.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '80e35729-407d-4b85-9f46-b9db6f63478f',
+    'outlying_talking',
+    '2024 US Presidential Election - Harris Win',
+    'Win',
+    11201.15,
+    '2024-06-25 00:00:00',
+    6653.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '2d067ce3-8b85-4e20-a137-fbce4de13af7',

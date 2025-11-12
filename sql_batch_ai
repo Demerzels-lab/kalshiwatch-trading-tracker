@@ -1,0 +1,50 @@
+    'yao2019m',
+    'US GDP Growth Q4 2024 > 2.5%',
+    'Win',
+    5667.88,
+    '2024-03-09 00:00:00',
+    5920.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '2649105c-6f49-4619-baa4-4cbc19a70451',
+    'yao2019m',
+    'Israel-Hamas Ceasefire by Dec 2024',
+    'Win',
+    4010.56,
+    '2024-12-02 00:00:00',
+    4552.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '65cd8379-b02d-45c2-babc-0388a7647e21',
+    'yao2019m',
+    'Taylor Swift Album > 1M First Week',
+    'Loss',
+    -920.51,
+    '2024-10-25 00:00:00',
+    1243.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'cfd3670d-eb1d-497f-b4c4-c2a5ca18dd9b',
+    'yao2019m',
+    'Federal Funds Rate > 5.25% in 2024',
+    'Loss',
+    -1792.63,
+    '2024-06-15 00:00:00',
+    8600.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'f941559a-36c5-4162-b263-c6b159046639',
+    'yao2019m',
+    'Super Bowl LVIX > 120M Viewers',

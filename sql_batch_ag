@@ -1,0 +1,50 @@
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '9d69ffe4-e248-4fee-a5c0-11574e950a8d',
+    'all_boar',
+    'US Wins >30 Olympic Gold Medals',
+    'Win',
+    690.1,
+    '2024-12-07 00:00:00',
+    1349.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'a766c714-f778-4ac6-8a1d-c6ad8d475dc3',
+    'all_boar',
+    'Super Bowl LVIX > 120M Viewers',
+    'Loss',
+    -1875.73,
+    '2024-01-29 00:00:00',
+    4393.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'c413d6b6-e21d-4ed2-aeb4-4bd3ccca76ef',
+    'all_boar',
+    '2024 US Presidential Election - Trump Win',
+    'Loss',
+    -2301.93,
+    '2024-06-01 00:00:00',
+    5709.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '0708c5d1-874f-46e8-baa4-666a4f717e85',
+    'fengdubiying_polywatch',
+    'Oscars Best Picture Predictable',
+    'Win',
+    7566.85,
+    '2024-11-12 00:00:00',
+    6436.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level

@@ -1,0 +1,50 @@
+) VALUES (
+    'e5a0ba0a-35b9-4717-a4f1-5fe683ce0aeb',
+    'Car',
+    'Tesla Stock > $300 by Year End',
+    'Loss',
+    -1279.46,
+    '2024-10-31 00:00:00',
+    1893.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '5c221e3d-049c-4d04-9af8-9ef3a02f4e38',
+    'Car',
+    'Ukraine-Russia War Ends in 2024',
+    'Loss',
+    -1354.51,
+    '2024-08-18 00:00:00',
+    4886.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '8364b5e9-12d7-4160-baf5-bd95d8bd1d94',
+    'Car',
+    'World Series Goes to 7 Games',
+    'Loss',
+    -3103.69,
+    '2024-07-28 00:00:00',
+    4158.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'e9ccef5d-3bd3-4389-8c29-4c882023486f',
+    'Dropper',
+    '2024 House Control - Republicans',
+    'Win',
+    801.17,
+    '2024-04-22 00:00:00',
+    4283.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '76119027-57e3-4905-b18c-a30d95461f2e',

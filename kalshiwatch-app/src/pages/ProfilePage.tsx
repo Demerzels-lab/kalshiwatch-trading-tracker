@@ -207,6 +207,87 @@ export default function ProfilePage() {
           <StatCard label="Monthly PnL (Past Month)" value={formatPnL(trader.monthly_pnl || 0)} highlight />
         </div>
 
+        {/* Top Profitable Trades Section */}
+        {profileData.topProfitableTrades && profileData.topProfitableTrades.length > 0 ? (
+          <div className="bg-card rounded-lg p-6 md:p-8 mb-8 border border-muted/20">
+            <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+              <TrendingUp className="w-6 h-6 text-primary" />
+              Top Profitable Trades
+            </h2>
+            <div className="space-y-3">
+              {profileData.topProfitableTrades.map((trade: any, index: number) => (
+                <div 
+                  key={trade.id}
+                  className="flex flex-col md:flex-row md:items-center justify-between p-4 bg-background rounded-lg border border-muted/20 hover:border-primary/50 transition-colors gap-3"
+                >
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xs font-semibold px-2 py-1 rounded bg-muted text-muted-foreground">
+                        #{index + 1}
+                      </span>
+                      <span className={`text-xs font-semibold px-2 py-1 rounded ${
+                        trade.outcome === 'Win' 
+                          ? 'bg-green-500/10 text-green-500' 
+                          : 'bg-red-500/10 text-red-500'
+                      }`}>
+                        {trade.outcome}
+                      </span>
+                      {trade.confidence_level && (
+                        <span className="text-xs font-medium px-2 py-1 rounded bg-primary/10 text-primary">
+                          {trade.confidence_level} Confidence
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="font-semibold mb-1 text-foreground">{trade.market}</h3>
+                    <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                      {trade.trade_date && (
+                        <span>
+                          {new Date(trade.trade_date).toLocaleDateString('en-US', { 
+                            month: 'short', 
+                            day: 'numeric', 
+                            year: 'numeric' 
+                          })}
+                        </span>
+                      )}
+                      {trade.position_size && (
+                        <>
+                          <span>•</span>
+                          <span>Position: {formatPnL(trade.position_size)}</span>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <span className={`font-bold text-xl ${
+                      trade.profit_loss >= 0 ? 'text-green-500' : 'text-red-500'
+                    }`}>
+                      {trade.profit_loss >= 0 ? '+' : ''}{formatPnL(trade.profit_loss)}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="bg-card rounded-lg p-6 md:p-8 mb-8 border border-muted/20">
+            <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+              <TrendingUp className="w-6 h-6 text-primary" />
+              Top Profitable Trades
+            </h2>
+            <div className="text-center py-12 space-y-3">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-muted/30 flex items-center justify-center">
+                <TrendingUp className="w-8 h-8 text-muted-foreground" />
+              </div>
+              <p className="text-lg font-medium text-foreground">
+                Belum ada riwayat trading yang tercatat
+              </p>
+              <p className="text-muted-foreground max-w-md mx-auto">
+                Trader ini belum memiliki data riwayat trading. Riwayat trading akan ditampilkan setelah trader melakukan transaksi pertama mereka.
+              </p>
+            </div>
+          </div>
+        )}
+
         {profileData.pnlHistory && profileData.pnlHistory.length > 0 && (
           <div className="bg-card rounded-lg p-6 md:p-8 mb-8 border border-muted/20">
             <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">

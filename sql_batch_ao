@@ -1,0 +1,50 @@
+    'Dropper',
+    'Lakers Make NBA Finals',
+    'Loss',
+    -958.2,
+    '2024-11-02 00:00:00',
+    1610.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '26281897-82df-4b7c-a512-71d95565de6a',
+    'Dropper',
+    'Tesla Stock > $300 by Year End',
+    'Loss',
+    -1201.01,
+    '2024-03-20 00:00:00',
+    4579.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '443cc440-da60-4520-bed5-60b50d7ca410',
+    'Dropper',
+    'China GDP Growth > 5% in 2024',
+    'Loss',
+    -2095.02,
+    '2024-04-25 00:00:00',
+    3173.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '5ff78273-8033-4259-89ac-21e46129762c',
+    'Dropper',
+    'NVIDIA Stock > $800 by End 2024',
+    'Loss',
+    -2258.05,
+    '2024-10-13 00:00:00',
+    2957.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'fa92c77a-c93d-4740-88aa-a09d55c71c67',
+    'Dropper',
+    'US Inflation Rate < 3% by Dec 2024',

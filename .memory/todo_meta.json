@@ -5,42 +5,42 @@
         "id": "1",
         "content": "Generate realistic trade history data untuk 15 traders",
         "details": "Membuat data trade history yang realistis untuk setiap trader dengan informasi: trade_id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level. Data harus konsisten dengan performance score masing-masing trader.",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
         "content": "Buat database schema untuk trade history",
         "details": "1. Create trade_history table dengan kolom: id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level. 2. Buat relasi dengan traders table. 3. Insert semua trade history data. 4. Buat indexing untuk performance query.",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
         "content": "Update Edge Functions untuk trade history",
         "details": "1. Update get-trader-profile edge function untuk include trade history data. 2. Buat function baru get-top-profitable-trades yang mengambil 5-10 trades paling menguntungkan per trader. 3. Optimasi query untuk performance.",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "4": {
         "id": "4",
         "content": "Update Frontend ProfilePage untuk menampilkan trade history",
         "details": "1. Modifikasi ProfilePage.tsx untuk menampilkan section 'Top Profitable Trades'. 2. Buat component untuk trade history card dengan format yang konsisten. 3. Implementasi loading states dan error handling. 4. Responsive design untuk mobile.",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "5": {
         "id": "5",
         "content": "Update nama trader (hanya display name)",
         "details": "Update pseudonym di database untuk 15 traders dengan nama yang lebih menarik/menarik, TANPA mengubah data performa (total_pnl, monthly_pnl, performance_score, wallet_address). Contoh: fengdubiying → 'CryptoKing Pro', YatSen → 'MarketOracle', dll.",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       },
       "6": {
         "id": "6",
         "content": "Testing dan Deploy",
         "details": "1. Test profile pages untuk semua 15 traders. 2. Verifikasi trade history data loading dengan benar. 3. Test nama baru trader display dengan benar. 4. Deploy ke production. 5. Update documentation.",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       }
     }

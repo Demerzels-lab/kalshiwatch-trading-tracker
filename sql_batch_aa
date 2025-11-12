@@ -1,0 +1,50 @@
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '911ad243-7b87-4754-8a64-c00d73c390fe',
+    'fengdubiying',
+    '2024 US Presidential Election - Trump Win',
+    'Win',
+    20878.04,
+    '2024-01-26 00:00:00',
+    11867.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '239e200f-7463-45ee-a31c-d2ab84ba9516',
+    'fengdubiying',
+    'Taylor Swift Album > 1M First Week',
+    'Win',
+    20321.66,
+    '2024-01-12 00:00:00',
+    11342.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '21498f78-2fd7-454d-a994-2950bce12dff',
+    'fengdubiying',
+    'EU Interest Rates > 4% by Year End',
+    'Win',
+    13513.64,
+    '2024-01-28 00:00:00',
+    7377.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'a55220cf-2948-4740-94bf-3671ffd73d96',
+    'fengdubiying',
+    'Ukraine-Russia War Ends in 2024',
+    'Win',
+    9534.23,
+    '2024-02-13 00:00:00',
+    5801.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level

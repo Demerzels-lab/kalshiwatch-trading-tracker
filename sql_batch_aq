@@ -1,0 +1,50 @@
+    '2024-10-31 00:00:00',
+    4787.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'e25a77aa-3614-4be9-8396-68ef5ead2c1c',
+    'AgricultureSecretary',
+    'Bitcoin Price > $80,000 by Dec 2024',
+    'Loss',
+    -1322.52,
+    '2024-04-23 00:00:00',
+    3986.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'aee87998-686a-4cb8-8777-dcebc393d888',
+    'AgricultureSecretary',
+    '2024 House Control - Republicans',
+    'Loss',
+    -1476.36,
+    '2024-05-19 00:00:00',
+    5315.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '3bbd8118-f8b3-4a55-a8ea-5dcb55cfb477',
+    'AgricultureSecretary',
+    'Tesla Stock > $300 by Year End',
+    'Loss',
+    -1704.55,
+    '2024-03-28 00:00:00',
+    3557.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '3c5b74d2-c03e-4e0b-be13-69f916821354',
+    'Euan',
+    'Marvel Movie > $1B Box Office 2024',
+    'Win',
+    355.26,
+    '2024-03-27 00:00:00',
+    4337.0,

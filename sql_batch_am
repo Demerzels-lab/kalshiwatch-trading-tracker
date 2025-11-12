@@ -1,0 +1,50 @@
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'c80f056f-7b96-434d-9f5d-ccdee8f9d945',
+    'Car',
+    'NVIDIA Stock > $800 by End 2024',
+    'Win',
+    1195.38,
+    '2024-12-09 00:00:00',
+    4640.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '6652d9c3-dea1-4077-bf71-43a22614762c',
+    'Car',
+    'NVIDIA Stock > $800 by End 2024',
+    'Win',
+    1159.01,
+    '2024-08-09 00:00:00',
+    3969.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '229f7690-7ec1-4ea9-8c66-14493098dab2',
+    'Car',
+    'NVIDIA Stock > $800 by End 2024',
+    'Win',
+    120.41,
+    '2024-10-21 00:00:00',
+    1238.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '6ad99107-4c45-416e-8fe3-87a6faa9feed',
+    'Car',
+    'Oscars Best Picture Predictable',
+    'Loss',
+    -940.43,
+    '2024-08-17 00:00:00',
+    1813.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level

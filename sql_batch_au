@@ -1,0 +1,44 @@
+    'GreekGamblerPM',
+    '2024 US Presidential Election - Trump Win',
+    'Win',
+    6.68,
+    '2024-08-18 00:00:00',
+    3919.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'a5585428-5ae3-4f58-8c4a-050655fe8787',
+    'GreekGamblerPM',
+    'Super Bowl LVIX > 120M Viewers',
+    'Win',
+    5.1,
+    '2024-07-08 00:00:00',
+    1832.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'a09f4242-daa4-4c57-9d17-a3da2de211ac',
+    'GreekGamblerPM',
+    'World Series Goes to 7 Games',
+    'Loss',
+    -1775.57,
+    '2024-10-08 00:00:00',
+    3013.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '97377240-7dd8-4cf4-a464-12a11713af54',
+    'GreekGamblerPM',
+    'Taylor Swift Album > 1M First Week',
+    'Loss',
+    -4101.68,
+    '2024-11-24 00:00:00',
+    5192.0,
+    'Medium'
+);

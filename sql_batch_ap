@@ -1,0 +1,50 @@
+    'Loss',
+    -3215.01,
+    '2024-02-14 00:00:00',
+    4877.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'a18b9b5d-9094-45cd-8689-4b7a109054fa',
+    'AgricultureSecretary',
+    'US Inflation Rate < 3% by Dec 2024',
+    'Win',
+    304.42,
+    '2024-03-17 00:00:00',
+    2273.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'ac43519e-d69a-472a-91f5-79c3b8bd3a7d',
+    'AgricultureSecretary',
+    'NVIDIA Stock > $800 by End 2024',
+    'Win',
+    172.94,
+    '2024-08-15 00:00:00',
+    3513.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '96424299-7469-493b-85d3-1d1f19028b68',
+    'AgricultureSecretary',
+    'S&P 500 > 5,500 by Dec 2024',
+    'Loss',
+    -525.41,
+    '2024-04-18 00:00:00',
+    990.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '2f09b47d-2912-48ab-8f9b-3bccd44a64ba',
+    'AgricultureSecretary',
+    'EU Interest Rates > 4% by Year End',
+    'Loss',
+    -1113.04,

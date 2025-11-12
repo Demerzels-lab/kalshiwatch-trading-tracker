@@ -1,0 +1,50 @@
+) VALUES (
+    'dc85da2b-bf6c-44fc-96cb-fcf63b12d074',
+    '25usdc',
+    'US GDP Growth Q4 2024 > 2.5%',
+    'Loss',
+    -990.68,
+    '2024-04-02 00:00:00',
+    1244.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '733c4ece-9278-4eaf-a03b-1c4197ade920',
+    '25usdc',
+    'World Series Goes to 7 Games',
+    'Loss',
+    -1879.76,
+    '2024-03-22 00:00:00',
+    3695.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '7de8d1d3-5eef-4db1-aabf-814433b4df4d',
+    '25usdc',
+    '2024 Senate Control - Democrats',
+    'Loss',
+    -2151.23,
+    '2024-03-29 00:00:00',
+    3803.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'ae84d51e-fc54-43da-860e-c7ccf3c650b4',
+    'GreekGamblerPM',
+    'China GDP Growth > 5% in 2024',
+    'Win',
+    15.92,
+    '2024-03-29 00:00:00',
+    3954.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'a904739d-3997-4865-872c-2af179c45e4e',

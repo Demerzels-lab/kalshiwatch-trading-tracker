@@ -1,0 +1,50 @@
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '7fca9e0d-1d98-416d-9c55-6d6ee7a3dbc9',
+    '25usdc',
+    '2024 US Presidential Election - Trump Win',
+    'Win',
+    181.23,
+    '2024-11-12 00:00:00',
+    6461.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'ae4e7e3e-d4c4-4e8a-b53d-47ade72a144f',
+    '25usdc',
+    'US Inflation Rate < 3% by Dec 2024',
+    'Win',
+    98.92,
+    '2024-11-15 00:00:00',
+    2388.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '46cf4f40-2fea-4d86-9c1a-b6828ee3ba2e',
+    '25usdc',
+    'S&P 500 > 5,500 by Dec 2024',
+    'Win',
+    25.89,
+    '2024-02-11 00:00:00',
+    973.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '50ccfb32-2cb7-42e3-893b-04ab764df575',
+    '25usdc',
+    'Super Bowl LVIX > 120M Viewers',
+    'Loss',
+    -390.95,
+    '2024-06-08 00:00:00',
+    1634.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level

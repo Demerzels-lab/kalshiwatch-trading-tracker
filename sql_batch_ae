@@ -1,0 +1,50 @@
+    '2024-05-02 00:00:00',
+    7203.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'd85f0782-fd50-4738-ba08-1c058475bdf4',
+    'ill_fun',
+    'Oscars Best Picture Predictable',
+    'Loss',
+    -4789.5,
+    '2024-07-13 00:00:00',
+    5987.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '2c77b681-56a6-4089-a998-3decf7906856',
+    'unsteady_agency',
+    'S&P 500 > 5,500 by Dec 2024',
+    'Win',
+    9248.65,
+    '2024-01-28 00:00:00',
+    6589.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '49c90584-edeb-44bd-a840-e805d5d073cb',
+    'unsteady_agency',
+    'Ukraine-Russia War Ends in 2024',
+    'Win',
+    7161.78,
+    '2024-04-01 00:00:00',
+    7075.0,
+    'High'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '028223c5-1d6a-4d1f-9ac2-2d63a8b3c20b',
+    'unsteady_agency',
+    'Bitcoin Price > $80,000 by Dec 2024',
+    'Win',
+    5942.52,
+    '2024-07-06 00:00:00',
+    5585.0,

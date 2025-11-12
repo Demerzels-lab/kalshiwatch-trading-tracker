@@ -1,0 +1,50 @@
+    '2024-12-11 00:00:00',
+    3546.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'f61d6f0b-fe50-4ab4-a65e-afa50199c700',
+    'YatSen',
+    'Ukraine-Russia War Ends in 2024',
+    'Win',
+    1016.74,
+    '2024-06-21 00:00:00',
+    1490.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '98389504-d169-4514-a344-3af7c04a872c',
+    'YatSen',
+    'Lakers Make NBA Finals',
+    'Win',
+    741.61,
+    '2024-09-25 00:00:00',
+    2559.0,
+    'Medium'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    'fe28e8ce-b0ae-4b2d-a023-15cee95363dc',
+    'YatSen',
+    '2024 US Presidential Election - Harris Win',
+    'Loss',
+    -558.86,
+    '2024-10-14 00:00:00',
+    877.0,
+    'Low'
+);
+INSERT INTO trade_history (
+    id, trader_pseudonym, market, outcome, profit_loss, trade_date, position_size, confidence_level
+) VALUES (
+    '65cc4f04-7078-4641-90da-679ca1dd4967',
+    'scottilicious',
+    'Federal Funds Rate > 5.25% in 2024',
+    'Win',
+    2118.7,
+    '2024-07-20 00:00:00',
+    4023.0,

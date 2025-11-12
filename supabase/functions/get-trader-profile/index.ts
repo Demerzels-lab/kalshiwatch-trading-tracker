@@ -1,5 +1,5 @@
 // Edge Function: Get Trader Profile
-// Returns detailed trader profile with trades history
+// Returns detailed trader profile with trades history and top profitable trades
 
 Deno.serve(async (req) => {
     const corsHeaders = {
@@ -60,6 +60,22 @@ Deno.serve(async (req) => {
 
         const trader = traders[0];
 
+        // Get top profitable trades from trade_history table
+        let topProfitableTrades = [];
+        const tradeHistoryResponse = await fetch(
+            `${supabaseUrl}/rest/v1/trade_history?trader_pseudonym=eq.${trader.pseudonym}&order=profit_loss.desc&limit=7`,
+            {
+                headers: {
+                    'Authorization': `Bearer ${serviceRoleKey}`,
+                    'apikey': serviceRoleKey
+                }
+            }
+        );
+
+        if (tradeHistoryResponse.ok) {
+            topProfitableTrades = await tradeHistoryResponse.json();
+        }
+
         // Get trader's trades (top 10 by profit)
         const tradesResponse = await fetch(
             `${supabaseUrl}/rest/v1/trades?trader_wallet=eq.${walletAddress}&order=profit_loss.desc&limit=10`,
@@ -116,7 +132,6 @@ Deno.serve(async (req) => {
             }, 0);
             
             // Calculate current holdings (simulated based on recent activity)
-            // For demonstration, we'll use a combination of recent profits and base amount
             const baseHoldings = 1000 + Math.random() * 5000; // Base $1K-6K
             const recentActivityBonus = Math.max(0, monthlyPnL) * 0.1; // 10% of monthly gains
             currentHoldings = Math.round(baseHoldings + recentActivityBonus);
@@ -125,7 +140,6 @@ Deno.serve(async (req) => {
             if (!joinDate && allTrades.length > 0) {
                 const firstTrade = allTrades[0];
                 const tradeDate = new Date(firstTrade.timestamp);
-                // Add some random days before the first trade to simulate user creation
                 const joinDaysBefore = Math.floor(Math.random() * 30) + 1;
                 tradeDate.setDate(tradeDate.getDate() - joinDaysBefore);
                 joinDate = tradeDate.toISOString();
@@ -182,6 +196,7 @@ Deno.serve(async (req) => {
             data: {
                 profile: enhancedProfile,
                 topTrades: topTrades || [],
+                topProfitableTrades: topProfitableTrades || [],
                 pnlHistory: pnlHistory || []
             }
         }), {

@@ -1,0 +1,872 @@
+[
+  {
+    "id": "911ad243-7b87-4754-8a64-c00d73c390fe",
+    "trader_pseudonym": "fengdubiying",
+    "market": "2024 US Presidential Election - Trump Win",
+    "outcome": "Win",
+    "profit_loss": 20878.04,
+    "trade_date": "2024-01-26 00:00:00",
+    "position_size": 11867.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "239e200f-7463-45ee-a31c-d2ab84ba9516",
+    "trader_pseudonym": "fengdubiying",
+    "market": "Taylor Swift Album > 1M First Week",
+    "outcome": "Win",
+    "profit_loss": 20321.66,
+    "trade_date": "2024-01-12 00:00:00",
+    "position_size": 11342.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "21498f78-2fd7-454d-a994-2950bce12dff",
+    "trader_pseudonym": "fengdubiying",
+    "market": "EU Interest Rates > 4% by Year End",
+    "outcome": "Win",
+    "profit_loss": 13513.64,
+    "trade_date": "2024-01-28 00:00:00",
+    "position_size": 7377.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "a55220cf-2948-4740-94bf-3671ffd73d96",
+    "trader_pseudonym": "fengdubiying",
+    "market": "Ukraine-Russia War Ends in 2024",
+    "outcome": "Win",
+    "profit_loss": 9534.23,
+    "trade_date": "2024-02-13 00:00:00",
+    "position_size": 5801.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "f91439ab-dc17-460c-95c1-cf7a6e7ced40",
+    "trader_pseudonym": "fengdubiying",
+    "market": "2024 US Presidential Election - Trump Win",
+    "outcome": "Win",
+    "profit_loss": 8972.78,
+    "trade_date": "2024-05-02 00:00:00",
+    "position_size": 9260.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "474dd087-574e-4940-a29c-5ff0828160e0",
+    "trader_pseudonym": "fengdubiying",
+    "market": "2024 US Presidential Election - Harris Win",
+    "outcome": "Win",
+    "profit_loss": 6589.86,
+    "trade_date": "2024-11-20 00:00:00",
+    "position_size": 7793.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "36dd1811-2e00-4ac9-b703-47a24c7c005d",
+    "trader_pseudonym": "fengdubiying",
+    "market": "2024 Senate Control - Democrats",
+    "outcome": "Loss",
+    "profit_loss": -1090.44,
+    "trade_date": "2024-09-20 00:00:00",
+    "position_size": 8781.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "80e35729-407d-4b85-9f46-b9db6f63478f",
+    "trader_pseudonym": "outlying_talking",
+    "market": "2024 US Presidential Election - Harris Win",
+    "outcome": "Win",
+    "profit_loss": 11201.15,
+    "trade_date": "2024-06-25 00:00:00",
+    "position_size": 6653.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "2d067ce3-8b85-4e20-a137-fbce4de13af7",
+    "trader_pseudonym": "outlying_talking",
+    "market": "NFL Championship Game Close (>7 pts)",
+    "outcome": "Win",
+    "profit_loss": 4035.25,
+    "trade_date": "2024-09-30 00:00:00",
+    "position_size": 6089.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "c9185682-e7a5-440e-a302-3594e3006282",
+    "trader_pseudonym": "outlying_talking",
+    "market": "Marvel Movie > $1B Box Office 2024",
+    "outcome": "Win",
+    "profit_loss": 2645.94,
+    "trade_date": "2024-08-19 00:00:00",
+    "position_size": 3202.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "5056badb-9154-4091-8bc5-fbe9fca8f11f",
+    "trader_pseudonym": "outlying_talking",
+    "market": "Marvel Movie > $1B Box Office 2024",
+    "outcome": "Win",
+    "profit_loss": 2600.58,
+    "trade_date": "2024-02-12 00:00:00",
+    "position_size": 5069.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "c8321139-2142-41d0-a92e-630329d7178d",
+    "trader_pseudonym": "outlying_talking",
+    "market": "NFL Championship Game Close (>7 pts)",
+    "outcome": "Win",
+    "profit_loss": 1130.68,
+    "trade_date": "2024-05-09 00:00:00",
+    "position_size": 1203.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "c31ca195-67e7-4081-a211-ac21c601a425",
+    "trader_pseudonym": "outlying_talking",
+    "market": "2024 Senate Control - Democrats",
+    "outcome": "Loss",
+    "profit_loss": -3168.16,
+    "trade_date": "2024-03-25 00:00:00",
+    "position_size": 6772.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "475f1b86-cddc-4592-8e6e-4569ce014b45",
+    "trader_pseudonym": "ill_fun",
+    "market": "China GDP Growth > 5% in 2024",
+    "outcome": "Win",
+    "profit_loss": 5636.59,
+    "trade_date": "2024-02-10 00:00:00",
+    "position_size": 6022.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "1b09a989-e20d-4a4d-bd7c-a199d943c3f4",
+    "trader_pseudonym": "ill_fun",
+    "market": "Lakers Make NBA Finals",
+    "outcome": "Win",
+    "profit_loss": 4426.95,
+    "trade_date": "2024-08-28 00:00:00",
+    "position_size": 3013.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "a7d07e36-a061-4ea0-8079-115087871324",
+    "trader_pseudonym": "ill_fun",
+    "market": "S&P 500 > 5,500 by Dec 2024",
+    "outcome": "Win",
+    "profit_loss": 2704.69,
+    "trade_date": "2024-06-14 00:00:00",
+    "position_size": 2371.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "b2ce1f12-5595-4254-af4d-d56d38a17c14",
+    "trader_pseudonym": "ill_fun",
+    "market": "US Unemployment Rate > 4.5% by Year End",
+    "outcome": "Loss",
+    "profit_loss": -4565.12,
+    "trade_date": "2024-05-02 00:00:00",
+    "position_size": 7203.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "d85f0782-fd50-4738-ba08-1c058475bdf4",
+    "trader_pseudonym": "ill_fun",
+    "market": "Oscars Best Picture Predictable",
+    "outcome": "Loss",
+    "profit_loss": -4789.5,
+    "trade_date": "2024-07-13 00:00:00",
+    "position_size": 5987.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "2c77b681-56a6-4089-a998-3decf7906856",
+    "trader_pseudonym": "unsteady_agency",
+    "market": "S&P 500 > 5,500 by Dec 2024",
+    "outcome": "Win",
+    "profit_loss": 9248.65,
+    "trade_date": "2024-01-28 00:00:00",
+    "position_size": 6589.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "49c90584-edeb-44bd-a840-e805d5d073cb",
+    "trader_pseudonym": "unsteady_agency",
+    "market": "Ukraine-Russia War Ends in 2024",
+    "outcome": "Win",
+    "profit_loss": 7161.78,
+    "trade_date": "2024-04-01 00:00:00",
+    "position_size": 7075.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "028223c5-1d6a-4d1f-9ac2-2d63a8b3c20b",
+    "trader_pseudonym": "unsteady_agency",
+    "market": "Bitcoin Price > $80,000 by Dec 2024",
+    "outcome": "Win",
+    "profit_loss": 5942.52,
+    "trade_date": "2024-07-06 00:00:00",
+    "position_size": 5585.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "afee30e5-6300-4741-9206-d44a7be855d2",
+    "trader_pseudonym": "unsteady_agency",
+    "market": "EU Interest Rates > 4% by Year End",
+    "outcome": "Win",
+    "profit_loss": 5687.33,
+    "trade_date": "2024-03-20 00:00:00",
+    "position_size": 4266.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "6a0c9e09-3704-407c-b406-fb82a0e90536",
+    "trader_pseudonym": "unsteady_agency",
+    "market": "EU Interest Rates > 4% by Year End",
+    "outcome": "Win",
+    "profit_loss": 2712.8,
+    "trade_date": "2024-08-04 00:00:00",
+    "position_size": 5710.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "a236292b-913b-4f13-a992-d1b3d0996008",
+    "trader_pseudonym": "all_boar",
+    "market": "China GDP Growth > 5% in 2024",
+    "outcome": "Win",
+    "profit_loss": 5400.07,
+    "trade_date": "2024-09-16 00:00:00",
+    "position_size": 6251.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "be163af8-f2d2-43fb-8ee3-54a409719848",
+    "trader_pseudonym": "all_boar",
+    "market": "Marvel Movie > $1B Box Office 2024",
+    "outcome": "Win",
+    "profit_loss": 5339.31,
+    "trade_date": "2024-05-18 00:00:00",
+    "position_size": 7238.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "9d69ffe4-e248-4fee-a5c0-11574e950a8d",
+    "trader_pseudonym": "all_boar",
+    "market": "US Wins >30 Olympic Gold Medals",
+    "outcome": "Win",
+    "profit_loss": 690.1,
+    "trade_date": "2024-12-07 00:00:00",
+    "position_size": 1349.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "a766c714-f778-4ac6-8a1d-c6ad8d475dc3",
+    "trader_pseudonym": "all_boar",
+    "market": "Super Bowl LVIX > 120M Viewers",
+    "outcome": "Loss",
+    "profit_loss": -1875.73,
+    "trade_date": "2024-01-29 00:00:00",
+    "position_size": 4393.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "c413d6b6-e21d-4ed2-aeb4-4bd3ccca76ef",
+    "trader_pseudonym": "all_boar",
+    "market": "2024 US Presidential Election - Trump Win",
+    "outcome": "Loss",
+    "profit_loss": -2301.93,
+    "trade_date": "2024-06-01 00:00:00",
+    "position_size": 5709.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "0708c5d1-874f-46e8-baa4-666a4f717e85",
+    "trader_pseudonym": "fengdubiying_polywatch",
+    "market": "Oscars Best Picture Predictable",
+    "outcome": "Win",
+    "profit_loss": 7566.85,
+    "trade_date": "2024-11-12 00:00:00",
+    "position_size": 6436.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "614b47f0-fd00-4144-88c2-6dbdc16c3864",
+    "trader_pseudonym": "fengdubiying_polywatch",
+    "market": "2024 US Presidential Election - Trump Win",
+    "outcome": "Win",
+    "profit_loss": 7027.51,
+    "trade_date": "2024-01-10 00:00:00",
+    "position_size": 7250.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "dc238336-6c3c-453d-9179-0d2f929a69e1",
+    "trader_pseudonym": "fengdubiying_polywatch",
+    "market": "Super Bowl LVIX > 120M Viewers",
+    "outcome": "Win",
+    "profit_loss": 4913.36,
+    "trade_date": "2024-11-30 00:00:00",
+    "position_size": 4417.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "f24e6c82-2af5-427a-843a-97b22f130776",
+    "trader_pseudonym": "fengdubiying_polywatch",
+    "market": "US Unemployment Rate > 4.5% by Year End",
+    "outcome": "Win",
+    "profit_loss": 1780.31,
+    "trade_date": "2024-07-26 00:00:00",
+    "position_size": 3593.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "b8e3963d-491d-4726-8ec6-8815f98af533",
+    "trader_pseudonym": "fengdubiying_polywatch",
+    "market": "Taylor Swift Album > 1M First Week",
+    "outcome": "Loss",
+    "profit_loss": -1033.2,
+    "trade_date": "2024-10-14 00:00:00",
+    "position_size": 3356.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "ecba2bba-5531-4f49-871b-8ff4bdb5f59b",
+    "trader_pseudonym": "yao2019m",
+    "market": "US GDP Growth Q4 2024 > 2.5%",
+    "outcome": "Win",
+    "profit_loss": 5667.88,
+    "trade_date": "2024-03-09 00:00:00",
+    "position_size": 5920.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "2649105c-6f49-4619-baa4-4cbc19a70451",
+    "trader_pseudonym": "yao2019m",
+    "market": "Israel-Hamas Ceasefire by Dec 2024",
+    "outcome": "Win",
+    "profit_loss": 4010.56,
+    "trade_date": "2024-12-02 00:00:00",
+    "position_size": 4552.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "65cd8379-b02d-45c2-babc-0388a7647e21",
+    "trader_pseudonym": "yao2019m",
+    "market": "Taylor Swift Album > 1M First Week",
+    "outcome": "Loss",
+    "profit_loss": -920.51,
+    "trade_date": "2024-10-25 00:00:00",
+    "position_size": 1243.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "cfd3670d-eb1d-497f-b4c4-c2a5ca18dd9b",
+    "trader_pseudonym": "yao2019m",
+    "market": "Federal Funds Rate > 5.25% in 2024",
+    "outcome": "Loss",
+    "profit_loss": -1792.63,
+    "trade_date": "2024-06-15 00:00:00",
+    "position_size": 8600.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "f941559a-36c5-4162-b263-c6b159046639",
+    "trader_pseudonym": "yao2019m",
+    "market": "Super Bowl LVIX > 120M Viewers",
+    "outcome": "Loss",
+    "profit_loss": -2022.31,
+    "trade_date": "2024-01-06 00:00:00",
+    "position_size": 6632.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "10f3feb4-63fd-4f00-8868-5f52dd99c630",
+    "trader_pseudonym": "yao2019m",
+    "market": "S&P 500 > 5,500 by Dec 2024",
+    "outcome": "Loss",
+    "profit_loss": -2708.09,
+    "trade_date": "2024-11-28 00:00:00",
+    "position_size": 5809.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "61589067-c278-4c44-957d-e252586e8e18",
+    "trader_pseudonym": "yao2019m",
+    "market": "2024 US Presidential Election - Trump Win",
+    "outcome": "Loss",
+    "profit_loss": -2995.51,
+    "trade_date": "2024-03-21 00:00:00",
+    "position_size": 7041.0,
+    "confidence_level": "High"
+  },
+  {
+    "id": "11382f04-b026-450c-b238-5bebc6895bbf",
+    "trader_pseudonym": "YatSen",
+    "market": "Lakers Make NBA Finals",
+    "outcome": "Win",
+    "profit_loss": 1857.91,
+    "trade_date": "2024-11-06 00:00:00",
+    "position_size": 2703.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "557c4a24-9685-45f3-a3fc-0d9d6707a2dc",
+    "trader_pseudonym": "YatSen",
+    "market": "Taylor Swift Album > 1M First Week",
+    "outcome": "Win",
+    "profit_loss": 1179.84,
+    "trade_date": "2024-12-11 00:00:00",
+    "position_size": 3546.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "f61d6f0b-fe50-4ab4-a65e-afa50199c700",
+    "trader_pseudonym": "YatSen",
+    "market": "Ukraine-Russia War Ends in 2024",
+    "outcome": "Win",
+    "profit_loss": 1016.74,
+    "trade_date": "2024-06-21 00:00:00",
+    "position_size": 1490.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "98389504-d169-4514-a344-3af7c04a872c",
+    "trader_pseudonym": "YatSen",
+    "market": "Lakers Make NBA Finals",
+    "outcome": "Win",
+    "profit_loss": 741.61,
+    "trade_date": "2024-09-25 00:00:00",
+    "position_size": 2559.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "fe28e8ce-b0ae-4b2d-a023-15cee95363dc",
+    "trader_pseudonym": "YatSen",
+    "market": "2024 US Presidential Election - Harris Win",
+    "outcome": "Loss",
+    "profit_loss": -558.86,
+    "trade_date": "2024-10-14 00:00:00",
+    "position_size": 877.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "65cc4f04-7078-4641-90da-679ca1dd4967",
+    "trader_pseudonym": "scottilicious",
+    "market": "Federal Funds Rate > 5.25% in 2024",
+    "outcome": "Win",
+    "profit_loss": 2118.7,
+    "trade_date": "2024-07-20 00:00:00",
+    "position_size": 4023.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "ec3a915e-4888-4b82-97dd-e5ef26074001",
+    "trader_pseudonym": "scottilicious",
+    "market": "Lakers Make NBA Finals",
+    "outcome": "Win",
+    "profit_loss": 298.3,
+    "trade_date": "2024-12-10 00:00:00",
+    "position_size": 1018.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "7303deb4-05bf-4196-ad87-7bd9a8ce65db",
+    "trader_pseudonym": "scottilicious",
+    "market": "2024 US Presidential Election - Harris Win",
+    "outcome": "Loss",
+    "profit_loss": -841.13,
+    "trade_date": "2024-04-28 00:00:00",
+    "position_size": 2362.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "ac391d60-f4e8-4290-a935-410cabe0a787",
+    "trader_pseudonym": "scottilicious",
+    "market": "Oscars Best Picture Predictable",
+    "outcome": "Loss",
+    "profit_loss": -892.09,
+    "trade_date": "2024-04-09 00:00:00",
+    "position_size": 2369.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "2b97d5c6-d857-4468-a874-1138375cdec1",
+    "trader_pseudonym": "scottilicious",
+    "market": "Federal Funds Rate > 5.25% in 2024",
+    "outcome": "Loss",
+    "profit_loss": -3527.18,
+    "trade_date": "2024-09-04 00:00:00",
+    "position_size": 4547.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "c80f056f-7b96-434d-9f5d-ccdee8f9d945",
+    "trader_pseudonym": "Car",
+    "market": "NVIDIA Stock > $800 by End 2024",
+    "outcome": "Win",
+    "profit_loss": 1195.38,
+    "trade_date": "2024-12-09 00:00:00",
+    "position_size": 4640.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "6652d9c3-dea1-4077-bf71-43a22614762c",
+    "trader_pseudonym": "Car",
+    "market": "NVIDIA Stock > $800 by End 2024",
+    "outcome": "Win",
+    "profit_loss": 1159.01,
+    "trade_date": "2024-08-09 00:00:00",
+    "position_size": 3969.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "229f7690-7ec1-4ea9-8c66-14493098dab2",
+    "trader_pseudonym": "Car",
+    "market": "NVIDIA Stock > $800 by End 2024",
+    "outcome": "Win",
+    "profit_loss": 120.41,
+    "trade_date": "2024-10-21 00:00:00",
+    "position_size": 1238.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "6ad99107-4c45-416e-8fe3-87a6faa9feed",
+    "trader_pseudonym": "Car",
+    "market": "Oscars Best Picture Predictable",
+    "outcome": "Loss",
+    "profit_loss": -940.43,
+    "trade_date": "2024-08-17 00:00:00",
+    "position_size": 1813.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "e5a0ba0a-35b9-4717-a4f1-5fe683ce0aeb",
+    "trader_pseudonym": "Car",
+    "market": "Tesla Stock > $300 by Year End",
+    "outcome": "Loss",
+    "profit_loss": -1279.46,
+    "trade_date": "2024-10-31 00:00:00",
+    "position_size": 1893.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "5c221e3d-049c-4d04-9af8-9ef3a02f4e38",
+    "trader_pseudonym": "Car",
+    "market": "Ukraine-Russia War Ends in 2024",
+    "outcome": "Loss",
+    "profit_loss": -1354.51,
+    "trade_date": "2024-08-18 00:00:00",
+    "position_size": 4886.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "8364b5e9-12d7-4160-baf5-bd95d8bd1d94",
+    "trader_pseudonym": "Car",
+    "market": "World Series Goes to 7 Games",
+    "outcome": "Loss",
+    "profit_loss": -3103.69,
+    "trade_date": "2024-07-28 00:00:00",
+    "position_size": 4158.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "e9ccef5d-3bd3-4389-8c29-4c882023486f",
+    "trader_pseudonym": "Dropper",
+    "market": "2024 House Control - Republicans",
+    "outcome": "Win",
+    "profit_loss": 801.17,
+    "trade_date": "2024-04-22 00:00:00",
+    "position_size": 4283.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "76119027-57e3-4905-b18c-a30d95461f2e",
+    "trader_pseudonym": "Dropper",
+    "market": "Lakers Make NBA Finals",
+    "outcome": "Loss",
+    "profit_loss": -958.2,
+    "trade_date": "2024-11-02 00:00:00",
+    "position_size": 1610.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "26281897-82df-4b7c-a512-71d95565de6a",
+    "trader_pseudonym": "Dropper",
+    "market": "Tesla Stock > $300 by Year End",
+    "outcome": "Loss",
+    "profit_loss": -1201.01,
+    "trade_date": "2024-03-20 00:00:00",
+    "position_size": 4579.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "443cc440-da60-4520-bed5-60b50d7ca410",
+    "trader_pseudonym": "Dropper",
+    "market": "China GDP Growth > 5% in 2024",
+    "outcome": "Loss",
+    "profit_loss": -2095.02,
+    "trade_date": "2024-04-25 00:00:00",
+    "position_size": 3173.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "5ff78273-8033-4259-89ac-21e46129762c",
+    "trader_pseudonym": "Dropper",
+    "market": "NVIDIA Stock > $800 by End 2024",
+    "outcome": "Loss",
+    "profit_loss": -2258.05,
+    "trade_date": "2024-10-13 00:00:00",
+    "position_size": 2957.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "fa92c77a-c93d-4740-88aa-a09d55c71c67",
+    "trader_pseudonym": "Dropper",
+    "market": "US Inflation Rate < 3% by Dec 2024",
+    "outcome": "Loss",
+    "profit_loss": -3215.01,
+    "trade_date": "2024-02-14 00:00:00",
+    "position_size": 4877.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "a18b9b5d-9094-45cd-8689-4b7a109054fa",
+    "trader_pseudonym": "AgricultureSecretary",
+    "market": "US Inflation Rate < 3% by Dec 2024",
+    "outcome": "Win",
+    "profit_loss": 304.42,
+    "trade_date": "2024-03-17 00:00:00",
+    "position_size": 2273.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "ac43519e-d69a-472a-91f5-79c3b8bd3a7d",
+    "trader_pseudonym": "AgricultureSecretary",
+    "market": "NVIDIA Stock > $800 by End 2024",
+    "outcome": "Win",
+    "profit_loss": 172.94,
+    "trade_date": "2024-08-15 00:00:00",
+    "position_size": 3513.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "96424299-7469-493b-85d3-1d1f19028b68",
+    "trader_pseudonym": "AgricultureSecretary",
+    "market": "S&P 500 > 5,500 by Dec 2024",
+    "outcome": "Loss",
+    "profit_loss": -525.41,
+    "trade_date": "2024-04-18 00:00:00",
+    "position_size": 990.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "2f09b47d-2912-48ab-8f9b-3bccd44a64ba",
+    "trader_pseudonym": "AgricultureSecretary",
+    "market": "EU Interest Rates > 4% by Year End",
+    "outcome": "Loss",
+    "profit_loss": -1113.04,
+    "trade_date": "2024-10-31 00:00:00",
+    "position_size": 4787.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "e25a77aa-3614-4be9-8396-68ef5ead2c1c",
+    "trader_pseudonym": "AgricultureSecretary",
+    "market": "Bitcoin Price > $80,000 by Dec 2024",
+    "outcome": "Loss",
+    "profit_loss": -1322.52,
+    "trade_date": "2024-04-23 00:00:00",
+    "position_size": 3986.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "aee87998-686a-4cb8-8777-dcebc393d888",
+    "trader_pseudonym": "AgricultureSecretary",
+    "market": "2024 House Control - Republicans",
+    "outcome": "Loss",
+    "profit_loss": -1476.36,
+    "trade_date": "2024-05-19 00:00:00",
+    "position_size": 5315.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "3bbd8118-f8b3-4a55-a8ea-5dcb55cfb477",
+    "trader_pseudonym": "AgricultureSecretary",
+    "market": "Tesla Stock > $300 by Year End",
+    "outcome": "Loss",
+    "profit_loss": -1704.55,
+    "trade_date": "2024-03-28 00:00:00",
+    "position_size": 3557.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "3c5b74d2-c03e-4e0b-be13-69f916821354",
+    "trader_pseudonym": "Euan",
+    "market": "Marvel Movie > $1B Box Office 2024",
+    "outcome": "Win",
+    "profit_loss": 355.26,
+    "trade_date": "2024-03-27 00:00:00",
+    "position_size": 4337.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "e64cfb7a-37ef-4eea-8f45-f703cadf85df",
+    "trader_pseudonym": "Euan",
+    "market": "NVIDIA Stock > $800 by End 2024",
+    "outcome": "Win",
+    "profit_loss": 247.62,
+    "trade_date": "2024-06-02 00:00:00",
+    "position_size": 3843.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "51eade65-bcb5-4aa0-b73b-3b172d9b1d5f",
+    "trader_pseudonym": "Euan",
+    "market": "Ukraine-Russia War Ends in 2024",
+    "outcome": "Loss",
+    "profit_loss": -574.78,
+    "trade_date": "2024-02-02 00:00:00",
+    "position_size": 1139.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "262f6007-92e2-4a42-be27-2a4a33f04a53",
+    "trader_pseudonym": "Euan",
+    "market": "Federal Funds Rate > 5.25% in 2024",
+    "outcome": "Loss",
+    "profit_loss": -818.71,
+    "trade_date": "2024-04-02 00:00:00",
+    "position_size": 1964.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "19bfbca2-af92-46a1-bedb-b496e8ab273d",
+    "trader_pseudonym": "Euan",
+    "market": "EU Interest Rates > 4% by Year End",
+    "outcome": "Loss",
+    "profit_loss": -3797.6,
+    "trade_date": "2024-05-10 00:00:00",
+    "position_size": 5594.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "7fca9e0d-1d98-416d-9c55-6d6ee7a3dbc9",
+    "trader_pseudonym": "25usdc",
+    "market": "2024 US Presidential Election - Trump Win",
+    "outcome": "Win",
+    "profit_loss": 181.23,
+    "trade_date": "2024-11-12 00:00:00",
+    "position_size": 6461.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "ae4e7e3e-d4c4-4e8a-b53d-47ade72a144f",
+    "trader_pseudonym": "25usdc",
+    "market": "US Inflation Rate < 3% by Dec 2024",
+    "outcome": "Win",
+    "profit_loss": 98.92,
+    "trade_date": "2024-11-15 00:00:00",
+    "position_size": 2388.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "46cf4f40-2fea-4d86-9c1a-b6828ee3ba2e",
+    "trader_pseudonym": "25usdc",
+    "market": "S&P 500 > 5,500 by Dec 2024",
+    "outcome": "Win",
+    "profit_loss": 25.89,
+    "trade_date": "2024-02-11 00:00:00",
+    "position_size": 973.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "50ccfb32-2cb7-42e3-893b-04ab764df575",
+    "trader_pseudonym": "25usdc",
+    "market": "Super Bowl LVIX > 120M Viewers",
+    "outcome": "Loss",
+    "profit_loss": -390.95,
+    "trade_date": "2024-06-08 00:00:00",
+    "position_size": 1634.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "dc85da2b-bf6c-44fc-96cb-fcf63b12d074",
+    "trader_pseudonym": "25usdc",
+    "market": "US GDP Growth Q4 2024 > 2.5%",
+    "outcome": "Loss",
+    "profit_loss": -990.68,
+    "trade_date": "2024-04-02 00:00:00",
+    "position_size": 1244.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "733c4ece-9278-4eaf-a03b-1c4197ade920",
+    "trader_pseudonym": "25usdc",
+    "market": "World Series Goes to 7 Games",
+    "outcome": "Loss",
+    "profit_loss": -1879.76,
+    "trade_date": "2024-03-22 00:00:00",
+    "position_size": 3695.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "7de8d1d3-5eef-4db1-aabf-814433b4df4d",
+    "trader_pseudonym": "25usdc",
+    "market": "2024 Senate Control - Democrats",
+    "outcome": "Loss",
+    "profit_loss": -2151.23,
+    "trade_date": "2024-03-29 00:00:00",
+    "position_size": 3803.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "ae84d51e-fc54-43da-860e-c7ccf3c650b4",
+    "trader_pseudonym": "GreekGamblerPM",
+    "market": "China GDP Growth > 5% in 2024",
+    "outcome": "Win",
+    "profit_loss": 15.92,
+    "trade_date": "2024-03-29 00:00:00",
+    "position_size": 3954.0,
+    "confidence_level": "Low"
+  },
+  {
+    "id": "a904739d-3997-4865-872c-2af179c45e4e",
+    "trader_pseudonym": "GreekGamblerPM",
+    "market": "2024 US Presidential Election - Trump Win",
+    "outcome": "Win",
+    "profit_loss": 6.68,
+    "trade_date": "2024-08-18 00:00:00",
+    "position_size": 3919.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "a5585428-5ae3-4f58-8c4a-050655fe8787",
+    "trader_pseudonym": "GreekGamblerPM",
+    "market": "Super Bowl LVIX > 120M Viewers",
+    "outcome": "Win",
+    "profit_loss": 5.1,
+    "trade_date": "2024-07-08 00:00:00",
+    "position_size": 1832.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "a09f4242-daa4-4c57-9d17-a3da2de211ac",
+    "trader_pseudonym": "GreekGamblerPM",
+    "market": "World Series Goes to 7 Games",
+    "outcome": "Loss",
+    "profit_loss": -1775.57,
+    "trade_date": "2024-10-08 00:00:00",
+    "position_size": 3013.0,
+    "confidence_level": "Medium"
+  },
+  {
+    "id": "97377240-7dd8-4cf4-a464-12a11713af54",
+    "trader_pseudonym": "GreekGamblerPM",
+    "market": "Taylor Swift Album > 1M First Week",
+    "outcome": "Loss",
+    "profit_loss": -4101.68,
+    "trade_date": "2024-11-24 00:00:00",
+    "position_size": 5192.0,
+    "confidence_level": "Medium"
+  }
+]
